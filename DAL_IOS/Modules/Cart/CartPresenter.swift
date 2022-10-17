@@ -62,7 +62,7 @@ extension CartPresenter: CartPresenterContract {
     func editOrder(paramters: [String: Any]) {
 //        let cart = CartBuilder().fetch()
 //        guard let orderID = cart?.cart?.first?.orderID else { return }
-//        let method = NetworkConfigration.EndPoint.endPoint(point: .editOrder, paramters: [orderID])
+        let method = NetworkConfigration.EndPoint.endPoint(point: .editOrder, paramters: [orderID])
 //        NetworkManager.instance.paramaters = paramters
 //        NetworkManager.instance.request(method, type: .post, BaseModel<String>.self) { [weak self] (response) in
 //            switch response {
