@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import CollieGallery
+//import CollieGallery
 // MARK: - ...  ViewController - Vars
 class ProviderDetailsVC: BaseController {
     @IBOutlet weak var resturantLbl: UILabel!
@@ -38,7 +38,7 @@ class ProviderDetailsVC: BaseController {
     var presenter: ProviderDetailsPresenter?
     var router: ProviderDetailsRouter?
     var provider: ProvidersResult?
-    var pictures = [CollieGalleryPicture]()
+//    var pictures = [CollieGalleryPicture]()
     var rates: [ProviderRatingsDatum]?
     var providerCategories: [ProviderCategoriesDatum]?
     var catgoryId: Int?

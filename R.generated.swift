@@ -2797,7 +2797,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 111 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 112 nibs.
   struct nib {
     /// Nib `AboutUsView`.
     static let aboutUsView = _R.nib._AboutUsView()
@@ -2939,6 +2939,8 @@ struct R: Rswift.Validatable {
     static let providerMoreMenuVC = _R.nib._ProviderMoreMenuVC()
     /// Nib `ProviderNotificationVC`.
     static let providerNotificationVC = _R.nib._ProviderNotificationVC()
+    /// Nib `ProviderOrdersVC`.
+    static let providerOrdersVC = _R.nib._ProviderOrdersVC()
     /// Nib `ProviderPackagesVC`.
     static let providerPackagesVC = _R.nib._ProviderPackagesVC()
     /// Nib `ProviderRatesView`.
@@ -3583,6 +3585,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderOrdersVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerOrdersVC) instead")
+    static func providerOrdersVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerOrdersVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "ProviderPackagesVC", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.providerPackagesVC) instead")
     static func providerPackagesVC(_: Void = ()) -> UIKit.UINib {
@@ -4188,6 +4198,10 @@ struct R: Rswift.Validatable {
 
     static func providerNotificationVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.providerNotificationVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func providerOrdersVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerOrdersVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func providerPackagesVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -5141,6 +5155,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "tray-1", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tray-1' is used in nib 'MealExtraEditCell', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "BorderColor2", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'BorderColor2' is used in nib 'MealExtraEditCell', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "mainColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'mainColor' is used in nib 'MealExtraEditCell', but couldn't be loaded.") }
           if UIKit.UIColor(named: "textColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor' is used in nib 'MealExtraEditCell', but couldn't be loaded.") }
           if UIKit.UIColor(named: "textColor-blue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor-blue' is used in nib 'MealExtraEditCell', but couldn't be loaded.") }
         }
@@ -5595,6 +5610,17 @@ struct _R: Rswift.Validatable {
     struct _ProviderNotificationVC: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "ProviderNotificationVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProviderOrdersVC: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ProviderOrdersVC"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -7000,6 +7026,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "star", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'star' is used in storyboard 'MealDetailsStoryboard', but couldn't be loaded.") }
         if UIKit.UIImage(named: "tray-1", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tray-1' is used in storyboard 'MealDetailsStoryboard', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "mainColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'mainColor' is used in storyboard 'MealDetailsStoryboard', but couldn't be loaded.") }
           if UIKit.UIColor(named: "starEmptyColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'starEmptyColor' is used in storyboard 'MealDetailsStoryboard', but couldn't be loaded.") }
         }
         if _R.storyboard.mealDetailsStoryboard().mealDetailsVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mealDetailsVC' could not be loaded from storyboard 'MealDetailsStoryboard' as 'MealDetailsVC'.") }

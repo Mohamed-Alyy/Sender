@@ -20,5 +20,5 @@ pod 'R.swift'
 pod 'Cosmos', '~> 15.0'
 pod 'GooglePlaces', '6.2.1'
 pod 'GoogleMaps', '6.2.1'
-pod 'CollieGallery'
+#pod 'CollieGallery'
 end
