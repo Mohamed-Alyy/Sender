@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="3GF-mK-YDj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoNameWhite" translatesAutoresizingMaskIntoConstraints="NO" id="CJS-cj-6xE">
+                                <rect key="frame" x="63" y="76" width="288" height="46"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Burger" translatesAutoresizingMaskIntoConstraints="NO" id="mq7-xz-Nv7">
+                                <rect key="frame" x="137" y="602" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="msr-7O-BD8"/>
+                                    <constraint firstAttribute="width" constant="140" id="xdm-pL-6z5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3GF-mK-YDj" secondAttribute="trailing" id="1ba-MQ-Gi8"/>
+                            <constraint firstItem="CJS-cj-6xE" firstAttribute="centerX" secondItem="3GF-mK-YDj" secondAttribute="centerX" id="LH1-74-Jls"/>
+                            <constraint firstItem="3GF-mK-YDj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="LM3-Ad-5nF"/>
+                            <constraint firstAttribute="bottom" secondItem="3GF-mK-YDj" secondAttribute="bottom" id="SYj-mb-lMM"/>
+                            <constraint firstItem="CJS-cj-6xE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="ZPX-2y-dhZ"/>
+                            <constraint firstItem="3GF-mK-YDj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gbP-8j-Gxg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mq7-xz-Nv7" secondAttribute="bottom" constant="120" id="gcK-kZ-Ent"/>
+                            <constraint firstItem="mq7-xz-Nv7" firstAttribute="centerX" secondItem="3GF-mK-YDj" secondAttribute="centerX" id="pTK-12-AHU"/>
+                            <constraint firstItem="3GF-mK-YDj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="u2v-Cq-Sye"/>
+                            <constraint firstItem="3GF-mK-YDj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vaJ-Ja-iwz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Burger" width="465" height="465"/>
+        <image name="LogoNameWhite" width="288" height="46"/>
+        <image name="lunchScreen" width="414" height="737"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

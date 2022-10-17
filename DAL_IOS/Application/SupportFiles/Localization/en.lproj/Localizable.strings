@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Created by on 11/5/18.
+  Copyright © 2018 ocs. All rights reserved.
+*/
+
+
+"Hello" = "Hello";
+"SAR.full" = "SAR";
+"SAR.short" = "SAR";
+"camera.lan" = "Camera";
+"photo.library.lan" = "Gallery";
+"cancel.lan" = "Cancel";

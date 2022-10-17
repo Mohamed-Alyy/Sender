@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="379.098" height="86.128" viewBox="0 0 379.098 86.128">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.985" y1="0.097" x2="-0.048" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bebed1"/>
+      <stop offset="1" stop-color="#9898b0"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_235" data-name="Rectangle 235" width="379.098" height="86.128" rx="10" transform="translate(17 423)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10586" data-name="Group 10586" transform="translate(-17 -423)">
+    <rect id="Rectangle_235-2" data-name="Rectangle 235" width="379.098" height="86.128" rx="10" transform="translate(17 423)" fill="url(#linear-gradient)"/>
+    <g id="Mask_Group_28" data-name="Mask Group 28" opacity="0.17" clip-path="url(#clip-path)">
+      <g id="Iconly_Light_Profile" data-name="Iconly/Light/Profile" transform="translate(11.833 444.896)">
+        <g id="Profile" transform="translate(0)">
+          <circle id="Ellipse_736" cx="18.913" cy="18.913" r="18.913" transform="translate(11.087)" fill="#fff"/>
+          <path id="Path_33945" d="M0,11.938A8.768,8.768,0,0,1,.87,8.1C2.681,4.475,7.79,2.554,12.029,1.685A66.449,66.449,0,0,1,21.3.38a99.167,99.167,0,0,1,17.355,0,67.21,67.21,0,0,1,9.275,1.3c4.239.87,9.348,2.609,11.159,6.413a8.986,8.986,0,0,1,0,7.717c-1.812,3.8-6.92,5.543-11.159,6.377a62.21,62.21,0,0,1-9.275,1.341,102.211,102.211,0,0,1-14.13.217,16.093,16.093,0,0,1-3.225-.217,61.051,61.051,0,0,1-9.239-1.341C7.79,21.359,2.717,19.62.87,15.815A9.022,9.022,0,0,1,0,11.938Z" transform="translate(0 52.192)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="381.549" height="86.256" viewBox="0 0 381.549 86.256">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.985" y1="0.097" x2="-0.048" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1baca7"/>
+      <stop offset="1" stop-color="#31dfd9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.985" y1="0.097" x2="-0.048" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff7a13"/>
+      <stop offset="1" stop-color="#fbc60b"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_235" data-name="Rectangle 235" width="381.098" height="86.128" rx="10" transform="translate(16 318)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10588" data-name="Group 10588" transform="translate(-16 -211.872)">
+    <rect id="Rectangle_235-2" data-name="Rectangle 235" width="381.098" height="86.128" rx="10" transform="translate(16 212)" fill="url(#linear-gradient-2)"/>
+    <g id="Mask_Group_33" data-name="Mask Group 33" transform="translate(0.451 -106.128)" clip-path="url(#clip-path)">
+      <g id="Iconly_Light_Document" data-name="Iconly/Light/Document" transform="translate(16 343.878)" opacity="0.18">
+        <g id="Document">
+          <path id="Stroke_4" data-name="Stroke 4" d="M49.965,0l-31.6.017C7.023.087,0,7.608,0,19.081V57.169C0,68.7,7.077,76.25,18.518,76.25l31.6-.012c11.343-.07,18.37-7.6,18.37-19.069V19.081C68.487,7.55,61.406,0,49.965,0Z" fill="#fff"/>
+          <path id="Stroke_1" data-name="Stroke 1" d="M29.672.5H0" transform="translate(19.503 55.305)" fill="#ff7f12" stroke="#ff8313" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Stroke_2" data-name="Stroke 2" d="M29.672.5H0" transform="translate(19.503 37.965)" fill="#ff7f12" stroke="#ff8313" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Stroke_3" data-name="Stroke 3" d="M11.322.5H0" transform="translate(19.503 20.666)" fill="#ff7f12" stroke="#ff8313" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

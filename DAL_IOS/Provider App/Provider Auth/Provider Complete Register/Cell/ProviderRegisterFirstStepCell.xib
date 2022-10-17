@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+        <array key="cairo.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProviderRegisterFirstStepCell" customModule="DAL_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="601" height="1178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="601" height="1178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jdQ-NL-H74">
+                        <rect key="frame" x="8" y="8" width="585" height="1150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1- Service Provider information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyf-rm-HKC">
+                                <rect key="frame" x="0.0" y="0.0" width="585" height="28"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SignIn"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="1- Service Provider information"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b24"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ML6-2c-cdu">
+                                <rect key="frame" x="0.0" y="36" width="585" height="1114"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your information to complete the registration process" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-Od-y3c">
+                                        <rect key="frame" x="0.0" y="0.0" width="585" height="14"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="12"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SignIn"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Enter your information to complete the registration process"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r12"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7T-xw-DEh">
+                                        <rect key="frame" x="0.0" y="22" width="585" height="8"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="Ype-oJ-wa3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="service logo image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzr-b9-lq9">
+                                        <rect key="frame" x="0.0" y="38" width="585" height="19"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SignIn"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Service logo image"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSi-iy-JiV">
+                                        <rect key="frame" x="0.0" y="65" width="585" height="96"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="KHi-pJ-10D">
+                                                <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuu-Ep-VqF" customClass="RoundedButton" customModule="DAL_IOS" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="2IH-ON-t7U"/>
+                                                    <constraint firstAttribute="width" constant="80" id="JNb-UZ-rWo"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemGray4Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="KHi-pJ-10D" firstAttribute="centerX" secondItem="fuu-Ep-VqF" secondAttribute="centerX" id="1vq-iB-q0H"/>
+                                            <constraint firstItem="KHi-pJ-10D" firstAttribute="height" secondItem="fuu-Ep-VqF" secondAttribute="height" id="6R0-SQ-8BB"/>
+                                            <constraint firstItem="KHi-pJ-10D" firstAttribute="trailing" secondItem="fuu-Ep-VqF" secondAttribute="trailing" id="HBc-XF-Psa"/>
+                                            <constraint firstItem="fuu-Ep-VqF" firstAttribute="top" secondItem="CSi-iy-JiV" secondAttribute="top" constant="8" id="NNP-jM-9sr"/>
+                                            <constraint firstItem="fuu-Ep-VqF" firstAttribute="leading" secondItem="CSi-iy-JiV" secondAttribute="leading" constant="8" id="TOc-ti-QUB"/>
+                                            <constraint firstAttribute="bottom" secondItem="fuu-Ep-VqF" secondAttribute="bottom" constant="8" id="eeB-Ob-YEq"/>
+                                            <constraint firstItem="KHi-pJ-10D" firstAttribute="centerY" secondItem="fuu-Ep-VqF" secondAttribute="centerY" id="fAJ-5Z-GgB"/>
+                                            <constraint firstItem="KHi-pJ-10D" firstAttribute="leading" secondItem="fuu-Ep-VqF" secondAttribute="leading" id="fBg-qr-QG1"/>
+                                            <constraint firstItem="KHi-pJ-10D" firstAttribute="width" secondItem="fuu-Ep-VqF" secondAttribute="width" id="jgH-l4-s02"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-yK-JMt">
+                                        <rect key="frame" x="0.0" y="169" width="585" height="19"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SignIn"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Store rating"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khb-1Y-cV8" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="196" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Store rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbm-nk-1at">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Store rating"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="Qnz-SW-935">
+                                                <rect key="frame" x="561" y="17" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="DgF-7x-kjA"/>
+                                                    <constraint firstAttribute="width" constant="16" id="RY7-NS-C4I"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7wh-2T-BvL"/>
+                                            <constraint firstItem="Qnz-SW-935" firstAttribute="trailing" secondItem="jbm-nk-1at" secondAttribute="trailing" id="VdH-NS-rFA"/>
+                                            <constraint firstItem="jbm-nk-1at" firstAttribute="top" secondItem="khb-1Y-cV8" secondAttribute="top" constant="8" id="XRV-EK-gmb"/>
+                                            <constraint firstItem="Qnz-SW-935" firstAttribute="centerY" secondItem="jbm-nk-1at" secondAttribute="centerY" id="g5f-UE-GGL"/>
+                                            <constraint firstItem="jbm-nk-1at" firstAttribute="leading" secondItem="khb-1Y-cV8" secondAttribute="leading" constant="8" id="lJv-2I-77u"/>
+                                            <constraint firstAttribute="trailing" secondItem="jbm-nk-1at" secondAttribute="trailing" constant="8" id="nNh-nO-qoG"/>
+                                            <constraint firstAttribute="bottom" secondItem="jbm-nk-1at" secondAttribute="bottom" constant="8" id="zb0-HY-GSB"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this a branch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-8w-LT2">
+                                        <rect key="frame" x="0.0" y="254" width="585" height="14"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="12"/>
+                                        <color key="textColor" red="0.53725490200000003" green="0.57254901960000004" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="AreYouTheOwnerOfTheVehicle"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Is this a branch"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYF-wm-FQu">
+                                        <rect key="frame" x="0.0" y="276" width="585" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-zs-xR7">
+                                                <rect key="frame" x="16" y="0.0" width="149" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mnu-cd-yp8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="99" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="k41-n0-UHO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                <color key="tintColor" name="mainColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="7ef-k6-9t6"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="DdH-fv-PjP"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jly-14-3LK" customClass="CustomUILabel" customModule="DAL_IOS" customModuleProvider="target">
+                                                                <rect key="frame" x="38" y="0.0" width="20.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Yes"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reguleFont" value="NO"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                        <real key="value" value="14"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f2O-an-dja">
+                                                        <rect key="frame" x="90.5" y="0.0" width="58.5" height="30"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="88" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="h0C-Mm-hcW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                <color key="tintColor" name="mainColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="A4R-mx-fBr"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="rQV-B4-Za8"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upf-lb-UT3" customClass="CustomUILabel" customModule="DAL_IOS" customModuleProvider="target">
+                                                                <rect key="frame" x="38" y="0.0" width="20.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="No"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reguleFont" value="NO"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                        <real key="value" value="14"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="was-m9-DrI"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drK-ON-PhT">
+                                                <rect key="frame" x="16" y="0.0" width="58.5" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <button opaque="NO" tag="88" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVz-1u-ZQp">
+                                                <rect key="frame" x="106.5" y="0.0" width="58.5" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="drK-ON-PhT" firstAttribute="height" secondItem="Mnu-cd-yp8" secondAttribute="height" id="Cri-2L-rTl"/>
+                                            <constraint firstItem="drK-ON-PhT" firstAttribute="centerX" secondItem="Mnu-cd-yp8" secondAttribute="centerX" id="EQg-dM-76p"/>
+                                            <constraint firstAttribute="height" constant="30" id="HeR-U5-qxQ"/>
+                                            <constraint firstItem="EVz-1u-ZQp" firstAttribute="centerX" secondItem="f2O-an-dja" secondAttribute="centerX" id="Jfz-it-9kf"/>
+                                            <constraint firstItem="EVz-1u-ZQp" firstAttribute="centerY" secondItem="f2O-an-dja" secondAttribute="centerY" id="M3t-te-sJl"/>
+                                            <constraint firstItem="drK-ON-PhT" firstAttribute="width" secondItem="Mnu-cd-yp8" secondAttribute="width" id="QS8-w8-8vU"/>
+                                            <constraint firstItem="drK-ON-PhT" firstAttribute="centerY" secondItem="Mnu-cd-yp8" secondAttribute="centerY" id="Rdi-93-HHp"/>
+                                            <constraint firstItem="Ibf-zs-xR7" firstAttribute="centerY" secondItem="aYF-wm-FQu" secondAttribute="centerY" id="WWy-0I-GQ7"/>
+                                            <constraint firstItem="EVz-1u-ZQp" firstAttribute="width" secondItem="f2O-an-dja" secondAttribute="width" id="eJH-l5-c6u"/>
+                                            <constraint firstItem="Ibf-zs-xR7" firstAttribute="leading" secondItem="aYF-wm-FQu" secondAttribute="leading" constant="16" id="iex-TC-hla"/>
+                                            <constraint firstItem="EVz-1u-ZQp" firstAttribute="height" secondItem="f2O-an-dja" secondAttribute="height" id="zzJ-WJ-uPD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nf-ik-sa3" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="314" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="The main branch" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-Hr-hbM">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="The main branch"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="MOu-ND-G3B">
+                                                <rect key="frame" x="561" y="17" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="Gi4-Uf-EG0"/>
+                                                    <constraint firstAttribute="width" constant="16" id="wap-hl-H7w"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Iwj-Hr-hbM" firstAttribute="top" secondItem="5nf-ik-sa3" secondAttribute="top" constant="8" id="JRE-7O-les"/>
+                                            <constraint firstItem="MOu-ND-G3B" firstAttribute="centerY" secondItem="Iwj-Hr-hbM" secondAttribute="centerY" id="U16-1t-TUq"/>
+                                            <constraint firstItem="Iwj-Hr-hbM" firstAttribute="leading" secondItem="5nf-ik-sa3" secondAttribute="leading" constant="8" id="aNe-8P-PcL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Iwj-Hr-hbM" secondAttribute="bottom" constant="8" id="gGq-gI-owi"/>
+                                            <constraint firstItem="MOu-ND-G3B" firstAttribute="trailing" secondItem="Iwj-Hr-hbM" secondAttribute="trailing" id="hai-RI-L5N"/>
+                                            <constraint firstAttribute="trailing" secondItem="Iwj-Hr-hbM" secondAttribute="trailing" constant="8" id="ohG-0f-EOP"/>
+                                            <constraint firstAttribute="height" constant="50" id="r3l-xA-ejN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6B-91-54B" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="372" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Store name in Arabic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-gT-cAW">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Store name in Arabic"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tc7-gT-cAW" secondAttribute="trailing" constant="8" id="4c8-l9-2b0"/>
+                                            <constraint firstItem="tc7-gT-cAW" firstAttribute="leading" secondItem="h6B-91-54B" secondAttribute="leading" constant="8" id="FnP-91-nQK"/>
+                                            <constraint firstAttribute="bottom" secondItem="tc7-gT-cAW" secondAttribute="bottom" constant="8" id="Rt2-AX-97Y"/>
+                                            <constraint firstAttribute="height" constant="50" id="UOE-xo-gGs"/>
+                                            <constraint firstItem="tc7-gT-cAW" firstAttribute="top" secondItem="h6B-91-54B" secondAttribute="top" constant="8" id="ky0-mt-uNp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q32-ol-B6z" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="430" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Store name in English" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ZC-mW-lsw">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Store name in English"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CHS-o2-Urm"/>
+                                            <constraint firstItem="3ZC-mW-lsw" firstAttribute="top" secondItem="Q32-ol-B6z" secondAttribute="top" constant="8" id="LPs-4x-try"/>
+                                            <constraint firstItem="3ZC-mW-lsw" firstAttribute="leading" secondItem="Q32-ol-B6z" secondAttribute="leading" constant="8" id="fWb-oO-Rfk"/>
+                                            <constraint firstAttribute="trailing" secondItem="3ZC-mW-lsw" secondAttribute="trailing" constant="8" id="n4Z-aN-hlx"/>
+                                            <constraint firstAttribute="bottom" secondItem="3ZC-mW-lsw" secondAttribute="bottom" constant="8" id="yIp-cP-LHf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-Oa-ILd" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="488" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location on the map" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muY-Kc-LCs">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Location on the map"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gps" translatesAutoresizingMaskIntoConstraints="NO" id="MNV-mU-yD2">
+                                                <rect key="frame" x="561" y="17" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="egY-uN-Y2g"/>
+                                                    <constraint firstAttribute="width" constant="16" id="xBx-c9-Fem"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="muY-Kc-LCs" secondAttribute="bottom" constant="8" id="M0q-aW-Xjn"/>
+                                            <constraint firstItem="muY-Kc-LCs" firstAttribute="leading" secondItem="HjI-Oa-ILd" secondAttribute="leading" constant="8" id="RS6-kR-e3A"/>
+                                            <constraint firstItem="muY-Kc-LCs" firstAttribute="top" secondItem="HjI-Oa-ILd" secondAttribute="top" constant="8" id="cAt-8l-JeL"/>
+                                            <constraint firstAttribute="trailing" secondItem="muY-Kc-LCs" secondAttribute="trailing" constant="8" id="dSB-Of-Ksq"/>
+                                            <constraint firstItem="MNV-mU-yD2" firstAttribute="trailing" secondItem="muY-Kc-LCs" secondAttribute="trailing" id="e2L-X4-zc1"/>
+                                            <constraint firstAttribute="height" constant="50" id="oEf-LC-lld"/>
+                                            <constraint firstItem="MNV-mU-yD2" firstAttribute="centerY" secondItem="muY-Kc-LCs" secondAttribute="centerY" id="rXn-dd-wS9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-rM-fuM" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="546" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIY-G5-3kc">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Location Details"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lIY-G5-3kc" secondAttribute="trailing" constant="8" id="2qJ-c8-lbX"/>
+                                            <constraint firstItem="lIY-G5-3kc" firstAttribute="leading" secondItem="Bep-rM-fuM" secondAttribute="leading" constant="8" id="3Od-XO-S9J"/>
+                                            <constraint firstAttribute="height" constant="50" id="8Qs-ad-4hv"/>
+                                            <constraint firstItem="lIY-G5-3kc" firstAttribute="top" secondItem="Bep-rM-fuM" secondAttribute="top" constant="8" id="947-9s-sVS"/>
+                                            <constraint firstAttribute="bottom" secondItem="lIY-G5-3kc" secondAttribute="bottom" constant="8" id="amp-LB-Ciy"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available working days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpg-aC-ny7">
+                                        <rect key="frame" x="0.0" y="604" width="585" height="19"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SignIn"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Store rating"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-H6-Ndf" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="631" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Available working days" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-13-7dj">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Available working days"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="R07-4c-Dfb">
+                                                <rect key="frame" x="561" y="17" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="JQV-Xk-5lg"/>
+                                                    <constraint firstAttribute="width" constant="16" id="bfM-WJ-QXJ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lgh-13-7dj" secondAttribute="trailing" constant="8" id="1I9-dI-Vng"/>
+                                            <constraint firstAttribute="bottom" secondItem="lgh-13-7dj" secondAttribute="bottom" constant="8" id="1o7-gL-043"/>
+                                            <constraint firstItem="lgh-13-7dj" firstAttribute="leading" secondItem="Zpv-H6-Ndf" secondAttribute="leading" constant="8" id="7M8-tq-Z4t"/>
+                                            <constraint firstItem="lgh-13-7dj" firstAttribute="top" secondItem="Zpv-H6-Ndf" secondAttribute="top" constant="8" id="9sM-hu-VFj"/>
+                                            <constraint firstItem="R07-4c-Dfb" firstAttribute="trailing" secondItem="lgh-13-7dj" secondAttribute="trailing" id="BNi-Ji-p9x"/>
+                                            <constraint firstItem="R07-4c-Dfb" firstAttribute="centerY" secondItem="lgh-13-7dj" secondAttribute="centerY" id="aXF-AU-Yak"/>
+                                            <constraint firstAttribute="height" constant="50" id="pV3-qe-9GF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtR-r0-3hb">
+                                        <rect key="frame" x="0.0" y="689" width="585" height="19"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SignIn"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Work time"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="YXW-bh-CwB">
+                                        <rect key="frame" x="0.0" y="716" width="585" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-b6-6st" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="To Hour" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ftk-dD-cHW">
+                                                        <rect key="frame" x="8" y="8" width="264.5" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="To hour"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="eWI-HM-CMS">
+                                                        <rect key="frame" x="256.5" y="17" width="16" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="P29-Hl-yPn"/>
+                                                            <constraint firstAttribute="width" constant="16" id="ol4-Xa-o9U"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ftk-dD-cHW" firstAttribute="leading" secondItem="ecn-b6-6st" secondAttribute="leading" constant="8" id="5gZ-3n-jfS"/>
+                                                    <constraint firstItem="eWI-HM-CMS" firstAttribute="centerY" secondItem="Ftk-dD-cHW" secondAttribute="centerY" id="Nvd-DJ-m6b"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ftk-dD-cHW" secondAttribute="trailing" constant="8" id="O36-Bj-Vxn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ftk-dD-cHW" secondAttribute="bottom" constant="8" id="f6a-Sv-71T"/>
+                                                    <constraint firstItem="Ftk-dD-cHW" firstAttribute="top" secondItem="ecn-b6-6st" secondAttribute="top" constant="8" id="fsl-nV-Abh"/>
+                                                    <constraint firstItem="eWI-HM-CMS" firstAttribute="trailing" secondItem="Ftk-dD-cHW" secondAttribute="trailing" id="grX-sx-Zku"/>
+                                                    <constraint firstAttribute="height" constant="50" id="xnb-zW-nQp"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVv-l2-ZrY" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                                <rect key="frame" x="304.5" y="0.0" width="280.5" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="From hour" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kfh-Pt-Ut6">
+                                                        <rect key="frame" x="8" y="8" width="264.5" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="From hour"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-MX-Oz7">
+                                                        <rect key="frame" x="256.5" y="17" width="16" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="16" id="C5u-RB-eKG"/>
+                                                            <constraint firstAttribute="height" constant="16" id="wv1-KV-Est"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Kfh-Pt-Ut6" secondAttribute="bottom" constant="8" id="5iT-94-Ge9"/>
+                                                    <constraint firstItem="DUP-MX-Oz7" firstAttribute="centerY" secondItem="Kfh-Pt-Ut6" secondAttribute="centerY" id="Hs9-hC-h5t"/>
+                                                    <constraint firstItem="Kfh-Pt-Ut6" firstAttribute="top" secondItem="UVv-l2-ZrY" secondAttribute="top" constant="8" id="IcM-if-qya"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ixX-ek-MMd"/>
+                                                    <constraint firstItem="Kfh-Pt-Ut6" firstAttribute="leading" secondItem="UVv-l2-ZrY" secondAttribute="leading" constant="8" id="nAl-Sg-pgH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kfh-Pt-Ut6" secondAttribute="trailing" constant="8" id="tRv-0G-177"/>
+                                                    <constraint firstItem="DUP-MX-Oz7" firstAttribute="trailing" secondItem="Kfh-Pt-Ut6" secondAttribute="trailing" id="vvv-IK-74V"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULq-VC-j2H" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="774" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="responsible person" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PoK-0Z-HrM">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="\"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="PoK-0Z-HrM" secondAttribute="trailing" constant="8" id="3uJ-4t-5Rg"/>
+                                            <constraint firstAttribute="height" constant="50" id="7eS-uw-XnY"/>
+                                            <constraint firstAttribute="bottom" secondItem="PoK-0Z-HrM" secondAttribute="bottom" constant="8" id="LLT-Nv-Sgo"/>
+                                            <constraint firstItem="PoK-0Z-HrM" firstAttribute="top" secondItem="ULq-VC-j2H" secondAttribute="top" constant="8" id="Mu7-MU-dNX"/>
+                                            <constraint firstItem="PoK-0Z-HrM" firstAttribute="leading" secondItem="ULq-VC-j2H" secondAttribute="leading" constant="8" id="NfL-24-uZD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-Hs-TXt" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="832" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fza-Zq-BUr">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fza-Zq-BUr" firstAttribute="top" secondItem="Fuv-Hs-TXt" secondAttribute="top" constant="8" id="8Jw-26-vOw"/>
+                                            <constraint firstAttribute="height" constant="50" id="L1h-yn-927"/>
+                                            <constraint firstAttribute="bottom" secondItem="fza-Zq-BUr" secondAttribute="bottom" constant="8" id="gnC-B1-WtR"/>
+                                            <constraint firstItem="fza-Zq-BUr" firstAttribute="leading" secondItem="Fuv-Hs-TXt" secondAttribute="leading" constant="8" id="oxO-3g-RCV"/>
+                                            <constraint firstAttribute="trailing" secondItem="fza-Zq-BUr" secondAttribute="trailing" constant="8" id="yQd-NB-JAh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-Pv-IsI" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="890" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-Oo-ffX">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Mobile number"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="HSa-Oo-ffX" firstAttribute="leading" secondItem="pWs-Pv-IsI" secondAttribute="leading" constant="8" id="2uw-Kl-Ydq"/>
+                                            <constraint firstAttribute="height" constant="50" id="DFl-Lq-vNh"/>
+                                            <constraint firstAttribute="bottom" secondItem="HSa-Oo-ffX" secondAttribute="bottom" constant="8" id="OU3-2O-oxZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="HSa-Oo-ffX" secondAttribute="trailing" constant="8" id="ahs-tS-aGb"/>
+                                            <constraint firstItem="HSa-Oo-ffX" firstAttribute="top" secondItem="pWs-Pv-IsI" secondAttribute="top" constant="8" id="uY2-Gd-E38"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-0I-DhI" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="948" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Another mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-Iw-IOa">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Another mobile number"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="yUa-Iw-IOa" secondAttribute="trailing" constant="8" id="DDt-2z-EIw"/>
+                                            <constraint firstItem="yUa-Iw-IOa" firstAttribute="top" secondItem="0r7-0I-DhI" secondAttribute="top" constant="8" id="MMw-7s-qqD"/>
+                                            <constraint firstAttribute="bottom" secondItem="yUa-Iw-IOa" secondAttribute="bottom" constant="8" id="YhT-T4-UeT"/>
+                                            <constraint firstItem="yUa-Iw-IOa" firstAttribute="leading" secondItem="0r7-0I-DhI" secondAttribute="leading" constant="8" id="dvK-Ce-W7y"/>
+                                            <constraint firstAttribute="height" constant="50" id="sjN-Df-60I"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-Td-4RJ" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1006" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Commercial Registration No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vig-jU-49Z">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Commercial Registration No"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Vig-jU-49Z" firstAttribute="leading" secondItem="a7l-Td-4RJ" secondAttribute="leading" constant="8" id="Kzw-gf-fIs"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vig-jU-49Z" secondAttribute="trailing" constant="8" id="T9t-B8-I0c"/>
+                                            <constraint firstAttribute="height" constant="50" id="U3M-aY-BEA"/>
+                                            <constraint firstItem="Vig-jU-49Z" firstAttribute="top" secondItem="a7l-Td-4RJ" secondAttribute="top" constant="8" id="enH-jC-RlH"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vig-jU-49Z" secondAttribute="bottom" constant="8" id="zsN-U6-AWT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-9t-O7P" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1064" width="585" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="National Identification Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8k2-9k-xTp">
+                                                <rect key="frame" x="8" y="8" width="569" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="LastName"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="National Identification Number"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8k2-9k-xTp" firstAttribute="leading" secondItem="5OL-9t-O7P" secondAttribute="leading" constant="8" id="KAc-JO-DVV"/>
+                                            <constraint firstAttribute="height" constant="50" id="Rwn-QL-lVC"/>
+                                            <constraint firstItem="8k2-9k-xTp" firstAttribute="top" secondItem="5OL-9t-O7P" secondAttribute="top" constant="8" id="Tr0-Jv-ZF3"/>
+                                            <constraint firstAttribute="trailing" secondItem="8k2-9k-xTp" secondAttribute="trailing" constant="8" id="dvo-28-pkd"/>
+                                            <constraint firstAttribute="bottom" secondItem="8k2-9k-xTp" secondAttribute="bottom" constant="8" id="v9y-Og-nsx"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jdQ-NL-H74" secondAttribute="trailing" constant="8" id="ABx-Xg-QQ4"/>
+                <constraint firstItem="jdQ-NL-H74" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="R8Y-HE-4yr"/>
+                <constraint firstItem="jdQ-NL-H74" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="h3M-Gk-rds"/>
+            </constraints>
+            <size key="customSize" width="601" height="1178"/>
+            <point key="canvasLocation" x="536.95652173913049" y="462.72321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-down" width="13.5" height="7.5"/>
+        <image name="gallery" width="35" height="30.5"/>
+        <image name="gps" width="34" height="34"/>
+        <image name="radio" width="32" height="32"/>
+        <namedColor name="mainColor">
+            <color red="0.96078431372549022" green="0.46274509803921571" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.59215686274509804" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

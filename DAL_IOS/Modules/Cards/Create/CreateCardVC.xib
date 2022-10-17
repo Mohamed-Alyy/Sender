@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateCardVC" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="cardHolderNameTxf" destination="F9O-1X-Zna" id="haq-ic-pp3"/>
+                <outlet property="cardNumberTxf" destination="pKi-im-952" id="odi-Hf-eBY"/>
+                <outlet property="cvvTxf" destination="WSI-QR-TIN" id="KAe-mf-vlo"/>
+                <outlet property="expirationDateTxf" destination="PVr-pc-c6C" id="s6h-cz-euY"/>
+                <outlet property="saveEditBT" destination="T1R-XV-eEL" id="LBv-k7-YNX"/>
+                <outlet property="titleLbl" destination="8ZS-cY-Fn4" id="bkA-1f-YQ0"/>
+                <outlet property="view" destination="VMW-bP-DP1" id="uVy-2r-8un"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VMW-bP-DP1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBackground" translatesAutoresizingMaskIntoConstraints="NO" id="kYJ-W9-nYU">
+                    <rect key="frame" x="0.0" y="99" width="414" height="797"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlQ-0P-Th9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulq-mG-AOi">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-mn-UtM">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+                                    <state key="normal" image="back-black"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="localizationImage" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="S7g-U4-pFU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Ste-mn-UtM" firstAttribute="leading" secondItem="Ulq-mG-AOi" secondAttribute="leading" id="2vA-xD-09O"/>
+                                <constraint firstAttribute="width" constant="60" id="X3q-c5-99f"/>
+                                <constraint firstAttribute="bottom" secondItem="Ste-mn-UtM" secondAttribute="bottom" id="qZN-1c-e7a"/>
+                                <constraint firstAttribute="trailing" secondItem="Ste-mn-UtM" secondAttribute="trailing" id="t9S-4l-mDM"/>
+                                <constraint firstItem="Ste-mn-UtM" firstAttribute="top" secondItem="Ulq-mG-AOi" secondAttribute="top" id="yJT-lU-N09"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-cY-Fn4">
+                            <rect key="frame" x="75" y="17.5" width="41.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r25"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="New address"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ulq-mG-AOi" secondAttribute="bottom" id="1Qo-DX-xTL"/>
+                        <constraint firstItem="Ulq-mG-AOi" firstAttribute="leading" secondItem="wlQ-0P-Th9" secondAttribute="leading" id="8ME-RK-gzr"/>
+                        <constraint firstItem="8ZS-cY-Fn4" firstAttribute="leading" secondItem="Ulq-mG-AOi" secondAttribute="trailing" constant="15" id="Bv2-Tk-VId"/>
+                        <constraint firstItem="Ulq-mG-AOi" firstAttribute="top" secondItem="wlQ-0P-Th9" secondAttribute="top" id="LNS-kp-ejE"/>
+                        <constraint firstItem="8ZS-cY-Fn4" firstAttribute="centerY" secondItem="Ste-mn-UtM" secondAttribute="centerY" id="pWS-OJ-fmK"/>
+                        <constraint firstAttribute="height" constant="55" id="t0X-mh-Ldd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1R-XV-eEL" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
+                    <rect key="frame" x="15" y="777" width="384" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sGd-Ek-NOK"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="create:" destination="-1" eventType="touchUpInside" id="nYe-Ej-26a"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Dr1-mV-2WZ">
+                    <rect key="frame" x="16" y="115" width="382" height="248"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the card information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-lJ-2fF">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r30"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Enter the card information"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Holder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-1X-Zna">
+                            <rect key="frame" x="0.0" y="66" width="382" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="uuk-bf-Yfe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Card Holder"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pKi-im-952">
+                            <rect key="frame" x="0.0" y="132" width="382" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="D7c-un-QiW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Card Number"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxChar">
+                                    <integer key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QNI-Zm-mIb">
+                            <rect key="frame" x="0.0" y="198" width="382" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="04/2022" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVr-pc-c6C">
+                                    <rect key="frame" x="0.0" y="0.0" width="183" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="oK2-Ku-C8n"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSI-QR-TIN">
+                                    <rect key="frame" x="199" y="0.0" width="183" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="mH3-at-Frb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="CVV"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="y4v-q5-XUt">
+                    <rect key="frame" x="175" y="330" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="2aS-fh-4oM"/>
+                        <constraint firstAttribute="height" constant="16" id="vlJ-kN-0qh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NZ4-nN-QUh"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NZ4-nN-QUh" firstAttribute="trailing" secondItem="Dr1-mV-2WZ" secondAttribute="trailing" constant="16" id="2rC-EO-9qf"/>
+                <constraint firstAttribute="trailing" secondItem="wlQ-0P-Th9" secondAttribute="trailing" id="3Y7-Am-Z8q"/>
+                <constraint firstItem="y4v-q5-XUt" firstAttribute="centerY" secondItem="PVr-pc-c6C" secondAttribute="centerY" id="8DI-mp-BDW"/>
+                <constraint firstItem="Dr1-mV-2WZ" firstAttribute="leading" secondItem="NZ4-nN-QUh" secondAttribute="leading" constant="16" id="8g9-TZ-a57"/>
+                <constraint firstItem="NZ4-nN-QUh" firstAttribute="trailing" secondItem="kYJ-W9-nYU" secondAttribute="trailing" id="ABp-Jf-TeZ"/>
+                <constraint firstItem="NZ4-nN-QUh" firstAttribute="bottom" secondItem="T1R-XV-eEL" secondAttribute="bottom" constant="35" id="FBY-Qv-dAG"/>
+                <constraint firstItem="wlQ-0P-Th9" firstAttribute="top" secondItem="NZ4-nN-QUh" secondAttribute="top" id="Ps0-zC-5b4"/>
+                <constraint firstItem="y4v-q5-XUt" firstAttribute="right" secondItem="PVr-pc-c6C" secondAttribute="right" constant="-8" id="YiL-xz-M2e"/>
+                <constraint firstItem="kYJ-W9-nYU" firstAttribute="bottom" secondItem="VMW-bP-DP1" secondAttribute="bottom" id="iHz-4h-4Zh"/>
+                <constraint firstItem="kYJ-W9-nYU" firstAttribute="leading" secondItem="NZ4-nN-QUh" secondAttribute="leading" id="iY2-yh-Bbq"/>
+                <constraint firstItem="kYJ-W9-nYU" firstAttribute="top" secondItem="wlQ-0P-Th9" secondAttribute="bottom" id="ilk-7J-oSJ"/>
+                <constraint firstItem="wlQ-0P-Th9" firstAttribute="leading" secondItem="NZ4-nN-QUh" secondAttribute="leading" id="kBN-yX-M5a"/>
+                <constraint firstItem="Dr1-mV-2WZ" firstAttribute="top" secondItem="wlQ-0P-Th9" secondAttribute="bottom" constant="16" id="mC6-mX-tn0"/>
+                <constraint firstItem="NZ4-nN-QUh" firstAttribute="trailing" secondItem="T1R-XV-eEL" secondAttribute="trailing" constant="15" id="vG6-ys-oho"/>
+                <constraint firstItem="T1R-XV-eEL" firstAttribute="leading" secondItem="VMW-bP-DP1" secondAttribute="leading" constant="15" id="xo2-tu-8ae"/>
+            </constraints>
+            <point key="canvasLocation" x="372" y="52"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="T1R-XV-eEL">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="appBackground" width="414" height="737"/>
+        <image name="back-black" width="19" height="16"/>
+        <image name="calendar" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

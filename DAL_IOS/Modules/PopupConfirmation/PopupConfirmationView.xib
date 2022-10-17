@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupConfirmationView" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeBtn" destination="ToG-L0-CyY" id="Gbv-1C-YwV"/>
+                <outlet property="containerView" destination="tMK-8K-LVB" id="l3A-47-wLr"/>
+                <outlet property="skipBtn" destination="eMc-kM-xH1" id="ixj-8O-Hgh"/>
+                <outlet property="stackBtns" destination="NeN-4K-6DG" id="H8O-i2-pxh"/>
+                <outlet property="titleLbl" destination="hJn-TS-V2W" id="NW0-re-ktK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMK-8K-LVB" customClass="CardView" customModule="DAL_IOS" customModuleProvider="target">
+                    <rect key="frame" x="25" y="366" width="364" height="164.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NeN-4K-6DG">
+                            <rect key="frame" x="16" y="24" width="332" height="116.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We could not locate your location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJn-TS-V2W">
+                                    <rect key="frame" x="0.0" y="0.0" width="332" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="secondTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r15"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="We could not locate your location"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToG-L0-CyY">
+                                    <rect key="frame" x="0.0" y="28.5" width="332" height="40"/>
+                                    <color key="backgroundColor" name="mainColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="6Qu-LQ-1g0"/>
+                                    </constraints>
+                                    <state key="normal" title="AGREE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b13"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="AGREE"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMc-kM-xH1">
+                                    <rect key="frame" x="0.0" y="76.5" width="332" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="QzC-3O-o15"/>
+                                    </constraints>
+                                    <state key="normal" title="SKIP">
+                                        <color key="titleColor" name="mainColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b13"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="SKIP"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="mainColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="background"/>
+                    <constraints>
+                        <constraint firstItem="NeN-4K-6DG" firstAttribute="top" secondItem="tMK-8K-LVB" secondAttribute="top" constant="24" id="Jqq-3a-8ZI"/>
+                        <constraint firstItem="NeN-4K-6DG" firstAttribute="leading" secondItem="tMK-8K-LVB" secondAttribute="leading" constant="16" id="RYS-ZJ-0CN"/>
+                        <constraint firstAttribute="trailing" secondItem="NeN-4K-6DG" secondAttribute="trailing" constant="16" id="ej9-61-reH"/>
+                        <constraint firstAttribute="bottom" secondItem="NeN-4K-6DG" secondAttribute="bottom" constant="24" id="her-SD-NGT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tMK-8K-LVB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MYf-6a-jVP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tMK-8K-LVB" secondAttribute="trailing" constant="25" id="aAa-A1-TuJ"/>
+                <constraint firstItem="tMK-8K-LVB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="hTe-3f-sSE"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="0.96078431372549022" green="0.46274509803921571" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondTextColor">
+            <color red="0.16078431372549021" green="0.13725490196078433" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

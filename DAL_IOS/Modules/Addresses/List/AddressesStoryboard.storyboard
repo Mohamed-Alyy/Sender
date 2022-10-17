@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddressesVC-->
+        <scene sceneID="fOk-df-Ycq">
+            <objects>
+                <viewController storyboardIdentifier="AddressesVC" id="Pjl-XB-5DP" customClass="AddressesVC" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gfy-4O-N1F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBackgroundWithoutAPPName" translatesAutoresizingMaskIntoConstraints="NO" id="iSn-4y-Mbc">
+                                <rect key="frame" x="0.0" y="89.5" width="414" height="806.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydE-do-CeH">
+                                <rect key="frame" x="21" y="59" width="40" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLn-vX-6Z5">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="back-black"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="localizationImage" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backBtn:" destination="Pjl-XB-5DP" eventType="touchUpInside" id="xWx-LA-qhv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BLn-vX-6Z5" firstAttribute="top" secondItem="ydE-do-CeH" secondAttribute="top" id="7Kf-7i-uHt"/>
+                                    <constraint firstAttribute="trailing" secondItem="BLn-vX-6Z5" secondAttribute="trailing" id="FZ5-Ze-Sbs"/>
+                                    <constraint firstItem="BLn-vX-6Z5" firstAttribute="leading" secondItem="ydE-do-CeH" secondAttribute="leading" id="Mdk-n9-u8u"/>
+                                    <constraint firstAttribute="bottom" secondItem="BLn-vX-6Z5" secondAttribute="bottom" id="NHV-et-EOe"/>
+                                    <constraint firstAttribute="height" constant="40" id="fLf-KB-Hq9"/>
+                                    <constraint firstAttribute="width" constant="40" id="fpp-oh-0LZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Addresses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIz-f9-A8D">
+                                <rect key="frame" x="81" y="69" width="108" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r30"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="My Addresses"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q0R-lW-lof">
+                                <rect key="frame" x="0.0" y="97.5" width="414" height="764.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9f8-OB-IFz">
+                                <rect key="frame" x="338" y="786" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ct2-vY-lCt"/>
+                                    <constraint firstAttribute="width" constant="60" id="ngb-jr-ihp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="createBT"/>
+                                <connections>
+                                    <action selector="createAddress:" destination="Pjl-XB-5DP" eventType="touchUpInside" id="5xJ-nX-iVA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3ru-WI-Waz"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="dIz-f9-A8D" firstAttribute="centerY" secondItem="BLn-vX-6Z5" secondAttribute="centerY" id="1jg-GJ-fCJ"/>
+                            <constraint firstItem="3ru-WI-Waz" firstAttribute="trailing" secondItem="9f8-OB-IFz" secondAttribute="trailing" constant="16" id="3JO-K7-8I1"/>
+                            <constraint firstItem="dIz-f9-A8D" firstAttribute="leading" secondItem="ydE-do-CeH" secondAttribute="trailing" constant="20" id="8eO-Ch-lfB"/>
+                            <constraint firstItem="3ru-WI-Waz" firstAttribute="bottom" secondItem="9f8-OB-IFz" secondAttribute="bottom" constant="16" id="ALK-ud-SRC"/>
+                            <constraint firstItem="3ru-WI-Waz" firstAttribute="trailing" secondItem="Q0R-lW-lof" secondAttribute="trailing" id="AgM-I3-lBl"/>
+                            <constraint firstItem="3ru-WI-Waz" firstAttribute="bottom" secondItem="Q0R-lW-lof" secondAttribute="bottom" id="L9n-lZ-I3P"/>
+                            <constraint firstItem="Q0R-lW-lof" firstAttribute="top" secondItem="dIz-f9-A8D" secondAttribute="bottom" constant="8" id="W4G-r2-5NJ"/>
+                            <constraint firstItem="iSn-4y-Mbc" firstAttribute="top" secondItem="dIz-f9-A8D" secondAttribute="bottom" id="c0H-7N-KV1"/>
+                            <constraint firstItem="ydE-do-CeH" firstAttribute="top" secondItem="3ru-WI-Waz" secondAttribute="top" constant="15" id="c8d-IW-vup"/>
+                            <constraint firstItem="iSn-4y-Mbc" firstAttribute="leading" secondItem="3ru-WI-Waz" secondAttribute="leading" id="dBq-qE-P3R"/>
+                            <constraint firstItem="ydE-do-CeH" firstAttribute="leading" secondItem="3ru-WI-Waz" secondAttribute="leading" constant="21" id="rbP-vp-A56"/>
+                            <constraint firstAttribute="bottom" secondItem="iSn-4y-Mbc" secondAttribute="bottom" id="sYy-uq-ip8"/>
+                            <constraint firstItem="Q0R-lW-lof" firstAttribute="leading" secondItem="3ru-WI-Waz" secondAttribute="leading" id="tHe-8G-VdB"/>
+                            <constraint firstItem="3ru-WI-Waz" firstAttribute="trailing" secondItem="iSn-4y-Mbc" secondAttribute="trailing" id="zrX-2z-Oyh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressesTbl" destination="Q0R-lW-lof" id="Zw8-In-IWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Yu-wO-umQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-528.98550724637687" y="-89.0625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appBackgroundWithoutAPPName" width="414" height="735"/>
+        <image name="back-black" width="19" height="16"/>
+        <image name="createBT" width="96" height="96"/>
+        <namedColor name="background">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

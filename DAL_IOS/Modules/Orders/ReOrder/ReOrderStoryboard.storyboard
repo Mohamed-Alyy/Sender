@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1z-F3-ot6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Re OrderVC-->
+        <scene sceneID="HEa-m2-jab">
+            <objects>
+                <viewController storyboardIdentifier="ReOrderVC" id="v1z-F3-ot6" customClass="ReOrderVC" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wn8-wF-9xc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvu-cv-vUu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="v1z-F3-ot6" eventType="touchUpInside" id="BC8-Kj-4ue"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-D5-wue">
+                                <rect key="frame" x="20" y="186" width="374" height="524.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 23" translatesAutoresizingMaskIntoConstraints="NO" id="StL-S4-D67">
+                                        <rect key="frame" x="111" y="39" width="152" height="181"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to re-order again?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcR-Sq-VGN">
+                                        <rect key="frame" x="8" y="245" width="358" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r22"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Would you like to re-order again?"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A notification will be sent to the service provider if you confirm the process, and the request will be added to new requests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-Oo-Grn">
+                                        <rect key="frame" x="35" y="278" width="304" height="81.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="thirdTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="A notification will be sent to the service provider if you confirm the process, and the request will be added to new requests"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5F-gS-LuA" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="379.5" width="344" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NOv-pV-0Z9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Request again"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="reOrder:" destination="v1z-F3-ot6" eventType="touchUpInside" id="Ngf-Td-GOd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSp-4m-ge1">
+                                        <rect key="frame" x="15" y="459.5" width="344" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lJo-CS-Zmd"/>
+                                        </constraints>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" name="thirdTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="CANCEL"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backBtn:" destination="v1z-F3-ot6" eventType="touchUpInside" id="rzE-Bg-gQf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5MG-Oo-Grn" firstAttribute="leading" secondItem="fxp-D5-wue" secondAttribute="leading" constant="35" id="8qt-WW-fnD"/>
+                                    <constraint firstItem="e5F-gS-LuA" firstAttribute="top" secondItem="5MG-Oo-Grn" secondAttribute="bottom" constant="20" id="HKz-H0-B6E"/>
+                                    <constraint firstAttribute="trailing" secondItem="e5F-gS-LuA" secondAttribute="trailing" constant="15" id="Ofd-ka-fai"/>
+                                    <constraint firstAttribute="trailing" secondItem="WcR-Sq-VGN" secondAttribute="trailing" constant="8" id="Tte-kF-lhQ"/>
+                                    <constraint firstItem="nSp-4m-ge1" firstAttribute="leading" secondItem="fxp-D5-wue" secondAttribute="leading" constant="15" id="WAe-ol-qAN"/>
+                                    <constraint firstAttribute="trailing" secondItem="nSp-4m-ge1" secondAttribute="trailing" constant="15" id="bP2-fX-UTm"/>
+                                    <constraint firstItem="5MG-Oo-Grn" firstAttribute="top" secondItem="WcR-Sq-VGN" secondAttribute="bottom" constant="12" id="d5z-K7-9OL"/>
+                                    <constraint firstItem="WcR-Sq-VGN" firstAttribute="leading" secondItem="fxp-D5-wue" secondAttribute="leading" constant="8" id="dtU-ZK-T6t"/>
+                                    <constraint firstAttribute="bottom" secondItem="nSp-4m-ge1" secondAttribute="bottom" constant="15" id="h5Y-YA-Aq6"/>
+                                    <constraint firstItem="StL-S4-D67" firstAttribute="top" secondItem="fxp-D5-wue" secondAttribute="top" constant="39" id="hWS-Ah-oyp"/>
+                                    <constraint firstItem="StL-S4-D67" firstAttribute="centerX" secondItem="fxp-D5-wue" secondAttribute="centerX" id="jEh-36-KmS"/>
+                                    <constraint firstAttribute="trailing" secondItem="5MG-Oo-Grn" secondAttribute="trailing" constant="35" id="peM-mo-rgH"/>
+                                    <constraint firstItem="e5F-gS-LuA" firstAttribute="leading" secondItem="fxp-D5-wue" secondAttribute="leading" constant="15" id="qYY-S0-keG"/>
+                                    <constraint firstItem="nSp-4m-ge1" firstAttribute="top" secondItem="e5F-gS-LuA" secondAttribute="bottom" constant="30" id="rDk-UO-CFQ"/>
+                                    <constraint firstItem="WcR-Sq-VGN" firstAttribute="top" secondItem="StL-S4-D67" secondAttribute="bottom" constant="25" id="uGG-FD-n7c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ckT-Oz-gwY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fxp-D5-wue" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" constant="20" id="2A2-PZ-ZgE"/>
+                            <constraint firstItem="Rvu-cv-vUu" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" id="9hu-in-ojz"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="Rvu-cv-vUu" secondAttribute="trailing" id="CEH-d3-TXy"/>
+                            <constraint firstItem="Rvu-cv-vUu" firstAttribute="top" secondItem="ckT-Oz-gwY" secondAttribute="top" id="GtP-nd-ZUD"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="fxp-D5-wue" secondAttribute="trailing" constant="20" id="Sb0-ek-rsp"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="bottom" secondItem="Rvu-cv-vUu" secondAttribute="bottom" id="qxW-jQ-zHS"/>
+                            <constraint firstItem="fxp-D5-wue" firstAttribute="centerY" secondItem="wn8-wF-9xc" secondAttribute="centerY" id="rS6-CS-XFd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXP-za-4cZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.18840579710145" y="-108.48214285714285"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="e5F-gS-LuA">
+            <size key="intrinsicContentSize" width="81" height="36"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Mask Group 23" width="152" height="181"/>
+        <namedColor name="thirdTextColor">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pick Time Controller-->
+        <scene sceneID="O5b-Yj-gDF">
+            <objects>
+                <viewController storyboardIdentifier="PickTimeController" id="hgw-Ut-WL7" customClass="PickTimeController" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zpl-cD-ryX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gu6-uc-2W5">
+                                <rect key="frame" x="0.0" y="632" width="414" height="230"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-Jc-XHX">
+                                        <rect key="frame" x="20" y="25" width="374" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="ulY-OY-qJ0"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6l-JF-qoD">
+                                        <rect key="frame" x="20" y="160" width="374" height="50"/>
+                                        <color key="backgroundColor" name="secondColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hIJ-Sk-VzF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="SAVE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="SAVE"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="m15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="complete:" destination="hgw-Ut-WL7" eventType="touchUpInside" id="3GU-1R-kwM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="J6l-JF-qoD" firstAttribute="top" secondItem="YyQ-Jc-XHX" secondAttribute="bottom" constant="25" id="88I-Xq-3mP"/>
+                                    <constraint firstAttribute="trailing" secondItem="J6l-JF-qoD" secondAttribute="trailing" constant="20" id="Fes-lc-P8S"/>
+                                    <constraint firstItem="YyQ-Jc-XHX" firstAttribute="leading" secondItem="gu6-uc-2W5" secondAttribute="leading" constant="20" id="XQz-7w-YdB"/>
+                                    <constraint firstItem="J6l-JF-qoD" firstAttribute="leading" secondItem="gu6-uc-2W5" secondAttribute="leading" constant="20" id="hhu-cT-99i"/>
+                                    <constraint firstItem="YyQ-Jc-XHX" firstAttribute="top" secondItem="gu6-uc-2W5" secondAttribute="top" constant="25" id="l0M-ig-tb0"/>
+                                    <constraint firstAttribute="trailing" secondItem="YyQ-Jc-XHX" secondAttribute="trailing" constant="20" id="lgO-v7-q2V"/>
+                                    <constraint firstAttribute="height" constant="230" id="mOm-Wr-FOx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIc-jP-DQJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="588"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="hgw-Ut-WL7" eventType="touchUpInside" id="gj0-kW-RQW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="leO-YL-aUD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="leO-YL-aUD" firstAttribute="bottom" secondItem="gu6-uc-2W5" secondAttribute="bottom" id="In0-VF-I1r"/>
+                            <constraint firstItem="leO-YL-aUD" firstAttribute="trailing" secondItem="gu6-uc-2W5" secondAttribute="trailing" id="JT0-tJ-KQF"/>
+                            <constraint firstItem="gu6-uc-2W5" firstAttribute="top" secondItem="iIc-jP-DQJ" secondAttribute="bottom" id="Typ-Nr-Jkm"/>
+                            <constraint firstItem="leO-YL-aUD" firstAttribute="trailing" secondItem="iIc-jP-DQJ" secondAttribute="trailing" id="eqJ-YW-zT3"/>
+                            <constraint firstItem="iIc-jP-DQJ" firstAttribute="leading" secondItem="leO-YL-aUD" secondAttribute="leading" id="fx6-WG-Yfr"/>
+                            <constraint firstItem="gu6-uc-2W5" firstAttribute="leading" secondItem="leO-YL-aUD" secondAttribute="leading" id="gNO-ua-ADC"/>
+                            <constraint firstItem="iIc-jP-DQJ" firstAttribute="top" secondItem="leO-YL-aUD" secondAttribute="top" id="hsI-gV-c2r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timePicker" destination="YyQ-Jc-XHX" id="3Cn-Pm-TgP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVh-HE-GGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="-230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="secondColor">
+            <color red="1" green="0.47843137254901963" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

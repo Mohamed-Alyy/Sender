@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoyaltyPointsVC" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="cTN-FB-GQ5" id="ICQ-xb-gUa"/>
+                <outlet property="view" destination="FSd-RG-IEw" id="JfW-zn-d5z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FSd-RG-IEw">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBackgroundWithoutAPPName" translatesAutoresizingMaskIntoConstraints="NO" id="1fW-7e-1gF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cTN-FB-GQ5">
+                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H97-fb-dgP">
+                    <rect key="frame" x="16" y="60" width="40" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCn-ny-UZA">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <state key="normal" image="back-black"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="localizationImage" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="hoa-wL-Vsb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="LCn-ny-UZA" firstAttribute="leading" secondItem="H97-fb-dgP" secondAttribute="leading" id="L8B-Xj-qmN"/>
+                        <constraint firstItem="LCn-ny-UZA" firstAttribute="top" secondItem="H97-fb-dgP" secondAttribute="top" id="UVl-rJ-UQX"/>
+                        <constraint firstAttribute="trailing" secondItem="LCn-ny-UZA" secondAttribute="trailing" id="WFm-3H-6xk"/>
+                        <constraint firstAttribute="width" constant="40" id="bYe-Uz-46N"/>
+                        <constraint firstAttribute="bottom" secondItem="LCn-ny-UZA" secondAttribute="bottom" id="jyZ-UM-Jl3"/>
+                        <constraint firstAttribute="height" constant="40" id="pHq-Lo-DOu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loyalty Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fz-2f-PIU">
+                    <rect key="frame" x="72" y="65.5" width="144" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r30"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Loyalty Points"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="TXw-yT-S3J"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6fz-2f-PIU" firstAttribute="leading" secondItem="H97-fb-dgP" secondAttribute="trailing" constant="16" id="0CN-eu-RCa"/>
+                <constraint firstItem="cTN-FB-GQ5" firstAttribute="leading" secondItem="TXw-yT-S3J" secondAttribute="leading" id="CRN-vi-akv"/>
+                <constraint firstItem="H97-fb-dgP" firstAttribute="top" secondItem="TXw-yT-S3J" secondAttribute="top" constant="16" id="Dyc-u7-QUP"/>
+                <constraint firstItem="H97-fb-dgP" firstAttribute="leading" secondItem="TXw-yT-S3J" secondAttribute="leading" constant="16" id="JGX-wL-YmE"/>
+                <constraint firstItem="TXw-yT-S3J" firstAttribute="bottom" secondItem="cTN-FB-GQ5" secondAttribute="bottom" id="Q1T-kQ-hS7"/>
+                <constraint firstItem="6fz-2f-PIU" firstAttribute="centerY" secondItem="LCn-ny-UZA" secondAttribute="centerY" id="SbV-Ij-m2P"/>
+                <constraint firstItem="cTN-FB-GQ5" firstAttribute="top" secondItem="H97-fb-dgP" secondAttribute="bottom" id="T1U-pZ-LGQ"/>
+                <constraint firstItem="1fW-7e-1gF" firstAttribute="leading" secondItem="TXw-yT-S3J" secondAttribute="leading" id="Tdz-ai-0V8"/>
+                <constraint firstItem="1fW-7e-1gF" firstAttribute="trailing" secondItem="TXw-yT-S3J" secondAttribute="trailing" id="a8O-O2-3Gy"/>
+                <constraint firstAttribute="bottom" secondItem="1fW-7e-1gF" secondAttribute="bottom" id="cwh-fQ-fsW"/>
+                <constraint firstItem="TXw-yT-S3J" firstAttribute="trailing" secondItem="cTN-FB-GQ5" secondAttribute="trailing" id="iaG-bH-1rC"/>
+                <constraint firstItem="1fW-7e-1gF" firstAttribute="top" secondItem="FSd-RG-IEw" secondAttribute="top" id="tSy-ez-Fps"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="appBackgroundWithoutAPPName" width="414" height="735"/>
+        <image name="back-black" width="19" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

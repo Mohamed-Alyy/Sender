@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithdrawWalletBalanceVC" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="accountHolderNameTextField" destination="VOP-ZG-Wj7" id="PXg-wo-QEC"/>
+                <outlet property="bankAccountNumberTextField" destination="OxL-O8-8qs" id="SVY-Aa-3Hr"/>
+                <outlet property="bankNameTextField" destination="EYT-SM-f6b" id="Kth-eT-t0L"/>
+                <outlet property="ibanTextField" destination="0y8-qD-esK" id="oru-t9-Oae"/>
+                <outlet property="view" destination="TbK-m4-KTJ" id="xct-Kd-dGX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TbK-m4-KTJ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBackgroundWithoutAPPName" translatesAutoresizingMaskIntoConstraints="NO" id="vXd-4K-u6k">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The balance of your sender account will be withdrawn and transferred to the bank account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFY-B9-NwI">
+                    <rect key="frame" x="24" y="116" width="366" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b16"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="The balance of your sender account will be withdrawn and transferred to the bank account"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-T0-Hrx">
+                    <rect key="frame" x="16" y="60" width="40" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yz7-Gc-a10">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <state key="normal" image="back-black"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="localizationImage" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="8xJ-8n-PNL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Yz7-Gc-a10" secondAttribute="bottom" id="3Ie-c7-VDj"/>
+                        <constraint firstItem="Yz7-Gc-a10" firstAttribute="leading" secondItem="Jgf-T0-Hrx" secondAttribute="leading" id="Egd-Td-K0y"/>
+                        <constraint firstAttribute="width" constant="40" id="Hmx-mI-17U"/>
+                        <constraint firstItem="Yz7-Gc-a10" firstAttribute="top" secondItem="Jgf-T0-Hrx" secondAttribute="top" id="OSz-Il-h4o"/>
+                        <constraint firstAttribute="trailing" secondItem="Yz7-Gc-a10" secondAttribute="trailing" id="Q18-st-Zqx"/>
+                        <constraint firstAttribute="height" constant="40" id="o1W-21-961"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwF-IQ-Huz">
+                    <rect key="frame" x="72" y="65.5" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r21"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Withdraw Wallet Balance"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPC-E3-m7H" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
+                    <rect key="frame" x="24" y="798" width="366" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="plv-Cg-tm6"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="CONFIRM"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b16"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTappedConfirmButton:" destination="-1" eventType="touchUpInside" id="64R-U4-F2e"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TuV-bL-fTr">
+                    <rect key="frame" x="24" y="181" width="366" height="208"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYT-SM-f6b">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Bank Name"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOP-ZG-Wj7">
+                            <rect key="frame" x="0.0" y="58" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Account Holder's Name"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-O8-8qs">
+                            <rect key="frame" x="0.0" y="116" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="Bank account number"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxChar">
+                                    <integer key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0y8-qD-esK">
+                            <rect key="frame" x="0.0" y="174" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationPlaceHolder" value="IBAN number"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="H0V-cS-wQF">
+                    <rect key="frame" x="370" y="192" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="7vS-yI-2ET"/>
+                        <constraint firstAttribute="height" constant="12" id="zvH-QT-UNe"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-bi-KPx">
+                    <rect key="frame" x="24" y="181" width="366" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title=""/>
+                    <connections>
+                        <action selector="didTappedBanksButton:" destination="-1" eventType="touchUpInside" id="4TR-Zp-6cw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PI4-KY-aPR"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PI4-KY-aPR" firstAttribute="bottom" secondItem="SPC-E3-m7H" secondAttribute="bottom" constant="24" id="3UZ-fH-PeE"/>
+                <constraint firstItem="TuV-bL-fTr" firstAttribute="top" secondItem="qFY-B9-NwI" secondAttribute="bottom" constant="24" id="3p3-l2-Uw2"/>
+                <constraint firstItem="Jgf-T0-Hrx" firstAttribute="leading" secondItem="PI4-KY-aPR" secondAttribute="leading" constant="16" id="43e-dR-B0s"/>
+                <constraint firstItem="vXd-4K-u6k" firstAttribute="top" secondItem="TbK-m4-KTJ" secondAttribute="top" id="A7N-Kt-vPE"/>
+                <constraint firstItem="1zf-bi-KPx" firstAttribute="centerX" secondItem="EYT-SM-f6b" secondAttribute="centerX" id="DoD-p8-F1x"/>
+                <constraint firstItem="H0V-cS-wQF" firstAttribute="trailing" secondItem="EYT-SM-f6b" secondAttribute="trailing" constant="-8" id="Jww-ZA-wW1"/>
+                <constraint firstItem="1zf-bi-KPx" firstAttribute="width" secondItem="EYT-SM-f6b" secondAttribute="width" id="LoA-Ld-nWD"/>
+                <constraint firstItem="TwF-IQ-Huz" firstAttribute="leading" secondItem="Jgf-T0-Hrx" secondAttribute="trailing" constant="16" id="OO9-XK-Cdt"/>
+                <constraint firstItem="1zf-bi-KPx" firstAttribute="centerY" secondItem="EYT-SM-f6b" secondAttribute="centerY" id="OnR-J1-IHt"/>
+                <constraint firstAttribute="bottom" secondItem="vXd-4K-u6k" secondAttribute="bottom" id="ZSy-6j-3KO"/>
+                <constraint firstItem="SPC-E3-m7H" firstAttribute="leading" secondItem="PI4-KY-aPR" secondAttribute="leading" constant="24" id="dX2-4B-z7b"/>
+                <constraint firstAttribute="trailing" secondItem="qFY-B9-NwI" secondAttribute="trailing" constant="24" id="etQ-XR-7yN"/>
+                <constraint firstItem="TuV-bL-fTr" firstAttribute="leading" secondItem="PI4-KY-aPR" secondAttribute="leading" constant="24" id="fdW-gE-lff"/>
+                <constraint firstItem="H0V-cS-wQF" firstAttribute="centerY" secondItem="EYT-SM-f6b" secondAttribute="centerY" id="hYD-Si-isT"/>
+                <constraint firstItem="PI4-KY-aPR" firstAttribute="trailing" secondItem="SPC-E3-m7H" secondAttribute="trailing" constant="24" id="hil-DN-vAb"/>
+                <constraint firstItem="vXd-4K-u6k" firstAttribute="trailing" secondItem="PI4-KY-aPR" secondAttribute="trailing" id="kCz-Qt-7CC"/>
+                <constraint firstItem="Jgf-T0-Hrx" firstAttribute="top" secondItem="PI4-KY-aPR" secondAttribute="top" constant="16" id="mYW-WJ-0cC"/>
+                <constraint firstItem="vXd-4K-u6k" firstAttribute="leading" secondItem="PI4-KY-aPR" secondAttribute="leading" id="rx3-51-jBT"/>
+                <constraint firstItem="qFY-B9-NwI" firstAttribute="leading" secondItem="PI4-KY-aPR" secondAttribute="leading" constant="24" id="sf3-wX-nwE"/>
+                <constraint firstItem="PI4-KY-aPR" firstAttribute="trailing" secondItem="TuV-bL-fTr" secondAttribute="trailing" constant="24" id="v1O-nR-nJf"/>
+                <constraint firstItem="qFY-B9-NwI" firstAttribute="top" secondItem="Jgf-T0-Hrx" secondAttribute="bottom" constant="16" id="wnA-lz-GRo"/>
+                <constraint firstItem="TwF-IQ-Huz" firstAttribute="centerY" secondItem="Yz7-Gc-a10" secondAttribute="centerY" id="y45-sg-06Y"/>
+                <constraint firstItem="1zf-bi-KPx" firstAttribute="height" secondItem="EYT-SM-f6b" secondAttribute="height" id="yKV-Ra-Aia"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="SPC-E3-m7H">
+            <size key="intrinsicContentSize" width="67" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="appBackgroundWithoutAPPName" width="414" height="735"/>
+        <image name="arrow-down" width="13.5" height="7.5"/>
+        <image name="back-black" width="19" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

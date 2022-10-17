@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1z-F3-ot6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reservation Table DoneVC-->
+        <scene sceneID="HEa-m2-jab">
+            <objects>
+                <viewController storyboardIdentifier="ReservationTableDoneVC" id="v1z-F3-ot6" customClass="ReservationTableDoneVC" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wn8-wF-9xc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akc-sc-xRW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="v1z-F3-ot6" eventType="touchUpInside" id="xh5-dp-DF8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-5y-R4Z">
+                                <rect key="frame" x="20" y="238" width="374" height="420"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2597" translatesAutoresizingMaskIntoConstraints="NO" id="1MW-Hk-jLC">
+                                        <rect key="frame" x="110.5" y="25" width="153" height="192.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order has been booked successfully" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI9-iW-Ddl">
+                                        <rect key="frame" x="30.5" y="233.5" width="313" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r22"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Your order has been booked successfully"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On the 12th of December, it is 2:45 pm for the number of 6 family members" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mK-Ta-Kmt">
+                                        <rect key="frame" x="25" y="265.5" width="324" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="thirdTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Your order has been booked successfully"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-wu-OA7" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="348" width="344" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hAQ-as-EJ1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Go for reservations"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="reservations:" destination="v1z-F3-ot6" eventType="touchUpInside" id="7MX-SR-Ny8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="SYb-wu-OA7" secondAttribute="bottom" constant="22" id="1Gc-PK-klq"/>
+                                    <constraint firstItem="SYb-wu-OA7" firstAttribute="leading" secondItem="qnu-5y-R4Z" secondAttribute="leading" constant="15" id="2Au-oQ-eMv"/>
+                                    <constraint firstItem="JI9-iW-Ddl" firstAttribute="top" secondItem="1MW-Hk-jLC" secondAttribute="bottom" constant="16" id="5QH-GY-fH0"/>
+                                    <constraint firstItem="JI9-iW-Ddl" firstAttribute="centerX" secondItem="qnu-5y-R4Z" secondAttribute="centerX" id="8oL-DL-mRT"/>
+                                    <constraint firstItem="4mK-Ta-Kmt" firstAttribute="top" secondItem="JI9-iW-Ddl" secondAttribute="bottom" constant="11" id="9B4-b8-O0i"/>
+                                    <constraint firstAttribute="trailing" secondItem="4mK-Ta-Kmt" secondAttribute="trailing" constant="25" id="CZ5-Mw-pqN"/>
+                                    <constraint firstItem="1MW-Hk-jLC" firstAttribute="centerX" secondItem="qnu-5y-R4Z" secondAttribute="centerX" id="NQg-pl-d1U"/>
+                                    <constraint firstItem="1MW-Hk-jLC" firstAttribute="top" secondItem="qnu-5y-R4Z" secondAttribute="top" constant="25" id="Qbq-vP-EO5"/>
+                                    <constraint firstAttribute="height" constant="420" id="lS5-WU-e8h"/>
+                                    <constraint firstAttribute="trailing" secondItem="SYb-wu-OA7" secondAttribute="trailing" constant="15" id="rch-rc-Shk"/>
+                                    <constraint firstItem="4mK-Ta-Kmt" firstAttribute="leading" secondItem="qnu-5y-R4Z" secondAttribute="leading" constant="25" id="vXI-lX-6qx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ckT-Oz-gwY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="akc-sc-xRW" firstAttribute="top" secondItem="ckT-Oz-gwY" secondAttribute="top" id="9iR-uV-OnR"/>
+                            <constraint firstItem="qnu-5y-R4Z" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" constant="20" id="Avz-1q-HOD"/>
+                            <constraint firstItem="akc-sc-xRW" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" id="Xmo-Kf-6qu"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="qnu-5y-R4Z" secondAttribute="trailing" constant="20" id="aZe-3J-uWD"/>
+                            <constraint firstItem="qnu-5y-R4Z" firstAttribute="centerY" secondItem="wn8-wF-9xc" secondAttribute="centerY" id="c0V-jE-cjm"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="bottom" secondItem="akc-sc-xRW" secondAttribute="bottom" id="gke-4x-NnZ"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="akc-sc-xRW" secondAttribute="trailing" id="s0B-12-gax"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reservationLbl" destination="4mK-Ta-Kmt" id="IK3-QV-Abd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXP-za-4cZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-108"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="SYb-wu-OA7">
+            <size key="intrinsicContentSize" width="131" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Group 2597" width="153" height="192.5"/>
+        <namedColor name="thirdTextColor">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2vl-Dw-vbh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Make Order DoneVC-->
+        <scene sceneID="aRa-HG-JcJ">
+            <objects>
+                <viewController storyboardIdentifier="MakeOrderDoneVC" id="2vl-Dw-vbh" customClass="MakeOrderDoneVC" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yg1-T0-We5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrE-p8-AtQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="2vl-Dw-vbh" eventType="touchUpInside" id="FDz-2Q-YKD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7e-72-ahG">
+                                <rect key="frame" x="20" y="238" width="374" height="420"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2597" translatesAutoresizingMaskIntoConstraints="NO" id="IfP-ni-3QS">
+                                        <rect key="frame" x="110.5" y="25" width="153" height="192.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order has been booked successfully" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g8-fH-8vT">
+                                        <rect key="frame" x="30.5" y="233.5" width="313" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r22"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Your order has been booked successfully"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-2u-tfv">
+                                        <rect key="frame" x="25" y="265.5" width="324" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="thirdTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCS-Ex-hDG" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="348" width="344" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lcE-zN-Q8e"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Go for orders"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="orders:" destination="2vl-Dw-vbh" eventType="touchUpInside" id="O0t-gB-jZt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="IfP-ni-3QS" firstAttribute="top" secondItem="L7e-72-ahG" secondAttribute="top" constant="25" id="0yv-RY-z5r"/>
+                                    <constraint firstAttribute="trailing" secondItem="v2M-2u-tfv" secondAttribute="trailing" constant="25" id="30t-t2-p6d"/>
+                                    <constraint firstItem="IfP-ni-3QS" firstAttribute="centerX" secondItem="L7e-72-ahG" secondAttribute="centerX" id="5sa-io-gvz"/>
+                                    <constraint firstItem="v2M-2u-tfv" firstAttribute="leading" secondItem="L7e-72-ahG" secondAttribute="leading" constant="25" id="6wH-OY-pWB"/>
+                                    <constraint firstAttribute="trailing" secondItem="cCS-Ex-hDG" secondAttribute="trailing" constant="15" id="BQO-LM-EgI"/>
+                                    <constraint firstItem="7g8-fH-8vT" firstAttribute="top" secondItem="IfP-ni-3QS" secondAttribute="bottom" constant="16" id="Bhs-Gk-2Zt"/>
+                                    <constraint firstItem="v2M-2u-tfv" firstAttribute="top" secondItem="7g8-fH-8vT" secondAttribute="bottom" constant="11" id="Cc0-O0-YEO"/>
+                                    <constraint firstAttribute="bottom" secondItem="cCS-Ex-hDG" secondAttribute="bottom" constant="22" id="R9X-LQ-Net"/>
+                                    <constraint firstAttribute="height" constant="420" id="ir3-0a-0Hm"/>
+                                    <constraint firstItem="7g8-fH-8vT" firstAttribute="centerX" secondItem="L7e-72-ahG" secondAttribute="centerX" id="ivG-pJ-jvx"/>
+                                    <constraint firstItem="cCS-Ex-hDG" firstAttribute="leading" secondItem="L7e-72-ahG" secondAttribute="leading" constant="15" id="lvo-5Y-lGf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hxa-i6-cKv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hrE-p8-AtQ" firstAttribute="top" secondItem="Hxa-i6-cKv" secondAttribute="top" id="1MP-aD-rb9"/>
+                            <constraint firstItem="Hxa-i6-cKv" firstAttribute="bottom" secondItem="hrE-p8-AtQ" secondAttribute="bottom" id="4yp-qN-l4C"/>
+                            <constraint firstItem="Hxa-i6-cKv" firstAttribute="trailing" secondItem="L7e-72-ahG" secondAttribute="trailing" constant="20" id="8J5-Kv-igD"/>
+                            <constraint firstItem="hrE-p8-AtQ" firstAttribute="leading" secondItem="Hxa-i6-cKv" secondAttribute="leading" id="NcW-Gh-tEB"/>
+                            <constraint firstItem="L7e-72-ahG" firstAttribute="leading" secondItem="Hxa-i6-cKv" secondAttribute="leading" constant="20" id="OkP-Ss-gLi"/>
+                            <constraint firstItem="Hxa-i6-cKv" firstAttribute="trailing" secondItem="hrE-p8-AtQ" secondAttribute="trailing" id="UTY-WE-SZv"/>
+                            <constraint firstItem="L7e-72-ahG" firstAttribute="centerY" secondItem="yg1-T0-We5" secondAttribute="centerY" id="Wln-pT-YG2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reservationLbl" destination="v2M-2u-tfv" id="lpE-PF-TdW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Peo-xq-th9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-108"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="cCS-Ex-hDG">
+            <size key="intrinsicContentSize" width="91" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Group 2597" width="153" height="192.5"/>
+        <namedColor name="thirdTextColor">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

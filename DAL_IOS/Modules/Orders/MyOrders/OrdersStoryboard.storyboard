@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1z-F3-ot6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My orders-->
+        <scene sceneID="HEa-m2-jab">
+            <objects>
+                <viewController storyboardIdentifier="OrdersVC" id="v1z-F3-ot6" customClass="OrdersVC" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wn8-wF-9xc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7c-8n-Vq9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHY-gp-0W5">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIM-3D-Kk4">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+                                                <state key="normal" image="Group 2542"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JIM-3D-Kk4" firstAttribute="leading" secondItem="MHY-gp-0W5" secondAttribute="leading" id="8Sm-UM-Xac"/>
+                                            <constraint firstAttribute="width" constant="60" id="M2Q-4l-J4v"/>
+                                            <constraint firstItem="JIM-3D-Kk4" firstAttribute="top" secondItem="MHY-gp-0W5" secondAttribute="top" id="auN-eR-EAt"/>
+                                            <constraint firstAttribute="trailing" secondItem="JIM-3D-Kk4" secondAttribute="trailing" id="dvg-WD-Kao"/>
+                                            <constraint firstAttribute="bottom" secondItem="JIM-3D-Kk4" secondAttribute="bottom" id="pTU-li-0BP"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-49-Cet">
+                                        <rect key="frame" x="75" y="17.5" width="52.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r25"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Orders"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MHY-gp-0W5" firstAttribute="leading" secondItem="N7c-8n-Vq9" secondAttribute="leading" id="1rn-aR-pn9"/>
+                                    <constraint firstItem="MHY-gp-0W5" firstAttribute="top" secondItem="N7c-8n-Vq9" secondAttribute="top" id="8zy-bm-szg"/>
+                                    <constraint firstItem="0HN-49-Cet" firstAttribute="centerY" secondItem="JIM-3D-Kk4" secondAttribute="centerY" id="9XY-y7-486"/>
+                                    <constraint firstAttribute="bottom" secondItem="MHY-gp-0W5" secondAttribute="bottom" id="GZA-DA-bwT"/>
+                                    <constraint firstItem="0HN-49-Cet" firstAttribute="leading" secondItem="MHY-gp-0W5" secondAttribute="trailing" constant="15" id="M2Y-k0-8ZW"/>
+                                    <constraint firstAttribute="height" constant="55" id="glC-y0-HYl"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="261-UC-FYe">
+                                <rect key="frame" x="8" y="107" width="398" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgI-mJ-B9P">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="New orders">
+                                            <color key="titleColor" name="thirdTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r12"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="New orders"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="newOrders:" destination="v1z-F3-ot6" eventType="touchUpInside" id="hXf-Xw-3SH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="167-y6-UFp">
+                                        <rect key="frame" x="135.5" y="0.0" width="127" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Preparing">
+                                            <color key="titleColor" name="thirdTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r12"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Preparing"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="processing:" destination="v1z-F3-ot6" eventType="touchUpInside" id="mhq-3f-p7W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om4-M1-vkb">
+                                        <rect key="frame" x="270.5" y="0.0" width="127.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Completed orders">
+                                            <color key="titleColor" name="thirdTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r12"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Completed orders"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="completedOrders:" destination="v1z-F3-ot6" eventType="touchUpInside" id="FBo-bQ-IkJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GpC-9u-j7U"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aDV-So-eo3">
+                                <rect key="frame" x="8" y="155" width="398" height="650"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ckT-Oz-gwY"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="aDV-So-eo3" firstAttribute="top" secondItem="261-UC-FYe" secondAttribute="bottom" constant="8" id="CX1-yl-KB9"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="261-UC-FYe" secondAttribute="trailing" constant="8" id="Zhg-Xh-1lH"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="N7c-8n-Vq9" secondAttribute="trailing" id="abQ-uv-2O6"/>
+                            <constraint firstItem="N7c-8n-Vq9" firstAttribute="leading" secondItem="wn8-wF-9xc" secondAttribute="leading" id="beJ-yg-GTK"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="bottom" secondItem="aDV-So-eo3" secondAttribute="bottom" constant="8" id="eqe-Ng-QbT"/>
+                            <constraint firstItem="261-UC-FYe" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" constant="8" id="hcW-zP-ERD"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="aDV-So-eo3" secondAttribute="trailing" constant="8" id="hpz-8t-VcV"/>
+                            <constraint firstItem="261-UC-FYe" firstAttribute="top" secondItem="N7c-8n-Vq9" secondAttribute="bottom" constant="8" id="kJO-8U-hLb"/>
+                            <constraint firstItem="N7c-8n-Vq9" firstAttribute="top" secondItem="ckT-Oz-gwY" secondAttribute="top" id="p1c-Ij-dN0"/>
+                            <constraint firstItem="aDV-So-eo3" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" constant="8" id="rP0-VO-OMI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My orders" image="Iconly-Light-Document" id="sev-YL-LlC">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="My orders"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="completedBtn" destination="om4-M1-vkb" id="t1E-0h-lXH"/>
+                        <outlet property="menuBtnButton" destination="JIM-3D-Kk4" id="DFZ-bj-ZbA"/>
+                        <outlet property="newOrdersBtn" destination="SgI-mJ-B9P" id="MFe-9J-clB"/>
+                        <outlet property="ordersTbl" destination="aDV-So-eo3" id="XIC-7X-S3Z"/>
+                        <outlet property="processingBtn" destination="167-y6-UFp" id="Wkr-a9-2Qm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXP-za-4cZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 2542" width="22" height="16"/>
+        <image name="Iconly-Light-Document" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="thirdTextColor">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

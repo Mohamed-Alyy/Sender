@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagCollectionCell" customModule="DAL_Provider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNS-pc-ppq">
+                        <rect key="frame" x="0.0" y="0.0" width="207" height="77"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qf-Gu-sSZ">
+                                <rect key="frame" x="12" y="28.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evM-mb-oK9">
+                                <rect key="frame" x="61.5" y="23.5" width="137.5" height="30"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="mainColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="remove:" destination="gTV-IL-0wX" eventType="touchUpInside" id="l05-IA-1jp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="9Qf-Gu-sSZ" firstAttribute="centerY" secondItem="DNS-pc-ppq" secondAttribute="centerY" id="Kor-7O-164"/>
+                            <constraint firstAttribute="trailing" secondItem="evM-mb-oK9" secondAttribute="trailing" constant="8" id="b3N-WU-Qit"/>
+                            <constraint firstItem="9Qf-Gu-sSZ" firstAttribute="leading" secondItem="DNS-pc-ppq" secondAttribute="leading" constant="12" id="fNm-3E-tSc"/>
+                            <constraint firstItem="evM-mb-oK9" firstAttribute="leading" secondItem="9Qf-Gu-sSZ" secondAttribute="trailing" constant="8" id="gnb-ji-zEG"/>
+                            <constraint firstItem="evM-mb-oK9" firstAttribute="centerY" secondItem="DNS-pc-ppq" secondAttribute="centerY" id="yQZ-Y1-anI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DNS-pc-ppq" secondAttribute="bottom" id="28U-Zx-f9J"/>
+                <constraint firstItem="DNS-pc-ppq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7xz-Gx-Rs6"/>
+                <constraint firstItem="DNS-pc-ppq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Eps-mZ-cLj"/>
+                <constraint firstAttribute="trailing" secondItem="DNS-pc-ppq" secondAttribute="trailing" id="T2U-Kf-QTX"/>
+            </constraints>
+            <size key="customSize" width="207" height="77"/>
+            <connections>
+                <outlet property="tagNameLbl" destination="9Qf-Gu-sSZ" id="f9Y-dw-cMl"/>
+            </connections>
+            <point key="canvasLocation" x="254.34782608695653" y="78.013392857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="0.99607843137254903" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1z-F3-ot6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="HEa-m2-jab">
+            <objects>
+                <viewController storyboardIdentifier="NotificationsVC" id="v1z-F3-ot6" customClass="NotificationsVC" customModule="DAL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wn8-wF-9xc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-kZ-IdV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ5-et-u3c">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvh-Fv-gim">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+                                                <state key="normal" image="Group 2542"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="zvh-Fv-gim" secondAttribute="trailing" id="4uB-vX-cgq"/>
+                                            <constraint firstAttribute="width" constant="60" id="75E-YB-dA7"/>
+                                            <constraint firstItem="zvh-Fv-gim" firstAttribute="top" secondItem="YZ5-et-u3c" secondAttribute="top" id="BZJ-2m-f0y"/>
+                                            <constraint firstAttribute="bottom" secondItem="zvh-Fv-gim" secondAttribute="bottom" id="IAf-4X-nKS"/>
+                                            <constraint firstItem="zvh-Fv-gim" firstAttribute="leading" secondItem="YZ5-et-u3c" secondAttribute="leading" id="oTc-NQ-DZ7"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nC-WD-mSd">
+                                        <rect key="frame" x="75" y="17" width="96" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r25"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Notifications"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YZ5-et-u3c" firstAttribute="top" secondItem="ieS-kZ-IdV" secondAttribute="top" id="0Hf-Rv-T9p"/>
+                                    <constraint firstAttribute="bottom" secondItem="YZ5-et-u3c" secondAttribute="bottom" id="Ovu-nl-w7s"/>
+                                    <constraint firstItem="YZ5-et-u3c" firstAttribute="leading" secondItem="ieS-kZ-IdV" secondAttribute="leading" id="ROa-JS-kcd"/>
+                                    <constraint firstAttribute="height" constant="55" id="ddX-yo-mqy"/>
+                                    <constraint firstItem="2nC-WD-mSd" firstAttribute="centerY" secondItem="zvh-Fv-gim" secondAttribute="centerY" id="fhb-8C-kTe"/>
+                                    <constraint firstItem="2nC-WD-mSd" firstAttribute="leading" secondItem="YZ5-et-u3c" secondAttribute="trailing" constant="15" id="sX9-bH-cD9"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-LO-3yj">
+                                <rect key="frame" x="0.0" y="107" width="414" height="698"/>
+                                <color key="backgroundColor" name="background"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ckT-Oz-gwY"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="bottom" secondItem="DgC-LO-3yj" secondAttribute="bottom" constant="8" id="0fE-fX-iNt"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="DgC-LO-3yj" secondAttribute="trailing" id="7ON-ip-O4b"/>
+                            <constraint firstItem="ckT-Oz-gwY" firstAttribute="trailing" secondItem="ieS-kZ-IdV" secondAttribute="trailing" id="N6b-80-mDA"/>
+                            <constraint firstItem="DgC-LO-3yj" firstAttribute="top" secondItem="ieS-kZ-IdV" secondAttribute="bottom" constant="8" id="OfT-Hb-f25"/>
+                            <constraint firstItem="ieS-kZ-IdV" firstAttribute="leading" secondItem="wn8-wF-9xc" secondAttribute="leading" id="igG-Ut-Bjc"/>
+                            <constraint firstItem="DgC-LO-3yj" firstAttribute="leading" secondItem="ckT-Oz-gwY" secondAttribute="leading" id="isw-OK-67M"/>
+                            <constraint firstItem="ieS-kZ-IdV" firstAttribute="top" secondItem="ckT-Oz-gwY" secondAttribute="top" id="xPg-Vh-VyP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="Iconly-Light-Notification" id="xGp-3l-ubN">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Notifications"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="notificationsTbl" destination="DgC-LO-3yj" id="fNB-yM-vaO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXP-za-4cZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 2542" width="22" height="16"/>
+        <image name="Iconly-Light-Notification" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
