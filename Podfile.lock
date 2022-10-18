@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (4.9.1)
-  - CollieGallery (0.6.0)
   - Cosmos (15.0.0)
   - Firebase (9.2.0):
     - Firebase/Core (= 9.2.0)
@@ -123,22 +122,20 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
-  - CollieGallery
   - Cosmos (~> 15.0)
-  - Firebase
-  - Firebase/Messaging
-  - GoogleMaps
-  - GooglePlaces
+  - Firebase (= 9.2.0)
+  - Firebase/Messaging (= 9.2.0)
+  - GoogleMaps (= 6.2.1)
+  - GooglePlaces (= 6.2.1)
   - IQKeyboardManagerSwift
   - Kingfisher (~> 5.15)
-  - lottie-ios
+  - lottie-ios (= 3.3.0)
   - R.swift
   - SwiftLint (= 0.32.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - CollieGallery
     - Cosmos
     - Firebase
     - FirebaseAnalytics
@@ -163,7 +160,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  CollieGallery: b8fcf63af6b31add2f435f5aee4742ae3b84cb3b
   Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
   Firebase: 4ba896cb8e5105d4b9e247e1c1b6222b548df55a
   FirebaseAnalytics: af5a03a8dff7648c7b8486f6a78b1368e0268dd3
@@ -186,6 +182,6 @@ SPEC CHECKSUMS:
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: b21314811a378ede66066deaf271d5f941ef73c8
+PODFILE CHECKSUM: ae25255940fd123debcacf7c0ad7288f604c4d64
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
