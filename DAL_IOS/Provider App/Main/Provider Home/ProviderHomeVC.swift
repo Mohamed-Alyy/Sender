@@ -13,7 +13,11 @@ class ProviderHomeVC: UIViewController {
     @IBOutlet weak var orderLabel: UILabel!
     @IBOutlet weak var StoreReportsLabel: UILabel!
     @IBOutlet private weak var collectionView: UICollectionView!
+    
     var adsArra = [AdsResult]()
+    private var carousalTimer: Timer?
+    private var newOffsetX: CGFloat = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -21,12 +25,9 @@ class ProviderHomeVC: UIViewController {
     }
  
     @IBAction func showAllButton(_ sender: UIButton) {
-        let vc = ProviderAdsVC.loadFromNib() as! ProviderAdsVC
+        let vc = ProviderAdsVC.loadFromNib()
         vc.data = adsArra
         present(vc, animated: true)
-        vc.modalPresentationStyle = .overFullScreen
-        navigationController?.pushViewController(vc , animated: true)
-        
     }
 }
 
@@ -35,16 +36,30 @@ extension ProviderHomeVC {
     private func setUI(){
         registerCollectionViewNIB()
     }
+    
+    private func startTimer() {
+        
+         carousalTimer = Timer(fire: Date(), interval: 2, repeats: true) {[weak self] (timer) in
+             guard let self = self else {return}
+             let cellSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
+             let contentOffset = self.collectionView.contentOffset
+             self.collectionView.scrollRectToVisible(CGRect(x: contentOffset.x + cellSize.width, y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: true);
+         }
+         RunLoop.current.add(carousalTimer!, forMode: .common)
+     }
+    
     func GetAdsAPi(){
-                NetworkManager.instance.request(.ads, type: .get, AdsModel.self) { [weak self] response in
-                    switch response {
-                        case .success(let model):
-                        self!.collectionView.reloadData()
-                        self?.adsArra = (model?.data)!
-                        case .failure:
-                            break
-                    }
-                }
+        NetworkManager.instance.request(.ads, type: .get, AdsModel.self) { [weak self] response in
+            guard let self = self else {return}
+            switch response {
+            case .success(let model):
+                self.collectionView.reloadData()
+                self.adsArra = model?.data ?? []
+                self.startTimer()
+            case .failure:
+                break
+            }
+        }
     }
     //MARK: - Register  CollectionView Cell
     private func registerCollectionViewNIB(){

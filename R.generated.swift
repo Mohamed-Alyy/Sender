@@ -2797,7 +2797,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 112 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 113 nibs.
   struct nib {
     /// Nib `AboutUsView`.
     static let aboutUsView = _R.nib._AboutUsView()
@@ -2917,6 +2917,8 @@ struct R: Rswift.Validatable {
     static let profileView = _R.nib._ProfileView()
     /// Nib `ProviderAdsCell`.
     static let providerAdsCell = _R.nib._ProviderAdsCell()
+    /// Nib `ProviderAdsVC`.
+    static let providerAdsVC = _R.nib._ProviderAdsVC()
     /// Nib `ProviderCartListVC`.
     static let providerCartListVC = _R.nib._ProviderCartListVC()
     /// Nib `ProviderCategoriesCell`.
@@ -3493,6 +3495,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.providerAdsCell) instead")
     static func providerAdsCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.providerAdsCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderAdsVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerAdsVC) instead")
+    static func providerAdsVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerAdsVC)
     }
     #endif
 
@@ -4156,6 +4166,10 @@ struct R: Rswift.Validatable {
       return R.nib.providerAdsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProviderAdsCell
     }
 
+    static func providerAdsVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerAdsVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     static func providerCartListVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.providerCartListVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -4555,6 +4569,7 @@ struct _R: Rswift.Validatable {
       try _ProductCollectionCell.validate()
       try _ProductTableCell.validate()
       try _ProviderAdsCell.validate()
+      try _ProviderAdsVC.validate()
       try _ProviderCartListVC.validate()
       try _ProviderCategoriesMealCell.validate()
       try _ProviderCompleteRegisterVC.validate()
@@ -5428,6 +5443,24 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _ProviderAdsVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ProviderAdsVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "appBackgroundWithoutAPPName", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'appBackgroundWithoutAPPName' is used in nib 'ProviderAdsVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderAdsVC', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
     struct _ProviderCartListVC: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "ProviderCartListVC"
@@ -5530,7 +5563,6 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
           if UIKit.UIColor(named: "mainColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'mainColor' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
           if UIKit.UIColor(named: "textColor-blue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor-blue' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "thirdTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'thirdTextColor' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
         }
       }
 

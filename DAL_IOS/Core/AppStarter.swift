@@ -56,7 +56,7 @@ final class AppStarter {
         }
         
         if UserRoot.token() != nil  {
-           goToHomeUser()
+            goToOnBoarding()
         }else{
             goToOnBoarding()
         }
@@ -66,7 +66,7 @@ final class AppStarter {
     
     
     private func goToOnBoarding(){ 
-        let rootViewController = SelectUserTypeVC.loadFromNib()
+        let rootViewController = ProviderHomeVC.loadFromNib()
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
