@@ -1,8 +1,9 @@
 //
-//  ExUIImageView.swift
-//  e-commerce
+//  Ex_LoadUI.swift
+//  DAL_IOS
 //
-//  Created by Mohamed Khaled on 10/10/2022.
+//  Created by Mohamed Khaled on 18/10/2022.
+//  Copyright © 2022 com.M.Abdu. All rights reserved.
 //
 
 import Foundation
