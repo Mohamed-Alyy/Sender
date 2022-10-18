@@ -13,7 +13,7 @@ class ProviderHomeVC: UIViewController {
     @IBOutlet weak var orderLabel: UILabel!
     @IBOutlet weak var StoreReportsLabel: UILabel!
     @IBOutlet private weak var collectionView: UICollectionView!
-    var AdsArra = [adsDatum]()
+    var AdsArra = [AdsDatum]()
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
