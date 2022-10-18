@@ -20,6 +20,14 @@ class ProviderHomeVC: UIViewController {
         GetAdsAPi()
     }
  
+    @IBAction func showAllButton(_ sender: UIButton) {
+        let vc = ProviderAdsVC.loadFromNib() as! ProviderAdsVC
+        vc.data = adsArra
+        present(vc, animated: true)
+        vc.modalPresentationStyle = .overFullScreen
+        navigationController?.pushViewController(vc , animated: true)
+        
+    }
 }
 
 extension ProviderHomeVC {
@@ -46,6 +54,7 @@ extension ProviderHomeVC {
         collectionView.reloadData()
 
     }
+    
     
 }
 

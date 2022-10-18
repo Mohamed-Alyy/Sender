@@ -439,6 +439,8 @@
 		77F7A7C625BD792A00680301 /* RateTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F7A7C425BD792A00680301 /* RateTableCell.swift */; };
 		77F7A7C725BD792A00680301 /* RateTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F7A7C525BD792A00680301 /* RateTableCell.xib */; };
 		7F3EA7FA28FEE03500203912 /* Ex_LoadUiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EA7F928FEE03500203912 /* Ex_LoadUiImageView.swift */; };
+		7F3EA7FE28FEEA3100203912 /* ProviderAdsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3EA7FC28FEEA3100203912 /* ProviderAdsVC.xib */; };
+		7F3EA7FF28FEEA3100203912 /* ProviderAdsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EA7FD28FEEA3100203912 /* ProviderAdsVC.swift */; };
 		7FBE175228FE5F65005FEA25 /* AdsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE175128FE5F65005FEA25 /* AdsModel.swift */; };
 		8A0916F2BE9CCDCFF4A785B1 /* Pods_DAL_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6320EE3CB5D3B9BC22EF46F5 /* Pods_DAL_IOS.framework */; };
 		C811A7F8261E2B9900AD43A6 /* EmptyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C811A7F7261E2B9900AD43A6 /* EmptyScreen.swift */; };
@@ -1116,6 +1118,8 @@
 		77F7A7C425BD792A00680301 /* RateTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableCell.swift; sourceTree = "<group>"; };
 		77F7A7C525BD792A00680301 /* RateTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateTableCell.xib; sourceTree = "<group>"; };
 		7F3EA7F928FEE03500203912 /* Ex_LoadUiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_LoadUiImageView.swift; sourceTree = "<group>"; };
+		7F3EA7FC28FEEA3100203912 /* ProviderAdsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProviderAdsVC.xib; sourceTree = "<group>"; };
+		7F3EA7FD28FEEA3100203912 /* ProviderAdsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderAdsVC.swift; sourceTree = "<group>"; };
 		7FBE175128FE5F65005FEA25 /* AdsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsModel.swift; sourceTree = "<group>"; };
 		B863CA0138A713097BF99680 /* Pods-DAL_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.release.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		C811A7F7261E2B9900AD43A6 /* EmptyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreen.swift; sourceTree = "<group>"; };
@@ -2720,6 +2724,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		7F3EA7FB28FEEA3100203912 /* Provider Ads */ = {
+			isa = PBXGroup;
+			children = (
+				7F3EA7FC28FEEA3100203912 /* ProviderAdsVC.xib */,
+				7F3EA7FD28FEEA3100203912 /* ProviderAdsVC.swift */,
+			);
+			path = "Provider Ads";
+			sourceTree = "<group>";
+		};
 		C811A7F6261E2B7B00AD43A6 /* EmptyScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -3071,6 +3084,7 @@
 				EEE4B99428FDA3F900F49B9D /* Provider Orders */,
 				EE71328828F6EC16007338FF /* Provider Store Reports */,
 				EE71327B28F6DEFA007338FF /* Provider Packages */,
+				7F3EA7FB28FEEA3100203912 /* Provider Ads */,
 				EE10ABFA28F573C7009B8BEA /* Provider Home */,
 				EE10ABF128F57302009B8BEA /* Provider Notification */,
 				EE10ABEC28F572DC009B8BEA /* Provider More */,
@@ -3555,6 +3569,7 @@
 				77EDFFBF25B88140005678D4 /* NotificationsStoryboard.storyboard in Resources */,
 				C87223E325DD34D9003AB06C /* LanguageStoryboard.storyboard in Resources */,
 				239C787825C6A58000D769FD /* CartView.xib in Resources */,
+				7F3EA7FE28FEEA3100203912 /* ProviderAdsVC.xib in Resources */,
 				776C8A7325B6EF4E002589C3 /* ResturantTableCell.xib in Resources */,
 				7769F0812599EA2700A4FC5E /* RegisterStoryboard.storyboard in Resources */,
 				7769F0A72599EA5A00A4FC5E /* VerifyCodeView.xib in Resources */,
@@ -3975,6 +3990,7 @@
 				7756A115253482EF00BFE53C /* BaseController.swift in Sources */,
 				EE71328728F6E487007338FF /* RoundedButton.swift in Sources */,
 				773C8ABA25D018F80024A01D /* CreateAddressContract.swift in Sources */,
+				7F3EA7FF28FEEA3100203912 /* ProviderAdsVC.swift in Sources */,
 				7796AF8E25BD75B900864D03 /* RangeSeekSlider.swift in Sources */,
 				C8DB39BF25DBC3EF0063B163 /* CartBuilderPresenter.swift in Sources */,
 				EE2E699B28998CD600E871B1 /* ExUIViewController.swift in Sources */,

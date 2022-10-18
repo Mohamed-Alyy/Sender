@@ -379,6 +379,9 @@
                                         <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Show all"/>
                                         <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r16"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="showAllButton:" destination="-1" eventType="touchUpInside" id="5ma-EY-PD9"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
