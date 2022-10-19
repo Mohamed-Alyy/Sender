@@ -558,6 +558,12 @@
 		C8DD21B02619BF65009D3564 /* EditSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DD21AE2619BF65009D3564 /* EditSelectView.xib */; };
 		C8DD21BB2619DA28009D3564 /* CategoryDetailFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD21B92619DA28009D3564 /* CategoryDetailFilterCell.swift */; };
 		C8DD21BC2619DA28009D3564 /* CategoryDetailFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DD21BA2619DA28009D3564 /* CategoryDetailFilterCell.xib */; };
+		E2261D5028FEA55B003937CC /* ProviderCouponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2261D4E28FEA55B003937CC /* ProviderCouponVC.swift */; };
+		E2261D5128FEA55B003937CC /* ProviderCouponVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2261D4F28FEA55B003937CC /* ProviderCouponVC.xib */; };
+		E252852528FF033F006FA20D /* CouponsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252852328FF033F006FA20D /* CouponsTableViewCell.swift */; };
+		E252852628FF033F006FA20D /* CouponsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E252852428FF033F006FA20D /* CouponsTableViewCell.xib */; };
+		E2917173290014B600F1AA53 /* EditAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2917171290014B600F1AA53 /* EditAddVC.swift */; };
+		E2917174290014B600F1AA53 /* EditAddVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2917172290014B600F1AA53 /* EditAddVC.xib */; };
 		EA226ABB28FED40A0071AF55 /* ProviderResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA226AB928FED40A0071AF55 /* ProviderResetPasswordVC.swift */; };
 		EA226ABC28FED40A0071AF55 /* ProviderResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */; };
 		EA2831BC28FE9883002AF854 /* ProviderForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */; };
@@ -1259,6 +1265,12 @@
 		C8DD21BA2619DA28009D3564 /* CategoryDetailFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryDetailFilterCell.xib; sourceTree = "<group>"; };
 		CCAEAE7FBFDB11CBC3EAE174 /* Pods-BaseIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DD5D7188E93C758A193459F7 /* Pods-DAL_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.debug.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E2261D4E28FEA55B003937CC /* ProviderCouponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderCouponVC.swift; sourceTree = "<group>"; };
+		E2261D4F28FEA55B003937CC /* ProviderCouponVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderCouponVC.xib; sourceTree = "<group>"; };
+		E252852328FF033F006FA20D /* CouponsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponsTableViewCell.swift; sourceTree = "<group>"; };
+		E252852428FF033F006FA20D /* CouponsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponsTableViewCell.xib; sourceTree = "<group>"; };
+		E2917171290014B600F1AA53 /* EditAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddVC.swift; sourceTree = "<group>"; };
+		E2917172290014B600F1AA53 /* EditAddVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAddVC.xib; sourceTree = "<group>"; };
 		EA226AB928FED40A0071AF55 /* ProviderResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderResetPasswordVC.swift; sourceTree = "<group>"; };
 		EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderResetPasswordVC.xib; sourceTree = "<group>"; };
 		EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderForgetPasswordVC.swift; sourceTree = "<group>"; };
@@ -3044,6 +3056,19 @@
 			path = LangIntro;
 			sourceTree = "<group>";
 		};
+		E2261D4D28FEA20F003937CC /* Provider Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				E2261D4E28FEA55B003937CC /* ProviderCouponVC.swift */,
+				E2261D4F28FEA55B003937CC /* ProviderCouponVC.xib */,
+				E252852328FF033F006FA20D /* CouponsTableViewCell.swift */,
+				E252852428FF033F006FA20D /* CouponsTableViewCell.xib */,
+				E2917171290014B600F1AA53 /* EditAddVC.swift */,
+				E2917172290014B600F1AA53 /* EditAddVC.xib */,
+			);
+			path = "Provider Coupon";
+			sourceTree = "<group>";
+		};
 		EA226AB828FED39E0071AF55 /* ProviderResetPasswordVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -3174,6 +3199,7 @@
 		EE10ABE028F56C5B009B8BEA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E2261D4D28FEA20F003937CC /* Provider Coupon */,
 				EE08357C290026A0005A2E44 /* Provider Filter Orders Popup */,
 				EEE4B99428FDA3F900F49B9D /* Provider Orders */,
 				EE71328828F6EC16007338FF /* Provider Store Reports */,
@@ -3551,7 +3577,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = com.M.Abdu;
 				TargetAttributes = {
 					77C5F4962534814100E70C4C = {
@@ -3704,6 +3730,7 @@
 				7769F0C12599EA8700A4FC5E /* ResetPasswordStoryboard.storyboard in Resources */,
 				7796AF8125BD746400864D03 /* MealFilterStoryboard.storyboard in Resources */,
 				77C4C91B2599CB7A00CDFA38 /* OnBoardingCell.xib in Resources */,
+				E252852628FF033F006FA20D /* CouponsTableViewCell.xib in Resources */,
 				77AF27DD25B6DE1A00A5EF3B /* FilterView.xib in Resources */,
 				7778205F25B5FEA400C93AAB /* SliderCollectionCell.xib in Resources */,
 				EEF8B3CB28A3F30E00293530 /* AlGhadTV-Regular.ttf in Resources */,
@@ -3732,6 +3759,7 @@
 				77F0B35625D55748002E5AB2 /* EditProfileStoryboard.storyboard in Resources */,
 				7756A095253482EF00BFE53C /* Radio.xib in Resources */,
 				EEF8B3C728A3EFE000293530 /* SplashVC.xib in Resources */,
+				E2261D5128FEA55B003937CC /* ProviderCouponVC.xib in Resources */,
 				77EDFFAF25B875F0005678D4 /* CategoryFilterView.xib in Resources */,
 				EE4BE51728B016970030C45C /* SearchCategoriesRestaurantCell.xib in Resources */,
 				C8D90DCA260B804C003D402B /* MakeOrderDoneStoryboard.storyboard in Resources */,
@@ -3756,6 +3784,7 @@
 				7775806025BEEBFB0022F7D0 /* PlusExtraMealCell.xib in Resources */,
 				EE083580290026C2005A2E44 /* ProviderFilterOrdersVC.xib in Resources */,
 				7769F0702599EA1800A4FC5E /* LoginStoryboard.storyboard in Resources */,
+				E2917174290014B600F1AA53 /* EditAddVC.xib in Resources */,
 				EE71327F28F6DF21007338FF /* ProviderPackagesVC.xib in Resources */,
 				C8D90DBA260B6462003D402B /* FaqStoryboard.storyboard in Resources */,
 				C8C51E06269B1908007ED481 /* GoogleService-Info.plist in Resources */,
@@ -4049,6 +4078,7 @@
 				771CA007259B8F2600E66E4B /* HomePresenter.swift in Sources */,
 				77F0B32F25D5530D002E5AB2 /* ProfileRouter.swift in Sources */,
 				EE71327A28F6DE50007338FF /* ExUICollectionView.swift in Sources */,
+				E2917173290014B600F1AA53 /* EditAddVC.swift in Sources */,
 				773C8ABD25D018F80024A01D /* CreateAddressModel.swift in Sources */,
 				7730ED9A25D165FB00BF97ED /* SwipeTransitionLayout.swift in Sources */,
 				C87223B025DD279F003AB06C /* MarkerProtocols.swift in Sources */,
@@ -4235,6 +4265,7 @@
 				771CA006259B8F2600E66E4B /* HomeContract.swift in Sources */,
 				7796AF8425BD746400864D03 /* MealFilterRouter.swift in Sources */,
 				7730ED9725D165FB00BF97ED /* Swipeable.swift in Sources */,
+				E2261D5028FEA55B003937CC /* ProviderCouponVC.swift in Sources */,
 				EE10ABD628F5618E009B8BEA /* ProviderRegisterFirstStepCell.swift in Sources */,
 				77AF27E725B6DF3800A5EF3B /* FilterTableCell.swift in Sources */,
 				EE56208B28A134260060051C /* CreateCardPresenter.swift in Sources */,
@@ -4247,6 +4278,7 @@
 				EEEAEED428D247A600EDAD8B /* ShippingAddressPresenter.swift in Sources */,
 				77C3CFD325BEC5F300301A5F /* MealExtrasVC.swift in Sources */,
 				C811A7F8261E2B9900AD43A6 /* EmptyScreen.swift in Sources */,
+				E252852528FF033F006FA20D /* CouponsTableViewCell.swift in Sources */,
 				771D8B2D25BDB72500C411B3 /* DateExtension.swift in Sources */,
 				77C4E53125B60C0F00228592 /* ProductTableCell.swift in Sources */,
 				773C8ABC25D018F80024A01D /* CreateAddressRouter.swift in Sources */,
@@ -4413,6 +4445,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -4476,6 +4509,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

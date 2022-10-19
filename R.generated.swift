@@ -1126,7 +1126,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 188 images.
+  /// This `R.image` struct is generated, and contains static references to 193 images.
   struct image {
     /// Image `076d506b2c5e606e82bf26462bf5f8e7`.
     static let d506b2c5e606e82bf26462bf5f8e7 = Rswift.ImageResource(bundle: R.hostingBundle, name: "076d506b2c5e606e82bf26462bf5f8e7")
@@ -1264,10 +1264,16 @@ struct R: Rswift.Validatable {
     static let iconMaterialCancel1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-cancel-1")
     /// Image `Icon material-cancel`.
     static let iconMaterialCancel = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-cancel")
+    /// Image `Icon material-local-offer`.
+    static let iconMaterialLocalOffer = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-local-offer")
+    /// Image `Iconly-Light-Calendar-1`.
+    static let iconlyLightCalendar1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Calendar-1")
     /// Image `Iconly-Light-Calendar-Temp`.
     static let iconlyLightCalendarTemp = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Calendar-Temp")
     /// Image `Iconly-Light-Calendar`.
     static let iconlyLightCalendar = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Calendar")
+    /// Image `Iconly-Light-Chart`.
+    static let iconlyLightChart = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Chart")
     /// Image `Iconly-Light-Document`.
     static let iconlyLightDocument = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Document")
     /// Image `Iconly-Light-Graph`.
@@ -1286,12 +1292,16 @@ struct R: Rswift.Validatable {
     static let iconlyLightProfile = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Profile")
     /// Image `Iconly-Light-Search-1`.
     static let iconlyLightSearch1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Search-1")
+    /// Image `Iconly-Light-Search-2`.
+    static let iconlyLightSearch2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Search-2")
     /// Image `Iconly-Light-Search`.
     static let iconlyLightSearch = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Search")
     /// Image `Iconly-Light-Setting`.
     static let iconlyLightSetting = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Setting")
     /// Image `Layer 2-10`.
     static let layer210 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Layer 2-10")
+    /// Image `Layer 2-11`.
+    static let layer211 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Layer 2-11")
     /// Image `Layer 2-1`.
     static let layer21 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Layer 2-1")
     /// Image `Layer 2-2`.
@@ -1982,6 +1992,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Icon material-local-offer", bundle: ..., traitCollection: ...)`
+    static func iconMaterialLocalOffer(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconMaterialLocalOffer, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Iconly-Light-Calendar", bundle: ..., traitCollection: ...)`
     static func iconlyLightCalendar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconlyLightCalendar, compatibleWith: traitCollection)
@@ -1989,9 +2006,23 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Iconly-Light-Calendar-1", bundle: ..., traitCollection: ...)`
+    static func iconlyLightCalendar1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconlyLightCalendar1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Iconly-Light-Calendar-Temp", bundle: ..., traitCollection: ...)`
     static func iconlyLightCalendarTemp(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconlyLightCalendarTemp, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Iconly-Light-Chart", bundle: ..., traitCollection: ...)`
+    static func iconlyLightChart(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconlyLightChart, compatibleWith: traitCollection)
     }
     #endif
 
@@ -2066,6 +2097,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Iconly-Light-Search-2", bundle: ..., traitCollection: ...)`
+    static func iconlyLightSearch2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconlyLightSearch2, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Iconly-Light-Setting", bundle: ..., traitCollection: ...)`
     static func iconlyLightSetting(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconlyLightSetting, compatibleWith: traitCollection)
@@ -2090,6 +2128,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Layer 2-10", bundle: ..., traitCollection: ...)`
     static func layer210(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.layer210, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Layer 2-11", bundle: ..., traitCollection: ...)`
+    static func layer211(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.layer211, compatibleWith: traitCollection)
     }
     #endif
 
@@ -2824,7 +2869,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 122 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 125 nibs.
   struct nib {
     /// Nib `AboutUsView`.
     static let aboutUsView = _R.nib._AboutUsView()
@@ -2862,6 +2907,8 @@ struct R: Rswift.Validatable {
     static let completeRegisterView = _R.nib._CompleteRegisterView()
     /// Nib `ContactUsView`.
     static let contactUsView = _R.nib._ContactUsView()
+    /// Nib `CouponsTableViewCell`.
+    static let couponsTableViewCell = _R.nib._CouponsTableViewCell()
     /// Nib `CreateAddressView`.
     static let createAddressView = _R.nib._CreateAddressView()
     /// Nib `CreateCardVC`.
@@ -2870,6 +2917,8 @@ struct R: Rswift.Validatable {
     static let deliveryServiceView = _R.nib._DeliveryServiceView()
     /// Nib `DeliveryTypeView`.
     static let deliveryTypeView = _R.nib._DeliveryTypeView()
+    /// Nib `EditAddVC`.
+    static let editAddVC = _R.nib._EditAddVC()
     /// Nib `EditProfileView`.
     static let editProfileView = _R.nib._EditProfileView()
     /// Nib `EditSelectView`.
@@ -2960,6 +3009,8 @@ struct R: Rswift.Validatable {
     static let providerCategoriesMealCell = _R.nib._ProviderCategoriesMealCell()
     /// Nib `ProviderCompleteRegisterVC`.
     static let providerCompleteRegisterVC = _R.nib._ProviderCompleteRegisterVC()
+    /// Nib `ProviderCouponVC`.
+    static let providerCouponVC = _R.nib._ProviderCouponVC()
     /// Nib `ProviderDetailsView`.
     static let providerDetailsView = _R.nib._ProviderDetailsView()
     /// Nib `ProviderFilterOrdersTableViewCell`.
@@ -3216,6 +3267,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CouponsTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.couponsTableViewCell) instead")
+    static func couponsTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.couponsTableViewCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "CreateAddressView", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.createAddressView) instead")
     static func createAddressView(_: Void = ()) -> UIKit.UINib {
@@ -3244,6 +3303,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.deliveryTypeView) instead")
     static func deliveryTypeView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.deliveryTypeView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "EditAddVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.editAddVC) instead")
+    static func editAddVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.editAddVC)
     }
     #endif
 
@@ -3604,6 +3671,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.providerCompleteRegisterVC) instead")
     static func providerCompleteRegisterVC(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.providerCompleteRegisterVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderCouponVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerCouponVC) instead")
+    static func providerCouponVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerCouponVC)
     }
     #endif
 
@@ -4119,6 +4194,10 @@ struct R: Rswift.Validatable {
       return R.nib.contactUsView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
+    static func couponsTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CouponsTableViewCell? {
+      return R.nib.couponsTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CouponsTableViewCell
+    }
+
     static func createAddressView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.createAddressView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -4133,6 +4212,10 @@ struct R: Rswift.Validatable {
 
     static func deliveryTypeView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.deliveryTypeView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func editAddVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.editAddVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func editProfileView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -4313,6 +4396,10 @@ struct R: Rswift.Validatable {
 
     static func providerCompleteRegisterVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.providerCompleteRegisterVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func providerCouponVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerCouponVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func providerDetailsView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -4708,7 +4795,9 @@ struct _R: Rswift.Validatable {
       try _CartCell.validate()
       try _CategoryTableCell.validate()
       try _CheckoutVC.validate()
+      try _CouponsTableViewCell.validate()
       try _CreateCardVC.validate()
+      try _EditAddVC.validate()
       try _EmptyScreen.validate()
       try _ExtraMealCell.validate()
       try _FilterResultsVC.validate()
@@ -4731,6 +4820,7 @@ struct _R: Rswift.Validatable {
       try _ProviderCartListVC.validate()
       try _ProviderCategoriesMealCell.validate()
       try _ProviderCompleteRegisterVC.validate()
+      try _ProviderCouponVC.validate()
       try _ProviderFilterOrdersVC.validate()
       try _ProviderForgetPasswordVC.validate()
       try _ProviderHomeVC.validate()
@@ -5019,6 +5109,27 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _CouponsTableViewCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "CouponsTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CouponsTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CouponsTableViewCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Icon material-local-offer", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Icon material-local-offer' is used in nib 'CouponsTableViewCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Iconly-Light-Calendar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Calendar' is used in nib 'CouponsTableViewCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Iconly-Light-Chart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Chart' is used in nib 'CouponsTableViewCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Iconly-Light-Graph", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Graph' is used in nib 'CouponsTableViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "OrangGradient2", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'OrangGradient2' is used in nib 'CouponsTableViewCell', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
     struct _CreateAddressView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "CreateAddressView"
@@ -5066,6 +5177,24 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _EditAddVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "EditAddVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Iconly-Light-Calendar-1", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Calendar-1' is used in nib 'EditAddVC', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "circle") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'circle' is used in nib 'EditAddVC', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -5740,6 +5869,28 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "appBackground", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'appBackground' is used in nib 'ProviderCompleteRegisterVC', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "mainColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'mainColor' is used in nib 'ProviderCompleteRegisterVC', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProviderCouponVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ProviderCouponVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Group 2542-1", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Group 2542-1' is used in nib 'ProviderCouponVC', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Iconly-Light-Search-2", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Search-2' is used in nib 'ProviderCouponVC', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Layer 2-11", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Layer 2-11' is used in nib 'ProviderCouponVC', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "back-black", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'back-black' is used in nib 'ProviderCouponVC', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "plus") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'plus' is used in nib 'ProviderCouponVC', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "OrangGradient1", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'OrangGradient1' is used in nib 'ProviderCouponVC', but couldn't be loaded.") }
         }
       }
 

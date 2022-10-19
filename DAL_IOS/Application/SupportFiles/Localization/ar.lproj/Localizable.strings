@@ -396,6 +396,26 @@
 "Filter Results" = "تصفية النتائج";
 "Most Wanted Areas" = "المناطق الأكثر طلبا";
 "Best Selling Items" = "العناصر الأكثر مبيعا";
+"Manage discount coupons" = "إدارة كوبونات الخصم" ;
+"PlaceHolder" = "ابحث بالاسم او رقم الطلب او الهاتف";
+"Coupon ID" = "الرقم التعريفي للكوبون";
+"march" = "مارس";
+"value" = "من قيمة الطلبية" ;
+"usage times" = "مرات الاستخدام" ;
+"left times" = "المرات المتبقية" ;
+"switch" = "مفعل" ; 
+"edit button" = "تعديل الكوبون" ;
+"edit" = "تعديل كود الخصم";
+"add" = "إضافة كود الخصم" ;
+"discoint code" = "كود الخصم" ;
+"type of discount" = "نوع الخصم" ;
+"percantage" = "نسبة" ;
+"fixed price" = "مبلغ ثابت" ;
+"amount" = "مقدار الخصم " ;
+"times of usage" = "عدد مرات الاسنخدام" ;
+"coupon date" = "تاريخ صلاحية الكود";
+"coupon state" = "حالة الكوبون";
+"save" = "أضف" ;
 "Your ads" = "إعلاناتك";
 "Show all" = "شاهد المزيد";
 
