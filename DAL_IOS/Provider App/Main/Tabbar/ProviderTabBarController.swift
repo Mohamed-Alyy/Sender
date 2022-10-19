@@ -24,12 +24,9 @@ class ProviderTabBarController: UITabBarController,UITabBarControllerDelegate {
             return tabBar
         }()
         self.setValue(tabBar, forKey: "tabBar")
+        addViewControllers()
     }
-    
-     
-
     // MARK: - Setups
-    
     private func addViewControllers(){
         viewControllers = [
             createTabBarItem(tabBarTitle: "More", tabBarImage: "Group 2542", viewController: ProviderMoreMenuVC.loadFromNib()),

@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProviderVerifyCodeVC" customModule="DAL_IOS" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProviderVerifyCodeVC" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="mobilePhoneLable" destination="UX1-jP-jou" id="7di-JQ-k4d"/>
+                <outlet property="num1" destination="Qrd-rB-fmB" id="PBC-Kw-LBw"/>
+                <outlet property="num2" destination="uWo-li-oQP" id="Im4-Va-to3"/>
+                <outlet property="num3" destination="ct1-XN-Kuk" id="Icc-qf-a5Q"/>
+                <outlet property="num4" destination="rn8-19-ccU" id="PbZ-Tn-qvl"/>
+                <outlet property="resendCodeBtn" destination="S7Z-yA-Ppz" id="Bmz-hH-4Hp"/>
+                <outlet property="view" destination="9IB-1S-dF5" id="4hE-Kt-97F"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="9IB-1S-dF5">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Dve-Z3-XKI">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I56-Ia-0h8">
-                    <rect key="frame" x="21" y="59" width="40" height="40"/>
+                    <rect key="frame" x="21" y="63" width="40" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IW-Zl-wVI">
                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -28,6 +38,9 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="localizationImage" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="-1" eventType="touchUpInside" id="ijc-Iy-tA7"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,7 +54,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-3n-I5j">
-                    <rect key="frame" x="35" y="131" width="344" height="92"/>
+                    <rect key="frame" x="35" y="135" width="344" height="92"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identity confirmation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbs-P6-X2j">
                             <rect key="frame" x="0.0" y="0.0" width="344" height="20.5"/>
@@ -72,7 +85,7 @@
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6C-IN-0WO">
-                    <rect key="frame" x="35" y="263" width="344" height="80"/>
+                    <rect key="frame" x="35" y="267" width="344" height="80"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="meR-UZ-WJX">
                             <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
@@ -214,7 +227,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqh-Lb-zeg" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
-                    <rect key="frame" x="35" y="378" width="344" height="50"/>
+                    <rect key="frame" x="35" y="382" width="344" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="nQF-9k-dgy"/>
                     </constraints>
@@ -222,9 +235,12 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="localization" value="NEXT"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="verifyCodeBtnTapped:" destination="-1" eventType="touchUpInside" id="mH6-49-qbh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7Z-yA-Ppz">
-                    <rect key="frame" x="99.5" y="473" width="215" height="30"/>
+                    <rect key="frame" x="99.5" y="477" width="215" height="30"/>
                     <state key="normal" title="No code received? Sent in 0:03">
                         <color key="titleColor" name="secondColor"/>
                     </state>
@@ -232,6 +248,9 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r14"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="localization" value="No code received? Sent in 0:03"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="resendVerifyCode:" destination="-1" eventType="touchUpInside" id="SNy-9c-KFf"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="J5F-Ny-LpC"/>

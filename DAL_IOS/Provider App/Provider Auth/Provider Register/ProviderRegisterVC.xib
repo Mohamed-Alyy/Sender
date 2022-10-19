@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProviderRegisterVC" customModule="DAL_IOS" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProviderRegisterVC" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Jyv-98-Ya1" id="7AH-zs-Wfb"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="Jyv-98-Ya1">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -134,7 +138,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZQ-IJ-KA4">
-                    <rect key="frame" x="21" y="44" width="40" height="40"/>
+                    <rect key="frame" x="21" y="48" width="40" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNa-Dw-QQd">
                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -142,6 +146,9 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="localizationImage" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="-1" eventType="touchUpInside" id="30f-DP-LVs"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,10 +162,10 @@
                     </constraints>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoNameWhite" translatesAutoresizingMaskIntoConstraints="NO" id="pNA-z2-0l1">
-                    <rect key="frame" x="63" y="104" width="288" height="46"/>
+                    <rect key="frame" x="63" y="108" width="288" height="46"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy with us an easier order from all restaurants" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-cn-1qy">
-                    <rect key="frame" x="8" y="198.5" width="398" height="20.5"/>
+                    <rect key="frame" x="8" y="202.5" width="398" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -168,7 +175,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome with us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-p0-ZlY">
-                    <rect key="frame" x="8" y="163" width="398" height="20.5"/>
+                    <rect key="frame" x="8" y="167" width="398" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
