@@ -81,7 +81,7 @@ class ProviderVerifyCodeVC: UIViewController {
                     if let error = error {
                         self?.showAlert(message: error.localizedDescription ,title: "Error")
                     }
-                }s
+                }
             }
         }
     }

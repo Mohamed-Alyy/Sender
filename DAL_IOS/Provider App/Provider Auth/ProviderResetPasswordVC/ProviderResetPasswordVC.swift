@@ -45,6 +45,7 @@ class ProviderResetPasswordVC: UIViewController {
                 case .success(let model):
                     print(model!)
                     self.getAlert(title: "Congratulations :)", message: "Your password updated Successfuly")
+                    self.navigationController?.popToRootViewController(animated: true)
                 case .failure(let error):
                     print(error!)
                     self.getAlert(title: "Error :(", message: error?.localizedDescription ?? "error")
