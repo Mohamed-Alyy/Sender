@@ -93,10 +93,10 @@ class ProviderVerifyCodeVC: UIViewController {
                 print("code resend:)")
                 self.didResend()
                 guard let model = model , let message = model.message else{return}
-                self.showAlert(message: "Error", title: "\(message) + \(model.wait_for ?? 0)")
+                self.showAlert(message: "\(message) + \(model.wait_for ?? 0)", title: "Error")
             case .failure(let error):
                 if let error = error {
-                    print(error)
+                    self.showAlert(message: error.localizedDescription, title: "Error")
                 }
             }
         }

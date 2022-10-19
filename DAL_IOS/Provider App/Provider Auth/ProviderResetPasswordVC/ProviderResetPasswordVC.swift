@@ -12,22 +12,20 @@ class ProviderResetPasswordVC: UIViewController {
     @IBOutlet weak var newPasswordTF: UITextField!
     @IBOutlet weak var confirmNewPasswordTF: UITextField!
     var secret_code: String?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(self.secret_code!)
     }
-    
-    
     @IBAction func confirmNewPasswordBtnTapped(_ sender: UIButton) {
         confirmNewPassword()
     }
     @IBAction func backBtnTapped(_ sender: UIButton) {
         self.navigationController?.popViewController()
     }
-    func getAlert(title: String,message: String){
+    func getAlert(title: String,message: String,completion: ((UIAlertAction)->Void)?){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        alert.addAction(UIAlertAction(title: "OK", style: .default,handler: completion))
         self.present(alert, animated: true)
     }
     private func confirmNewPassword(){
@@ -44,11 +42,12 @@ class ProviderResetPasswordVC: UIViewController {
                 switch response {
                 case .success(let model):
                     print(model!)
-                    self.getAlert(title: "Congratulations :)", message: "Your password updated Successfuly")
-                    self.navigationController?.popToRootViewController(animated: true)
+                    self.getAlert(title: "Congratulations :)", message: "Your password updated Successfuly", completion: {_ in
+                        self.navigationController?.popToRootViewController(animated: true)
+                    })
                 case .failure(let error):
                     print(error!)
-                    self.getAlert(title: "Error :(", message: error?.localizedDescription ?? "error")
+                    self.getAlert(title: "Error :(", message: error?.localizedDescription ?? "error", completion: nil)
                 }
             }
         }
