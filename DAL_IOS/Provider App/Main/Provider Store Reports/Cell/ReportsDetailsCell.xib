@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlGhadTV-Bold.ttf">
+            <string>AlGhadTV-Bold</string>
+        </array>
+        <array key="AlGhadTV-Regular.ttf">
+            <string>AlGhadTV</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReportsDetailsCell" customModule="DAL_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="203" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZW-V6-ro2">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="131"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xol-jx-wZP">
+                                <rect key="frame" x="15" y="15" width="173" height="101"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eqh-Fz-2bP">
+                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="44"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iconly-Light-Graph" translatesAutoresizingMaskIntoConstraints="NO" id="izH-V6-wLM">
+                                                <rect key="frame" x="0.0" y="0.0" width="15.5" height="15.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15.4" id="5Bh-55-3ve"/>
+                                                    <constraint firstAttribute="height" constant="15.4" id="i1L-dO-JDB"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHq-5I-fsm">
+                                                <rect key="frame" x="0.0" y="20.5" width="34.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="AlGhadTV" family="AlGhadTV" pointSize="14"/>
+                                                <color key="textColor" red="0.13333333333333333" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Lf-vg-TKG">
+                                        <rect key="frame" x="0.0" y="61" width="102.5" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMe-xU-LCm">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="40"/>
+                                                <fontDescription key="fontDescription" name="AlGhadTV-Bold" family="AlGhadTV" pointSize="24"/>
+                                                <color key="textColor" red="0.13333333333333333" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-bX-12V">
+                                                <rect key="frame" x="68" y="8.5" width="34.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="AlGhadTV" family="AlGhadTV" pointSize="14"/>
+                                                <color key="textColor" red="0.1333333333" green="0.16862745100000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xol-jx-wZP" firstAttribute="leading" secondItem="lZW-V6-ro2" secondAttribute="leading" constant="15" id="0Ie-Uw-HHJ"/>
+                            <constraint firstItem="Xol-jx-wZP" firstAttribute="top" secondItem="lZW-V6-ro2" secondAttribute="top" constant="15" id="0K4-W6-Ory"/>
+                            <constraint firstAttribute="bottom" secondItem="Xol-jx-wZP" secondAttribute="bottom" constant="15" id="Bed-kh-Yud"/>
+                            <constraint firstAttribute="trailing" secondItem="Xol-jx-wZP" secondAttribute="trailing" constant="15" id="ZdH-Hx-xPZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lZW-V6-ro2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4rk-Yf-Ap6"/>
+                <constraint firstAttribute="trailing" secondItem="lZW-V6-ro2" secondAttribute="trailing" id="P5B-eo-wey"/>
+                <constraint firstAttribute="bottom" secondItem="lZW-V6-ro2" secondAttribute="bottom" id="R5b-s7-TI1"/>
+                <constraint firstItem="lZW-V6-ro2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fTi-HS-GFj"/>
+            </constraints>
+            <size key="customSize" width="203" height="131"/>
+            <connections>
+                <outlet property="currencyLB" destination="xXd-bX-12V" id="Bu6-Dh-69x"/>
+                <outlet property="priceLB" destination="AMe-xU-LCm" id="cVE-7W-C9O"/>
+                <outlet property="titleLB" destination="YHq-5I-fsm" id="Vyu-TT-2mY"/>
+            </connections>
+            <point key="canvasLocation" x="242.75362318840581" y="110.82589285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Iconly-Light-Graph" width="20.270999908447266" height="20.791000366210938"/>
+    </resources>
+</document>

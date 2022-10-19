@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042EBE2828FF221000EC6773 /* FilterResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EBE2628FF221000EC6773 /* FilterResultsVC.swift */; };
+		042EBE2928FF221000EC6773 /* FilterResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042EBE2728FF221000EC6773 /* FilterResultsVC.xib */; };
+		04407E8C28FF0103004B1B16 /* ReportsDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04407E8A28FF0103004B1B16 /* ReportsDetailsCell.swift */; };
+		04407E8D28FF0103004B1B16 /* ReportsDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04407E8B28FF0103004B1B16 /* ReportsDetailsCell.xib */; };
+		047A964828FF93CC00AFC40B /* MostAreasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A964628FF93CC00AFC40B /* MostAreasCell.swift */; };
+		047A964928FF93CC00AFC40B /* MostAreasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A964728FF93CC00AFC40B /* MostAreasCell.xib */; };
+		047A964C28FF9B6E00AFC40B /* BestItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A964A28FF9B6E00AFC40B /* BestItemsCell.swift */; };
+		047A964D28FF9B6E00AFC40B /* BestItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A964B28FF9B6E00AFC40B /* BestItemsCell.xib */; };
 		239C787225C6A58000D769FD /* CartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239C786B25C6A58000D769FD /* CartStoryboard.storyboard */; };
 		239C787325C6A58000D769FD /* CartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C786C25C6A58000D769FD /* CartContract.swift */; };
 		239C787425C6A58000D769FD /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C786D25C6A58000D769FD /* CartPresenter.swift */; };
@@ -676,6 +684,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042EBE2628FF221000EC6773 /* FilterResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterResultsVC.swift; sourceTree = "<group>"; };
+		042EBE2728FF221000EC6773 /* FilterResultsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterResultsVC.xib; sourceTree = "<group>"; };
+		04407E8A28FF0103004B1B16 /* ReportsDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsDetailsCell.swift; sourceTree = "<group>"; };
+		04407E8B28FF0103004B1B16 /* ReportsDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportsDetailsCell.xib; sourceTree = "<group>"; };
+		047A964628FF93CC00AFC40B /* MostAreasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostAreasCell.swift; sourceTree = "<group>"; };
+		047A964728FF93CC00AFC40B /* MostAreasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostAreasCell.xib; sourceTree = "<group>"; };
+		047A964A28FF9B6E00AFC40B /* BestItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestItemsCell.swift; sourceTree = "<group>"; };
+		047A964B28FF9B6E00AFC40B /* BestItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestItemsCell.xib; sourceTree = "<group>"; };
 		239C786B25C6A58000D769FD /* CartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartStoryboard.storyboard; sourceTree = "<group>"; };
 		239C786C25C6A58000D769FD /* CartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartContract.swift; sourceTree = "<group>"; };
 		239C786D25C6A58000D769FD /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
@@ -1365,6 +1381,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047A964528FF8F9A00AFC40B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04407E8A28FF0103004B1B16 /* ReportsDetailsCell.swift */,
+				04407E8B28FF0103004B1B16 /* ReportsDetailsCell.xib */,
+				047A964628FF93CC00AFC40B /* MostAreasCell.swift */,
+				047A964728FF93CC00AFC40B /* MostAreasCell.xib */,
+				047A964A28FF9B6E00AFC40B /* BestItemsCell.swift */,
+				047A964B28FF9B6E00AFC40B /* BestItemsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2354DC8625C6A50A0039BE78 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
@@ -3247,8 +3276,11 @@
 		EE71328828F6EC16007338FF /* Provider Store Reports */ = {
 			isa = PBXGroup;
 			children = (
+				047A964528FF8F9A00AFC40B /* Cell */,
 				EE71328928F6EC43007338FF /* ProviderStoreReportsVC.swift */,
 				EE71328A28F6EC43007338FF /* ProviderStoreReportsVC.xib */,
+				042EBE2628FF221000EC6773 /* FilterResultsVC.swift */,
+				042EBE2728FF221000EC6773 /* FilterResultsVC.xib */,
 			);
 			path = "Provider Store Reports";
 			sourceTree = "<group>";
@@ -3569,10 +3601,12 @@
 				C872237625DD1F34003AB06C /* OrderProductCell.xib in Resources */,
 				77EDFFA925B875F0005678D4 /* CategoryFilterStoryboard.storyboard in Resources */,
 				EE9ECFA028F4CD9A00A76409 /* ProviderLoginVC.xib in Resources */,
+				042EBE2928FF221000EC6773 /* FilterResultsVC.xib in Resources */,
 				C8DD21A92619BC1A009D3564 /* LangIntroView.xib in Resources */,
 				77811B2B25BD6B3C0096119C /* ProviderRatesView.xib in Resources */,
 				77811B3625BD72540096119C /* ReservationTypeStoryboard.storyboard in Resources */,
 				C88C83252619F32A006402DB /* TagCollectionView.xib in Resources */,
+				047A964D28FF9B6E00AFC40B /* BestItemsCell.xib in Resources */,
 				C8D90D76260B5D62003D402B /* ReservationsStoryboard.storyboard in Resources */,
 				77EDFFCB25B8846B005678D4 /* NotificationCell.xib in Resources */,
 				77C4C90E2599C88A00CDFA38 /* OnBoardingStoryboard.storyboard in Resources */,
@@ -3580,6 +3614,7 @@
 				7778206925B5FEBB00C93AAB /* ProductCollectionCell.xib in Resources */,
 				77B1BF1425D5269500E50B21 /* OrdersView.xib in Resources */,
 				C8D90DB3260B6462003D402B /* ContactUsStoryboard.storyboard in Resources */,
+				047A964928FF93CC00AFC40B /* MostAreasCell.xib in Resources */,
 				7769F0C12599EA8700A4FC5E /* ResetPasswordStoryboard.storyboard in Resources */,
 				7796AF8125BD746400864D03 /* MealFilterStoryboard.storyboard in Resources */,
 				77C4C91B2599CB7A00CDFA38 /* OnBoardingCell.xib in Resources */,
@@ -3621,6 +3656,7 @@
 				77F0577A25C94A0D00A762DD /* DeliveryTypeView.xib in Resources */,
 				C87223D825DD28FA003AB06C /* ImageDisplayController.storyboard in Resources */,
 				77E3982F25BEEA6C0049422C /* ExtraMealCell.xib in Resources */,
+				04407E8D28FF0103004B1B16 /* ReportsDetailsCell.xib in Resources */,
 				77F0B35C25D55748002E5AB2 /* EditProfileView.xib in Resources */,
 				EE88717F28C815B900297D63 /* ProviderCategoriesMealCell.xib in Resources */,
 				77569F342534827300BFE53C /* loading.json in Resources */,
@@ -3836,6 +3872,7 @@
 				EE2E3E5528DC96E9009523D5 /* WalletModel.swift in Sources */,
 				C87223D725DD28FA003AB06C /* ImageDisplayController.swift in Sources */,
 				C8D90DCD260B804C003D402B /* MakeOrderDoneRouter.swift in Sources */,
+				04407E8C28FF0103004B1B16 /* ReportsDetailsCell.swift in Sources */,
 				239C787325C6A58000D769FD /* CartContract.swift in Sources */,
 				C8D90D6E260B5D62003D402B /* ReservationsModel.swift in Sources */,
 				77268D7025D53AA7008886FF /* OrderDetailsContract.swift in Sources */,
@@ -3869,6 +3906,7 @@
 				7756A17925348AD400BFE53C /* FloatExtensions.swift in Sources */,
 				77EDFFCA25B8846B005678D4 /* NotificationCell.swift in Sources */,
 				772DE35225D55AE3005F1BC7 /* FavoritesPresenter.swift in Sources */,
+				042EBE2828FF221000EC6773 /* FilterResultsVC.swift in Sources */,
 				7769F0862599EA2700A4FC5E /* RegisterVC.swift in Sources */,
 				EE56208928A133E10060051C /* CreateCardContract.swift in Sources */,
 				C8D90DCB260B804C003D402B /* MakeOrderDoneContract.swift in Sources */,
@@ -3954,6 +3992,7 @@
 				EEEAEED228D2472100EDAD8B /* ShippingAddressContract.swift in Sources */,
 				7778205E25B5FEA400C93AAB /* SliderCollectionCell.swift in Sources */,
 				7756A18325348AD400BFE53C /* OptionalExtensions.swift in Sources */,
+				047A964828FF93CC00AFC40B /* MostAreasCell.swift in Sources */,
 				77B1BF1125D5269500E50B21 /* OrdersRouter.swift in Sources */,
 				77C5F49B2534814100E70C4C /* AppDelegate.swift in Sources */,
 				77AF27DC25B6DE1A00A5EF3B /* FilterView.swift in Sources */,
@@ -4220,6 +4259,7 @@
 				EE56207D28A11ED50060051C /* CardsListModel.swift in Sources */,
 				7756A17125348AD400BFE53C /* UIImageViewExtensions.swift in Sources */,
 				EE9ECFAE28F4D19800A76409 /* ProviderCompleteRegisterVC.swift in Sources */,
+				047A964C28FF9B6E00AFC40B /* BestItemsCell.swift in Sources */,
 				EE88717E28C815B900297D63 /* ProviderCategoriesMealCell.swift in Sources */,
 				7739010F25D0211200F66231 /* AddressTableCell.swift in Sources */,
 			);
