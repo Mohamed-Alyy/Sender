@@ -546,6 +546,10 @@
 		C8DD21B02619BF65009D3564 /* EditSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DD21AE2619BF65009D3564 /* EditSelectView.xib */; };
 		C8DD21BB2619DA28009D3564 /* CategoryDetailFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD21B92619DA28009D3564 /* CategoryDetailFilterCell.swift */; };
 		C8DD21BC2619DA28009D3564 /* CategoryDetailFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DD21BA2619DA28009D3564 /* CategoryDetailFilterCell.xib */; };
+		EA226ABB28FED40A0071AF55 /* ProviderResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA226AB928FED40A0071AF55 /* ProviderResetPasswordVC.swift */; };
+		EA226ABC28FED40A0071AF55 /* ProviderResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */; };
+		EA2831BC28FE9883002AF854 /* ProviderForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */; };
+		EA2831BD28FE9883002AF854 /* ProviderForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2831BB28FE9883002AF854 /* ProviderForgetPasswordVC.xib */; };
 		EE0C4DD528A7D8E0004DC7C2 /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C4DD328A7D8E0004DC7C2 /* WalletVC.swift */; };
 		EE0C4DD628A7D8E0004DC7C2 /* WalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE0C4DD428A7D8E0004DC7C2 /* WalletVC.xib */; };
 		EE0C4DDA28A7DEF3004DC7C2 /* FinancialTransactionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C4DD828A7DEF3004DC7C2 /* FinancialTransactionsCell.swift */; };
@@ -1223,6 +1227,10 @@
 		C8DD21BA2619DA28009D3564 /* CategoryDetailFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryDetailFilterCell.xib; sourceTree = "<group>"; };
 		CCAEAE7FBFDB11CBC3EAE174 /* Pods-BaseIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DD5D7188E93C758A193459F7 /* Pods-DAL_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.debug.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		EA226AB928FED40A0071AF55 /* ProviderResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderResetPasswordVC.swift; sourceTree = "<group>"; };
+		EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderResetPasswordVC.xib; sourceTree = "<group>"; };
+		EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderForgetPasswordVC.swift; sourceTree = "<group>"; };
+		EA2831BB28FE9883002AF854 /* ProviderForgetPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProviderForgetPasswordVC.xib; sourceTree = "<group>"; };
 		EE0C4DD328A7D8E0004DC7C2 /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
 		EE0C4DD428A7D8E0004DC7C2 /* WalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletVC.xib; sourceTree = "<group>"; };
 		EE0C4DD828A7DEF3004DC7C2 /* FinancialTransactionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialTransactionsCell.swift; sourceTree = "<group>"; };
@@ -2986,6 +2994,24 @@
 			path = LangIntro;
 			sourceTree = "<group>";
 		};
+		EA226AB828FED39E0071AF55 /* ProviderResetPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA226AB928FED40A0071AF55 /* ProviderResetPasswordVC.swift */,
+				EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */,
+			);
+			path = ProviderResetPasswordVC;
+			sourceTree = "<group>";
+		};
+		EA2831BE28FE9891002AF854 /* ProviderForgetPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */,
+				EA2831BB28FE9883002AF854 /* ProviderForgetPasswordVC.xib */,
+			);
+			path = ProviderForgetPasswordVC;
+			sourceTree = "<group>";
+		};
 		EE0C4DD228A7D8C8004DC7C2 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -3306,9 +3332,11 @@
 			isa = PBXGroup;
 			children = (
 				EE9ECFAB28F4D12E00A76409 /* Provider Complete Register */,
-				EE9ECFA628F4CF9300A76409 /* Provider Verify Code */,
 				EE9ECFA128F4CEA200A76409 /* Provider Register */,
 				EE9ECF9C28F4CD8500A76409 /* Provider Login */,
+				EA2831BE28FE9891002AF854 /* ProviderForgetPasswordVC */,
+				EE9ECFA628F4CF9300A76409 /* Provider Verify Code */,
+				EA226AB828FED39E0071AF55 /* ProviderResetPasswordVC */,
 			);
 			path = "Provider Auth";
 			sourceTree = "<group>";
@@ -3519,6 +3547,7 @@
 				EE71328C28F6EC43007338FF /* ProviderStoreReportsVC.xib in Resources */,
 				77F0B32C25D5530D002E5AB2 /* ProfileStoryboard.storyboard in Resources */,
 				7769F0C72599EA8700A4FC5E /* ResetPasswordView.xib in Resources */,
+				EA226ABC28FED40A0071AF55 /* ProviderResetPasswordVC.xib in Resources */,
 				C8D90DB0260B6462003D402B /* ContactUsView.xib in Resources */,
 				77B1BF0E25D5269500E50B21 /* OrdersStoryboard.storyboard in Resources */,
 				EE10ABF028F572FD009B8BEA /* ProviderMoreMenuVC.xib in Resources */,
@@ -3545,6 +3574,7 @@
 				77B1BF1A25D52A3000E50B21 /* OrderCell.xib in Resources */,
 				77C3CFB325BEB27E00301A5F /* MealFilterCell.xib in Resources */,
 				EE71327828F6DD4D007338FF /* ProviderAdsCell.xib in Resources */,
+				EA2831BD28FE9883002AF854 /* ProviderForgetPasswordVC.xib in Resources */,
 				77AF27CE25B6DD9100A5EF3B /* SearchFilterStoryboard.storyboard in Resources */,
 				EE0C4DD628A7D8E0004DC7C2 /* WalletVC.xib in Resources */,
 				77C4E53825B60C2300228592 /* TagSearchCell.xib in Resources */,
@@ -4062,6 +4092,7 @@
 				C87223B625DD279F003AB06C /* GoogleMapZoom.swift in Sources */,
 				77811B2625BD6B3C0096119C /* ProviderRatesContract.swift in Sources */,
 				77C3CFE025BEC61C00301A5F /* ReservationTablePresenter.swift in Sources */,
+				EA2831BC28FE9883002AF854 /* ProviderForgetPasswordVC.swift in Sources */,
 				7756A17625348AD400BFE53C /* SignedIntegerExtensions.swift in Sources */,
 				77C4E51125B60AC300228592 /* NewSearchContainerRouter.swift in Sources */,
 				7730ED9625D165FB00BF97ED /* SwipeCollectionViewCell+Display.swift in Sources */,
@@ -4079,6 +4110,7 @@
 				7769F0A52599EA5A00A4FC5E /* VerifyCodeModel.swift in Sources */,
 				77E9DAC125B88C5D005BF3C7 /* DeliveryServiceModel.swift in Sources */,
 				EE4BE50C28B011FB0030C45C /* SearchCategoriesContract.swift in Sources */,
+				EA226ABB28FED40A0071AF55 /* ProviderResetPasswordVC.swift in Sources */,
 				773AB97A25C1CEA100CD48FB /* QuantityModel.swift in Sources */,
 				771C9FEE259B778000E66E4B /* PopupConfirmationContract.swift in Sources */,
 				77C3CFF025BEC63600301A5F /* ReservationTableDonePresenter.swift in Sources */,
