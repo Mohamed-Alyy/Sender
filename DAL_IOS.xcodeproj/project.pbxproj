@@ -438,7 +438,11 @@
 		77F67C27253C15030004318A /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F67C26253C15030004318A /* RouterProtocol.swift */; };
 		77F7A7C625BD792A00680301 /* RateTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F7A7C425BD792A00680301 /* RateTableCell.swift */; };
 		77F7A7C725BD792A00680301 /* RateTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F7A7C525BD792A00680301 /* RateTableCell.xib */; };
-		87694D04F0560715E6939899 /* Pods_DAL_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AB38BCF9C35B4FC6FC27FA /* Pods_DAL_IOS.framework */; };
+		7F3EA7FA28FEE03500203912 /* Ex_LoadUiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EA7F928FEE03500203912 /* Ex_LoadUiImageView.swift */; };
+		7F3EA7FE28FEEA3100203912 /* ProviderAdsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3EA7FC28FEEA3100203912 /* ProviderAdsVC.xib */; };
+		7F3EA7FF28FEEA3100203912 /* ProviderAdsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EA7FD28FEEA3100203912 /* ProviderAdsVC.swift */; };
+		7FBE175228FE5F65005FEA25 /* AdsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE175128FE5F65005FEA25 /* AdsModel.swift */; };
+		8A0916F2BE9CCDCFF4A785B1 /* Pods_DAL_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6320EE3CB5D3B9BC22EF46F5 /* Pods_DAL_IOS.framework */; };
 		C811A7F8261E2B9900AD43A6 /* EmptyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C811A7F7261E2B9900AD43A6 /* EmptyScreen.swift */; };
 		C811A7FB261E2B9F00AD43A6 /* EmptyScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C811A7FA261E2B9F00AD43A6 /* EmptyScreen.xib */; };
 		C872237525DD1F34003AB06C /* OrderProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872237325DD1F34003AB06C /* OrderProductCell.swift */; };
@@ -550,6 +554,13 @@
 		EA226ABC28FED40A0071AF55 /* ProviderResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */; };
 		EA2831BC28FE9883002AF854 /* ProviderForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */; };
 		EA2831BD28FE9883002AF854 /* ProviderForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2831BB28FE9883002AF854 /* ProviderForgetPasswordVC.xib */; };
+		EE08357F290026C2005A2E44 /* ProviderFilterOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08357D290026C2005A2E44 /* ProviderFilterOrdersVC.swift */; };
+		EE083580290026C2005A2E44 /* ProviderFilterOrdersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08357E290026C2005A2E44 /* ProviderFilterOrdersVC.xib */; };
+		EE08358429002773005A2E44 /* ProviderFilterOrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08358229002773005A2E44 /* ProviderFilterOrdersTableViewCell.swift */; };
+		EE08358529002773005A2E44 /* ProviderFilterOrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08358329002773005A2E44 /* ProviderFilterOrdersTableViewCell.xib */; };
+		EE083588290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE083586290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.swift */; };
+		EE083589290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE083587290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.xib */; };
+		EE08358B2900282B005A2E44 /* CircalUIVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08358A2900282B005A2E44 /* CircalUIVew.swift */; };
 		EE0C4DD528A7D8E0004DC7C2 /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C4DD328A7D8E0004DC7C2 /* WalletVC.swift */; };
 		EE0C4DD628A7D8E0004DC7C2 /* WalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE0C4DD428A7D8E0004DC7C2 /* WalletVC.xib */; };
 		EE0C4DDA28A7DEF3004DC7C2 /* FinancialTransactionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C4DD828A7DEF3004DC7C2 /* FinancialTransactionsCell.swift */; };
@@ -680,6 +691,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1987EE9814BCA556F8C71224 /* Pods-DAL_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.debug.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		239C786B25C6A58000D769FD /* CartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartStoryboard.storyboard; sourceTree = "<group>"; };
 		239C786C25C6A58000D769FD /* CartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartContract.swift; sourceTree = "<group>"; };
 		239C786D25C6A58000D769FD /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
@@ -692,8 +704,7 @@
 		239C788125C6AD3000D769FD /* CartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartBuilder.swift; sourceTree = "<group>"; };
 		239C788425C6AD6D00D769FD /* CartBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartBuilderProtocol.swift; sourceTree = "<group>"; };
 		23FE9DE225C6B14700158157 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		3D9812F0426A5F8B57F1CA30 /* Pods-BaseIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.release.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.release.xcconfig"; sourceTree = "<group>"; };
-		60AB38BCF9C35B4FC6FC27FA /* Pods_DAL_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAL_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6320EE3CB5D3B9BC22EF46F5 /* Pods_DAL_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAL_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7712A2132538728B0072BAEC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		771C9FE7259B778000E66E4B /* PopupConfirmationContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupConfirmationContract.swift; sourceTree = "<group>"; };
 		771C9FE8259B778000E66E4B /* PopupConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupConfirmationView.swift; sourceTree = "<group>"; };
@@ -1117,6 +1128,11 @@
 		77F67C26253C15030004318A /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		77F7A7C425BD792A00680301 /* RateTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableCell.swift; sourceTree = "<group>"; };
 		77F7A7C525BD792A00680301 /* RateTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateTableCell.xib; sourceTree = "<group>"; };
+		7F3EA7F928FEE03500203912 /* Ex_LoadUiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_LoadUiImageView.swift; sourceTree = "<group>"; };
+		7F3EA7FC28FEEA3100203912 /* ProviderAdsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProviderAdsVC.xib; sourceTree = "<group>"; };
+		7F3EA7FD28FEEA3100203912 /* ProviderAdsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderAdsVC.swift; sourceTree = "<group>"; };
+		7FBE175128FE5F65005FEA25 /* AdsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsModel.swift; sourceTree = "<group>"; };
+		B863CA0138A713097BF99680 /* Pods-DAL_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.release.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		C811A7F7261E2B9900AD43A6 /* EmptyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreen.swift; sourceTree = "<group>"; };
 		C811A7FA261E2B9F00AD43A6 /* EmptyScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyScreen.xib; sourceTree = "<group>"; };
 		C8520762265E89DD00FA9595 /* DAL_IOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DAL_IOS.entitlements; sourceTree = "<group>"; };
@@ -1231,6 +1247,13 @@
 		EA226ABA28FED40A0071AF55 /* ProviderResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderResetPasswordVC.xib; sourceTree = "<group>"; };
 		EA2831BA28FE9883002AF854 /* ProviderForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderForgetPasswordVC.swift; sourceTree = "<group>"; };
 		EA2831BB28FE9883002AF854 /* ProviderForgetPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProviderForgetPasswordVC.xib; sourceTree = "<group>"; };
+		EE08357D290026C2005A2E44 /* ProviderFilterOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderFilterOrdersVC.swift; sourceTree = "<group>"; };
+		EE08357E290026C2005A2E44 /* ProviderFilterOrdersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderFilterOrdersVC.xib; sourceTree = "<group>"; };
+		EE08358229002773005A2E44 /* ProviderFilterOrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderFilterOrdersTableViewCell.swift; sourceTree = "<group>"; };
+		EE08358329002773005A2E44 /* ProviderFilterOrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderFilterOrdersTableViewCell.xib; sourceTree = "<group>"; };
+		EE083586290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderHeaderTableviewFilterOrdersCell.swift; sourceTree = "<group>"; };
+		EE083587290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderHeaderTableviewFilterOrdersCell.xib; sourceTree = "<group>"; };
+		EE08358A2900282B005A2E44 /* CircalUIVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircalUIVew.swift; sourceTree = "<group>"; };
 		EE0C4DD328A7D8E0004DC7C2 /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
 		EE0C4DD428A7D8E0004DC7C2 /* WalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletVC.xib; sourceTree = "<group>"; };
 		EE0C4DD828A7DEF3004DC7C2 /* FinancialTransactionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialTransactionsCell.swift; sourceTree = "<group>"; };
@@ -1358,7 +1381,6 @@
 		EEF8B3C528A3EFE000293530 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		EEF8B3C828A3F2FF00293530 /* AlGhadTV-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlGhadTV-Bold.ttf"; sourceTree = "<group>"; };
 		EEF8B3CA28A3F30E00293530 /* AlGhadTV-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlGhadTV-Regular.ttf"; sourceTree = "<group>"; };
-		FE8DFFFBE13D16FDD1C473EA /* Pods-DAL_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.release.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1366,7 +1388,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87694D04F0560715E6939899 /* Pods_DAL_IOS.framework in Frameworks */,
+				8A0916F2BE9CCDCFF4A785B1 /* Pods_DAL_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1413,21 +1435,11 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
-		45A065D4EE4EADA94F3AE79E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				60AB38BCF9C35B4FC6FC27FA /* Pods_DAL_IOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		472FD741C01ACDF410192B6F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CCAEAE7FBFDB11CBC3EAE174 /* Pods-BaseIOS.debug.xcconfig */,
-				3D9812F0426A5F8B57F1CA30 /* Pods-BaseIOS.release.xcconfig */,
-				DD5D7188E93C758A193459F7 /* Pods-DAL_IOS.debug.xcconfig */,
-				FE8DFFFBE13D16FDD1C473EA /* Pods-DAL_IOS.release.xcconfig */,
+				1987EE9814BCA556F8C71224 /* Pods-DAL_IOS.debug.xcconfig */,
+				B863CA0138A713097BF99680 /* Pods-DAL_IOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2530,7 +2542,7 @@
 				77C5F4992534814100E70C4C /* DAL_IOS */,
 				77C5F4982534814100E70C4C /* Products */,
 				472FD741C01ACDF410192B6F /* Pods */,
-				45A065D4EE4EADA94F3AE79E /* Frameworks */,
+				E59A6D5A881E99D2DE5F9DDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2734,6 +2746,15 @@
 				77F7A7C525BD792A00680301 /* RateTableCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		7F3EA7FB28FEEA3100203912 /* Provider Ads */ = {
+			isa = PBXGroup;
+			children = (
+				7F3EA7FC28FEEA3100203912 /* ProviderAdsVC.xib */,
+				7F3EA7FD28FEEA3100203912 /* ProviderAdsVC.swift */,
+			);
+			path = "Provider Ads";
 			sourceTree = "<group>";
 		};
 		C811A7F6261E2B7B00AD43A6 /* EmptyScreen */ = {
@@ -3012,6 +3033,36 @@
 			path = ProviderForgetPasswordVC;
 			sourceTree = "<group>";
 		};
+		E59A6D5A881E99D2DE5F9DDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6320EE3CB5D3B9BC22EF46F5 /* Pods_DAL_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE08357C290026A0005A2E44 /* Provider Filter Orders Popup */ = {
+			isa = PBXGroup;
+			children = (
+				EE0835812900275E005A2E44 /* Cell */,
+				EE08357D290026C2005A2E44 /* ProviderFilterOrdersVC.swift */,
+				EE08357E290026C2005A2E44 /* ProviderFilterOrdersVC.xib */,
+				EE08358A2900282B005A2E44 /* CircalUIVew.swift */,
+			);
+			path = "Provider Filter Orders Popup";
+			sourceTree = "<group>";
+		};
+		EE0835812900275E005A2E44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE08358229002773005A2E44 /* ProviderFilterOrdersTableViewCell.swift */,
+				EE08358329002773005A2E44 /* ProviderFilterOrdersTableViewCell.xib */,
+				EE083586290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.swift */,
+				EE083587290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		EE0C4DD228A7D8C8004DC7C2 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -3094,9 +3145,11 @@
 		EE10ABE028F56C5B009B8BEA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EE08357C290026A0005A2E44 /* Provider Filter Orders Popup */,
 				EEE4B99428FDA3F900F49B9D /* Provider Orders */,
 				EE71328828F6EC16007338FF /* Provider Store Reports */,
 				EE71327B28F6DEFA007338FF /* Provider Packages */,
+				7F3EA7FB28FEEA3100203912 /* Provider Ads */,
 				EE10ABFA28F573C7009B8BEA /* Provider Home */,
 				EE10ABF128F57302009B8BEA /* Provider Notification */,
 				EE10ABEC28F572DC009B8BEA /* Provider More */,
@@ -3139,7 +3192,9 @@
 			children = (
 				EE71327428F6DD35007338FF /* Cell */,
 				EE10ABF628F573A0009B8BEA /* ProviderHomeVC.swift */,
+				7F3EA7F928FEE03500203912 /* Ex_LoadUiImageView.swift */,
 				EE10ABF728F573A0009B8BEA /* ProviderHomeVC.xib */,
+				7FBE175128FE5F65005FEA25 /* AdsModel.swift */,
 			);
 			path = "Provider Home";
 			sourceTree = "<group>";
@@ -3440,13 +3495,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77C5F4AE2534814200E70C4C /* Build configuration list for PBXNativeTarget "DAL_IOS" */;
 			buildPhases = (
-				E08A9C0475CE52799E5B313D /* [CP] Check Pods Manifest.lock */,
+				18B1FBF96CBCFCEF277886FD /* [CP] Check Pods Manifest.lock */,
 				77C5F4952534814100E70C4C /* Resources */,
 				77C5F4942534814100E70C4C /* Frameworks */,
 				7712A1FF25386FFB0072BAEC /* R.Swift */,
-				6A5382CF6C1C97069C85A5D9 /* [CP] Embed Pods Frameworks */,
 				77C5F4932534814100E70C4C /* Sources */,
-				A22E08006EFC62B5764EBF44 /* [CP] Copy Pods Resources */,
+				3D8113DAAA93E79D6DF82F9C /* [CP] Embed Pods Frameworks */,
+				A62BC821DCEF85E161D4170B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3583,6 +3638,7 @@
 				77EDFFBF25B88140005678D4 /* NotificationsStoryboard.storyboard in Resources */,
 				C87223E325DD34D9003AB06C /* LanguageStoryboard.storyboard in Resources */,
 				239C787825C6A58000D769FD /* CartView.xib in Resources */,
+				7F3EA7FE28FEEA3100203912 /* ProviderAdsVC.xib in Resources */,
 				776C8A7325B6EF4E002589C3 /* ResturantTableCell.xib in Resources */,
 				7769F0812599EA2700A4FC5E /* RegisterStoryboard.storyboard in Resources */,
 				7769F0A72599EA5A00A4FC5E /* VerifyCodeView.xib in Resources */,
@@ -3629,6 +3685,7 @@
 				C8D90D70260B5D62003D402B /* ReservationDetailsStoryboard.storyboard in Resources */,
 				77C4B4A225D54C5E00B9B4CE /* ReOrderView.xib in Resources */,
 				771D8B3425BDB87200C411B3 /* CategoryTableCell.xib in Resources */,
+				EE08358529002773005A2E44 /* ProviderFilterOrdersTableViewCell.xib in Resources */,
 				77F7A7C725BD792A00680301 /* RateTableCell.xib in Resources */,
 				77F0B33225D5530D002E5AB2 /* ProfileView.xib in Resources */,
 				77E9DAC325B88C5D005BF3C7 /* DeliveryServiceView.xib in Resources */,
@@ -3661,6 +3718,7 @@
 				EEF8B3C928A3F2FF00293530 /* AlGhadTV-Bold.ttf in Resources */,
 				772DE34325D557FE005F1BC7 /* EditTextFieldView.xib in Resources */,
 				7775806025BEEBFB0022F7D0 /* PlusExtraMealCell.xib in Resources */,
+				EE083580290026C2005A2E44 /* ProviderFilterOrdersVC.xib in Resources */,
 				7769F0702599EA1800A4FC5E /* LoginStoryboard.storyboard in Resources */,
 				EE71327F28F6DF21007338FF /* ProviderPackagesVC.xib in Resources */,
 				C8D90DBA260B6462003D402B /* FaqStoryboard.storyboard in Resources */,
@@ -3669,6 +3727,7 @@
 				C8D90D85260B5DA3003D402B /* ReservationsFilterStoryboard.storyboard in Resources */,
 				7796AF8725BD746400864D03 /* MealFilterView.xib in Resources */,
 				7739011025D0211200F66231 /* AddressTableCell.xib in Resources */,
+				EE083589290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.xib in Resources */,
 				772DE35625D55AE3005F1BC7 /* FavoritesView.xib in Resources */,
 				7732FEFB25C04A8A005D67E1 /* PickTimeController.storyboard in Resources */,
 				77483C3325B9D1D90095D52B /* ResturantSearchCell.xib in Resources */,
@@ -3678,7 +3737,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6A5382CF6C1C97069C85A5D9 /* [CP] Embed Pods Frameworks */ = {
+		18B1FBF96CBCFCEF277886FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DAL_IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D8113DAAA93E79D6DF82F9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3715,7 +3796,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		A22E08006EFC62B5764EBF44 /* [CP] Copy Pods Resources */ = {
+		A62BC821DCEF85E161D4170B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3732,28 +3813,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E08A9C0475CE52799E5B313D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DAL_IOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -3766,6 +3825,7 @@
 				7796AF8225BD746400864D03 /* MealFilterContract.swift in Sources */,
 				7756A116253482EF00BFE53C /* PresentingViewProtocol.swift in Sources */,
 				77F0577725C94A0D00A762DD /* DeliveryTypeRouter.swift in Sources */,
+				EE08358429002773005A2E44 /* ProviderFilterOrdersTableViewCell.swift in Sources */,
 				C87223B525DD279F003AB06C /* RouteModel.swift in Sources */,
 				C8D90D82260B5DA3003D402B /* ReservationsFilterRouter.swift in Sources */,
 				77C3CFE125BEC61C00301A5F /* ReservationTableRouter.swift in Sources */,
@@ -3806,6 +3866,7 @@
 				7756A18225348AD400BFE53C /* IntExtensions.swift in Sources */,
 				7796AF8325BD746400864D03 /* MealFilterPresenter.swift in Sources */,
 				EE71328328F6E1A4007338FF /* ProviderSenderPackagesCell.swift in Sources */,
+				EE08358B2900282B005A2E44 /* CircalUIVew.swift in Sources */,
 				7756A0F6253482EF00BFE53C /* PublicHelper.swift in Sources */,
 				7756A16825348AD400BFE53C /* UIViewControllerExtensions.swift in Sources */,
 				7769F0B22599EA7200A4FC5E /* CompleteRegisterContract.swift in Sources */,
@@ -3823,6 +3884,7 @@
 				C8D90DB6260B6462003D402B /* FaqCell.swift in Sources */,
 				77C4E53725B60C2300228592 /* TagSearchCell.swift in Sources */,
 				7769F0A62599EA5A00A4FC5E /* VerifyCodeVC.swift in Sources */,
+				7F3EA7FA28FEE03500203912 /* Ex_LoadUiImageView.swift in Sources */,
 				77E3982E25BEEA6C0049422C /* ExtraMealCell.swift in Sources */,
 				7756A15825348AD400BFE53C /* UISearchBarExtensions.swift in Sources */,
 				771CA00A259B8F2600E66E4B /* HomeVC.swift in Sources */,
@@ -4002,6 +4064,7 @@
 				7756A115253482EF00BFE53C /* BaseController.swift in Sources */,
 				EE71328728F6E487007338FF /* RoundedButton.swift in Sources */,
 				773C8ABA25D018F80024A01D /* CreateAddressContract.swift in Sources */,
+				7F3EA7FF28FEEA3100203912 /* ProviderAdsVC.swift in Sources */,
 				7796AF8E25BD75B900864D03 /* RangeSeekSlider.swift in Sources */,
 				C8DB39BF25DBC3EF0063B163 /* CartBuilderPresenter.swift in Sources */,
 				EE2E699B28998CD600E871B1 /* ExUIViewController.swift in Sources */,
@@ -4038,6 +4101,7 @@
 				EEEAEEEA28D2739E00EDAD8B /* CheckoutModel.swift in Sources */,
 				7778206825B5FEBB00C93AAB /* ProductCollectionCell.swift in Sources */,
 				77F0B33025D5530D002E5AB2 /* ProfileModel.swift in Sources */,
+				7FBE175228FE5F65005FEA25 /* AdsModel.swift in Sources */,
 				77C4C9112599C88A00CDFA38 /* OnBoardingRouter.swift in Sources */,
 				77EDFFC425B88140005678D4 /* NotificationsVC.swift in Sources */,
 				77C4B4A125D54C5E00B9B4CE /* ReOrderVC.swift in Sources */,
@@ -4077,6 +4141,7 @@
 				7792B0BB25D3FD8100DFAA06 /* Cached.swift in Sources */,
 				EE10AC0128F57F1C009B8BEA /* ProviderMenuItemType.swift in Sources */,
 				776C8A6C25B6EEC2002589C3 /* CategoryDetailsVC.swift in Sources */,
+				EE08357F290026C2005A2E44 /* ProviderFilterOrdersVC.swift in Sources */,
 				772DE35125D55AE3005F1BC7 /* FavoritesContract.swift in Sources */,
 				77811B2A25BD6B3C0096119C /* ProviderRatesVC.swift in Sources */,
 				77483C3225B9D1D90095D52B /* ResturantSearchCell.swift in Sources */,
@@ -4114,6 +4179,7 @@
 				773AB97A25C1CEA100CD48FB /* QuantityModel.swift in Sources */,
 				771C9FEE259B778000E66E4B /* PopupConfirmationContract.swift in Sources */,
 				77C3CFF025BEC63600301A5F /* ReservationTableDonePresenter.swift in Sources */,
+				EE083588290027EA005A2E44 /* ProviderHeaderTableviewFilterOrdersCell.swift in Sources */,
 				C8D90DB1260B6462003D402B /* ContactUsRouter.swift in Sources */,
 				C8D90D6C260B5D62003D402B /* ReservationCell.swift in Sources */,
 				7756A18425348AD400BFE53C /* CollectionExtensions.swift in Sources */,
@@ -4317,6 +4383,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4338,6 +4405,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -4378,6 +4446,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -4389,16 +4458,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
 		77C5F4AF2534814200E70C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD5D7188E93C758A193459F7 /* Pods-DAL_IOS.debug.xcconfig */;
+			baseConfigurationReference = 1987EE9814BCA556F8C71224 /* Pods-DAL_IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DAL_IOS/DAL_IOS.entitlements;
@@ -4420,7 +4491,7 @@
 		};
 		77C5F4B02534814200E70C4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE8DFFFBE13D16FDD1C473EA /* Pods-DAL_IOS.release.xcconfig */;
+			baseConfigurationReference = B863CA0138A713097BF99680 /* Pods-DAL_IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DAL_IOS/DAL_IOS.entitlements;

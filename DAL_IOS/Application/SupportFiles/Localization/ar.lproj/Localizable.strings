@@ -391,3 +391,12 @@
 "There are no packages subscribed at the moment" = "لم يتم الاشتراك في باقات في الوقت الحالي";
 "Sender Packages" = "باقات Sender";
 "Out Of Stock" = "غير متوفر";
+"Your ads" = "إعلاناتك";
+"Show all" = "شاهد المزيد";
+
+//MARK: - Provider Filter Orders VC
+"Categorized By Date" = "تصنيف بالتاريخ";
+"Visa" = "فيزا";
+"Mada" = "مدي";
+"Preparation In Progress" = "جاري التجهيز";
+"Ready" = "جاهز";
