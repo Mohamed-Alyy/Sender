@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlGhadTV-Bold.ttf">
+            <string>AlGhadTV-Bold</string>
+        </array>
+        <array key="AlGhadTV-Regular.ttf">
+            <string>AlGhadTV</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProviderFilterOrdersVC" customModule="DAL_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtnOutlet" destination="LUP-mt-ZqC" id="N76-63-s0q"/>
+                <outlet property="categorizedByDateLableOutlet" destination="BUu-Vn-UQW" id="ncp-Tw-mmF"/>
+                <outlet property="dataPickerOulet" destination="nnV-Bk-50b" id="vQY-eV-AKF"/>
+                <outlet property="dateTextFieldOutlet" destination="7g7-yb-VlS" id="zcq-ev-Hl9"/>
+                <outlet property="nameScreenLableOutlet" destination="uoY-VO-aoq" id="UGY-fv-uSV"/>
+                <outlet property="searchBtnOutlet" destination="u6z-bS-QgJ" id="Xt6-iu-SSh"/>
+                <outlet property="tableview" destination="5sO-S1-Pkc" id="KIj-Kq-tcj"/>
+                <outlet property="view" destination="jlt-wq-aQV" id="4l2-GQ-gxr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jlt-wq-aQV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-fS-rJG">
+                    <rect key="frame" x="24" y="68" width="366" height="156"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvd-az-nNh" userLabel="View Close">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="52"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Filter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoY-VO-aoq">
+                                    <rect key="frame" x="0.0" y="9.5" width="192" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="geJ-qA-cyE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AlGhadTV-Bold" family="AlGhadTV" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b20"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6z-bS-QgJ">
+                                    <rect key="frame" x="284" y="4" width="82" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="82" id="jLb-sH-eOv"/>
+                                    </constraints>
+                                    <color key="tintColor" red="1" green="0.47843137250000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Search">
+                                        <fontDescription key="titleFontDescription" name="AlGhadTV" family="AlGhadTV" pointSize="18"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="searchBtnAction:" destination="-1" eventType="touchUpInside" id="DAZ-nD-djt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-mt-ZqC">
+                                    <rect key="frame" x="202" y="4" width="82" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="82" id="ORJ-5r-aLL"/>
+                                    </constraints>
+                                    <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                        <fontDescription key="titleFontDescription" name="AlGhadTV" family="AlGhadTV" pointSize="18"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelBtnAction:" destination="-1" eventType="touchUpInside" id="5sm-1B-jLE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="u6z-bS-QgJ" secondAttribute="trailing" id="26i-Fq-Mu2"/>
+                                <constraint firstItem="uoY-VO-aoq" firstAttribute="leading" secondItem="Bvd-az-nNh" secondAttribute="leading" id="5e3-M0-zE6"/>
+                                <constraint firstAttribute="height" constant="52" id="AGa-2J-QMU"/>
+                                <constraint firstItem="uoY-VO-aoq" firstAttribute="centerY" secondItem="Bvd-az-nNh" secondAttribute="centerY" id="SEW-Ot-MIc"/>
+                                <constraint firstItem="u6z-bS-QgJ" firstAttribute="leading" secondItem="LUP-mt-ZqC" secondAttribute="trailing" id="TEj-uU-KWL"/>
+                                <constraint firstItem="LUP-mt-ZqC" firstAttribute="centerY" secondItem="Bvd-az-nNh" secondAttribute="centerY" id="XML-Xg-W8Z"/>
+                                <constraint firstItem="u6z-bS-QgJ" firstAttribute="centerY" secondItem="Bvd-az-nNh" secondAttribute="centerY" id="lWl-rs-3hm"/>
+                                <constraint firstItem="LUP-mt-ZqC" firstAttribute="leading" secondItem="uoY-VO-aoq" secondAttribute="trailing" constant="10" id="rjI-QJ-bD1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-Tn-dQs" userLabel="View Date lable">
+                            <rect key="frame" x="0.0" y="52" width="366" height="52"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categorized By Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUu-Vn-UQW">
+                                    <rect key="frame" x="8" y="10" width="348" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="AlGhadTV-Bold" family="AlGhadTV" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="b16"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="BUu-Vn-UQW" secondAttribute="trailing" constant="10" id="2Lb-op-3fc"/>
+                                <constraint firstItem="BUu-Vn-UQW" firstAttribute="top" secondItem="KvE-Tn-dQs" secondAttribute="top" constant="10" id="2V3-5w-c2f"/>
+                                <constraint firstAttribute="bottom" secondItem="BUu-Vn-UQW" secondAttribute="bottom" id="Iae-CY-vU6"/>
+                                <constraint firstAttribute="height" constant="32" id="Mwh-Pl-osw"/>
+                                <constraint firstItem="BUu-Vn-UQW" firstAttribute="leading" secondItem="KvE-Tn-dQs" secondAttribute="leading" constant="8" id="TSY-yW-lUH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jw-P8-sDd" userLabel="View Date Textfield">
+                            <rect key="frame" x="0.0" y="104" width="366" height="52"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00-00-0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7g7-yb-VlS">
+                                    <rect key="frame" x="8" y="0.0" width="342" height="52"/>
+                                    <fontDescription key="fontDescription" name="AlGhadTV" family="AlGhadTV" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontLabel" value="r18"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVq-BL-mtP">
+                                    <rect key="frame" x="318" y="14" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="0tu-jb-bWq"/>
+                                        <constraint firstAttribute="height" constant="24" id="Q05-L8-7Qw"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Iconly-Light-Calendar"/>
+                                    <connections>
+                                        <action selector="btnShowDateTabWithSender:" destination="-1" eventType="touchUpInside" id="4mY-Pv-zlp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="6Db-B7-YgA"/>
+                                <constraint firstAttribute="trailing" secondItem="7g7-yb-VlS" secondAttribute="trailing" constant="16" id="ddI-jD-6Jb"/>
+                                <constraint firstItem="7g7-yb-VlS" firstAttribute="leading" secondItem="7Jw-P8-sDd" secondAttribute="leading" constant="8" id="l1U-6H-H55"/>
+                                <constraint firstAttribute="bottom" secondItem="7g7-yb-VlS" secondAttribute="bottom" id="p16-hd-8eM"/>
+                                <constraint firstItem="aVq-BL-mtP" firstAttribute="centerY" secondItem="7g7-yb-VlS" secondAttribute="centerY" id="u0O-2G-qYo"/>
+                                <constraint firstItem="aVq-BL-mtP" firstAttribute="trailing" secondItem="7g7-yb-VlS" secondAttribute="trailing" constant="-8" id="wnN-8k-lmK"/>
+                                <constraint firstItem="7g7-yb-VlS" firstAttribute="top" secondItem="7Jw-P8-sDd" secondAttribute="top" id="yhP-si-lN0"/>
+                            </constraints>
+                        </view>
+                        <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nnV-Bk-50b">
+                            <rect key="frame" x="0.0" y="156" width="366" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="gAX-bh-88p"/>
+                            </constraints>
+                        </datePicker>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-8I-9do">
+                    <rect key="frame" x="24" y="224" width="366" height="614"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5sO-S1-Pkc">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="614"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NJL-Ip-iKH"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NJL-Ip-iKH" firstAttribute="trailing" secondItem="aUP-fS-rJG" secondAttribute="trailing" constant="24" id="643-sI-3vz"/>
+                <constraint firstItem="hrg-8I-9do" firstAttribute="leading" secondItem="NJL-Ip-iKH" secondAttribute="leading" constant="24" id="Fq9-JT-JlJ"/>
+                <constraint firstItem="aUP-fS-rJG" firstAttribute="leading" secondItem="NJL-Ip-iKH" secondAttribute="leading" constant="24" id="gvV-nh-Tfm"/>
+                <constraint firstItem="NJL-Ip-iKH" firstAttribute="bottom" secondItem="hrg-8I-9do" secondAttribute="bottom" constant="24" id="oPS-M7-lkd"/>
+                <constraint firstItem="hrg-8I-9do" firstAttribute="top" secondItem="aUP-fS-rJG" secondAttribute="bottom" id="ppl-f7-D2W"/>
+                <constraint firstItem="aUP-fS-rJG" firstAttribute="top" secondItem="NJL-Ip-iKH" secondAttribute="top" constant="24" id="rr2-7v-Gpf"/>
+                <constraint firstItem="NJL-Ip-iKH" firstAttribute="trailing" secondItem="hrg-8I-9do" secondAttribute="trailing" constant="24" id="wPf-PH-vEk"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="89.673913043478265"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Iconly-Light-Calendar" width="19" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
