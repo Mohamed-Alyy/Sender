@@ -1126,7 +1126,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 185 images.
+  /// This `R.image` struct is generated, and contains static references to 188 images.
   struct image {
     /// Image `076d506b2c5e606e82bf26462bf5f8e7`.
     static let d506b2c5e606e82bf26462bf5f8e7 = Rswift.ImageResource(bundle: R.hostingBundle, name: "076d506b2c5e606e82bf26462bf5f8e7")
@@ -1264,10 +1264,14 @@ struct R: Rswift.Validatable {
     static let iconMaterialCancel1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-cancel-1")
     /// Image `Icon material-cancel`.
     static let iconMaterialCancel = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-cancel")
+    /// Image `Iconly-Light-Calendar-Temp`.
+    static let iconlyLightCalendarTemp = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Calendar-Temp")
     /// Image `Iconly-Light-Calendar`.
     static let iconlyLightCalendar = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Calendar")
     /// Image `Iconly-Light-Document`.
     static let iconlyLightDocument = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Document")
+    /// Image `Iconly-Light-Graph`.
+    static let iconlyLightGraph = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Graph")
     /// Image `Iconly-Light-Heart-1`.
     static let iconlyLightHeart1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Iconly-Light-Heart-1")
     /// Image `Iconly-Light-Heart`.
@@ -1384,6 +1388,8 @@ struct R: Rswift.Validatable {
     static let eye = Rswift.ImageResource(bundle: R.hostingBundle, name: "eye")
     /// Image `favoriteOrange`.
     static let favoriteOrange = Rswift.ImageResource(bundle: R.hostingBundle, name: "favoriteOrange")
+    /// Image `filter`.
+    static let filter = Rswift.ImageResource(bundle: R.hostingBundle, name: "filter")
     /// Image `fire-1`.
     static let fire1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "fire-1")
     /// Image `fire`.
@@ -1983,9 +1989,23 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Iconly-Light-Calendar-Temp", bundle: ..., traitCollection: ...)`
+    static func iconlyLightCalendarTemp(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconlyLightCalendarTemp, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Iconly-Light-Document", bundle: ..., traitCollection: ...)`
     static func iconlyLightDocument(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconlyLightDocument, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Iconly-Light-Graph", bundle: ..., traitCollection: ...)`
+    static func iconlyLightGraph(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconlyLightGraph, compatibleWith: traitCollection)
     }
     #endif
 
@@ -2396,6 +2416,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "filter", bundle: ..., traitCollection: ...)`
+    static func filter(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.filter, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "fire", bundle: ..., traitCollection: ...)`
     static func fire(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.fire, compatibleWith: traitCollection)
@@ -2797,7 +2824,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 118 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 122 nibs.
   struct nib {
     /// Nib `AboutUsView`.
     static let aboutUsView = _R.nib._AboutUsView()
@@ -2807,6 +2834,8 @@ struct R: Rswift.Validatable {
     static let addressTableCell = _R.nib._AddressTableCell()
     /// Nib `AddressesView`.
     static let addressesView = _R.nib._AddressesView()
+    /// Nib `BestItemsCell`.
+    static let bestItemsCell = _R.nib._BestItemsCell()
     /// Nib `CardsListCell`.
     static let cardsListCell = _R.nib._CardsListCell()
     /// Nib `CardsListVC`.
@@ -2857,6 +2886,8 @@ struct R: Rswift.Validatable {
     static let faqView = _R.nib._FaqView()
     /// Nib `FavoritesView`.
     static let favoritesView = _R.nib._FavoritesView()
+    /// Nib `FilterResultsVC`.
+    static let filterResultsVC = _R.nib._FilterResultsVC()
     /// Nib `FilterTableCell`.
     static let filterTableCell = _R.nib._FilterTableCell()
     /// Nib `FilterView`.
@@ -2889,6 +2920,8 @@ struct R: Rswift.Validatable {
     static let mealFilterCell = _R.nib._MealFilterCell()
     /// Nib `MealFilterView`.
     static let mealFilterView = _R.nib._MealFilterView()
+    /// Nib `MostAreasCell`.
+    static let mostAreasCell = _R.nib._MostAreasCell()
     /// Nib `NotificationCell`.
     static let notificationCell = _R.nib._NotificationCell()
     /// Nib `NotificationsView`.
@@ -2985,6 +3018,8 @@ struct R: Rswift.Validatable {
     static let reOrderView = _R.nib._ReOrderView()
     /// Nib `RegisterView`.
     static let registerView = _R.nib._RegisterView()
+    /// Nib `ReportsDetailsCell`.
+    static let reportsDetailsCell = _R.nib._ReportsDetailsCell()
     /// Nib `ReservationCell`.
     static let reservationCell = _R.nib._ReservationCell()
     /// Nib `ReservationTableDoneView`.
@@ -3065,6 +3100,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.addressesView) instead")
     static func addressesView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.addressesView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "BestItemsCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.bestItemsCell) instead")
+    static func bestItemsCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.bestItemsCell)
     }
     #endif
 
@@ -3269,6 +3312,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "FilterResultsVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.filterResultsVC) instead")
+    static func filterResultsVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.filterResultsVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "FilterTableCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.filterTableCell) instead")
     static func filterTableCell(_: Void = ()) -> UIKit.UINib {
@@ -3393,6 +3444,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.mealFilterView) instead")
     static func mealFilterView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.mealFilterView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MostAreasCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.mostAreasCell) instead")
+    static func mostAreasCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.mostAreasCell)
     }
     #endif
 
@@ -3781,6 +3840,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ReportsDetailsCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.reportsDetailsCell) instead")
+    static func reportsDetailsCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.reportsDetailsCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "ReservationCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.reservationCell) instead")
     static func reservationCell(_: Void = ()) -> UIKit.UINib {
@@ -3996,6 +4063,10 @@ struct R: Rswift.Validatable {
       return R.nib.addressesView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
+    static func bestItemsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> BestItemsCell? {
+      return R.nib.bestItemsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? BestItemsCell
+    }
+
     static func cardsListCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CardsListCell? {
       return R.nib.cardsListCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CardsListCell
     }
@@ -4096,6 +4167,10 @@ struct R: Rswift.Validatable {
       return R.nib.favoritesView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
+    static func filterResultsVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.filterResultsVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     static func filterTableCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FilterTableCell? {
       return R.nib.filterTableCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FilterTableCell
     }
@@ -4158,6 +4233,10 @@ struct R: Rswift.Validatable {
 
     static func mealFilterView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.mealFilterView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func mostAreasCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MostAreasCell? {
+      return R.nib.mostAreasCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MostAreasCell
     }
 
     static func notificationCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NotificationCell? {
@@ -4350,6 +4429,10 @@ struct R: Rswift.Validatable {
 
     static func registerView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.registerView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func reportsDetailsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReportsDetailsCell? {
+      return R.nib.reportsDetailsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ReportsDetailsCell
     }
 
     static func reservationCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReservationCell? {
@@ -4619,6 +4702,7 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _AdditionsTableViewCell.validate()
+      try _BestItemsCell.validate()
       try _CardsListCell.validate()
       try _CardsListVC.validate()
       try _CartCell.validate()
@@ -4627,12 +4711,14 @@ struct _R: Rswift.Validatable {
       try _CreateCardVC.validate()
       try _EmptyScreen.validate()
       try _ExtraMealCell.validate()
+      try _FilterResultsVC.validate()
       try _FilterView.validate()
       try _FinancialTransactionsCell.validate()
       try _LoyaltyPointsCell.validate()
       try _LoyaltyPointsVC.validate()
       try _MealExtraEditCell.validate()
       try _MealFilterCell.validate()
+      try _MostAreasCell.validate()
       try _NotificationCell.validate()
       try _OnBoardingCell.validate()
       try _OrderCell.validate()
@@ -4657,10 +4743,12 @@ struct _R: Rswift.Validatable {
       try _ProviderRegisterVC.validate()
       try _ProviderResetPasswordVC.validate()
       try _ProviderSenderPackagesCell.validate()
+      try _ProviderStoreReportsVC.validate()
       try _ProviderVerifyCodeVC.validate()
       try _QuantityView.validate()
       try _RadioView.validate()
       try _RateTableCell.validate()
+      try _ReportsDetailsCell.validate()
       try _ResturantTableCell.validate()
       try _SearchCategoriesRestaurantCell.validate()
       try _SearchCategoriesVC.validate()
@@ -4720,6 +4808,23 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _BestItemsCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "BestItemsCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> BestItemsCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? BestItemsCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Group 2544", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Group 2544' is used in nib 'BestItemsCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -5070,6 +5175,25 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _FilterResultsVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "FilterResultsVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Iconly-Light-Calendar-Temp", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Calendar-Temp' is used in nib 'FilterResultsVC', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "multiply") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'multiply' is used in nib 'FilterResultsVC', but couldn't be loaded.") } }
+        if UIKit.UIImage(named: "storeReport", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'storeReport' is used in nib 'FilterResultsVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
     struct _FilterTableCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "FilterTableCell"
@@ -5290,6 +5414,23 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MostAreasCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "MostAreasCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MostAreasCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MostAreasCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "storeReport", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'storeReport' is used in nib 'MostAreasCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -5947,12 +6088,18 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _ProviderStoreReportsVC: Rswift.NibResourceType {
+    struct _ProviderStoreReportsVC: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "ProviderStoreReportsVC"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "appBackgroundWithoutAPPName", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'appBackgroundWithoutAPPName' is used in nib 'ProviderStoreReportsVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -6075,6 +6222,23 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ReportsDetailsCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ReportsDetailsCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReportsDetailsCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ReportsDetailsCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Iconly-Light-Graph", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Graph' is used in nib 'ReportsDetailsCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
