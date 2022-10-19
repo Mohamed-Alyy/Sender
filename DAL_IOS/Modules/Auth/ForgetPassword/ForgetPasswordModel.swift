@@ -13,4 +13,5 @@ class ForgetPasswordModel: Codable {
     var message: String?
     var user_id: Int?
     var secret_code: String?
+    var wait_for: Int?
 }

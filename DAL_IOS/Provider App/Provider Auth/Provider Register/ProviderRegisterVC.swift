@@ -16,5 +16,8 @@ class ProviderRegisterVC: UIViewController {
         // Do any additional setup after loading the view.
     }
  
-
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

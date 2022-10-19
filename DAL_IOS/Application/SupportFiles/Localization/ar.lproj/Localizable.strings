@@ -396,3 +396,12 @@
 "Filter Results" = "تصفية النتائج";
 "Most Wanted Areas" = "المناطق الأكثر طلبا";
 "Best Selling Items" = "العناصر الأكثر مبيعا";
+"Your ads" = "إعلاناتك";
+"Show all" = "شاهد المزيد";
+
+//MARK: - Provider Filter Orders VC
+"Categorized By Date" = "تصنيف بالتاريخ";
+"Visa" = "فيزا";
+"Mada" = "مدي";
+"Preparation In Progress" = "جاري التجهيز";
+"Ready" = "جاهز";

@@ -14,7 +14,7 @@ import GooglePlaces
 final class AppStarter {
     static let shared = AppStarter()
     private let window = (AppDelegate.shared?.window)
-//    private let locationManager = LocationManager.instance
+    //    private let locationManager = LocationManager.instance
     
     private init() {}
     
@@ -22,7 +22,7 @@ final class AppStarter {
         initLang()
         if !Localizer.isChanged {
             Localizer.set(language: Localizer.getDeviceLocale())
-        } 
+        }
         setupKeyboardConfig()
         setGoogleKey()
         DispatchQueue.main.async {
@@ -33,8 +33,8 @@ final class AppStarter {
     
     private func setDefultLangauge(){
         if let enPath = Bundle.main.path(forResource: "en", ofType: "lproj") {
-                    let enBundle = Bundle(path: enPath)
-                    enBundle?.localizedString(forKey: "your_key_here", value: nil, table: nil)
+            let enBundle = Bundle(path: enPath)
+            enBundle?.localizedString(forKey: "your_key_here", value: nil, table: nil)
         }
     }
     
@@ -47,30 +47,37 @@ final class AppStarter {
         GMSServices.provideAPIKey(GoogleMapHelper.Keys.googleAPI)
         GMSPlacesClient.provideAPIKey(GoogleMapHelper.Keys.googleAPI)
     }
-    
-     
-    
     private func setRootViewController() {
+//        goToOnProviderLoginVC()
         if #available(iOS 13.0, *) {
             window?.overrideUserInterfaceStyle = .light
         }
-        
         if UserRoot.token() != nil  {
-           goToHomeUser()
+            goToHomeUser()
         }else{
             goToOnBoarding()
         }
     }
-    
-    
-    
-    
-    private func goToOnBoarding(){ 
+    private func goToOnBoarding(){
         let rootViewController = SelectUserTypeVC.loadFromNib()
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
-    
+    private func goToOnProviderLoginVC(){
+//        let rootViewController = ProviderLoginVC.loadFromNib()
+//        window?.rootViewController = rootViewController
+//        window?.makeKeyAndVisible()
+        
+        let rootViewController = ProviderLoginVC.loadFromNib()
+        let nav = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
+    }
+    private func goToForgetPassword(){
+        let rootViewController = ProviderForgetPasswordVC.loadFromNib()
+        window?.rootViewController = rootViewController
+        window?.makeKeyAndVisible()
+    }
     private func goToHomeUser(){
         let storyboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
         guard let rootViewController = storyboard.instantiateInitialViewController() else { return  }

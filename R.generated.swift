@@ -2824,7 +2824,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 116 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 122 nibs.
   struct nib {
     /// Nib `AboutUsView`.
     static let aboutUsView = _R.nib._AboutUsView()
@@ -2950,6 +2950,8 @@ struct R: Rswift.Validatable {
     static let profileView = _R.nib._ProfileView()
     /// Nib `ProviderAdsCell`.
     static let providerAdsCell = _R.nib._ProviderAdsCell()
+    /// Nib `ProviderAdsVC`.
+    static let providerAdsVC = _R.nib._ProviderAdsVC()
     /// Nib `ProviderCartListVC`.
     static let providerCartListVC = _R.nib._ProviderCartListVC()
     /// Nib `ProviderCategoriesCell`.
@@ -2960,6 +2962,14 @@ struct R: Rswift.Validatable {
     static let providerCompleteRegisterVC = _R.nib._ProviderCompleteRegisterVC()
     /// Nib `ProviderDetailsView`.
     static let providerDetailsView = _R.nib._ProviderDetailsView()
+    /// Nib `ProviderFilterOrdersTableViewCell`.
+    static let providerFilterOrdersTableViewCell = _R.nib._ProviderFilterOrdersTableViewCell()
+    /// Nib `ProviderFilterOrdersVC`.
+    static let providerFilterOrdersVC = _R.nib._ProviderFilterOrdersVC()
+    /// Nib `ProviderForgetPasswordVC`.
+    static let providerForgetPasswordVC = _R.nib._ProviderForgetPasswordVC()
+    /// Nib `ProviderHeaderTableviewFilterOrdersCell`.
+    static let providerHeaderTableviewFilterOrdersCell = _R.nib._ProviderHeaderTableviewFilterOrdersCell()
     /// Nib `ProviderHomeVC`.
     static let providerHomeVC = _R.nib._ProviderHomeVC()
     /// Nib `ProviderLoginVC`.
@@ -2986,6 +2996,8 @@ struct R: Rswift.Validatable {
     static let providerRegisterThirdStepCell = _R.nib._ProviderRegisterThirdStepCell()
     /// Nib `ProviderRegisterVC`.
     static let providerRegisterVC = _R.nib._ProviderRegisterVC()
+    /// Nib `ProviderResetPasswordVC`.
+    static let providerResetPasswordVC = _R.nib._ProviderResetPasswordVC()
     /// Nib `ProviderSenderPackagesCell`.
     static let providerSenderPackagesCell = _R.nib._ProviderSenderPackagesCell()
     /// Nib `ProviderStoreReportsVC`.
@@ -3556,6 +3568,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderAdsVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerAdsVC) instead")
+    static func providerAdsVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerAdsVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "ProviderCartListVC", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.providerCartListVC) instead")
     static func providerCartListVC(_: Void = ()) -> UIKit.UINib {
@@ -3592,6 +3612,38 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.providerDetailsView) instead")
     static func providerDetailsView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.providerDetailsView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderFilterOrdersTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerFilterOrdersTableViewCell) instead")
+    static func providerFilterOrdersTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerFilterOrdersTableViewCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderFilterOrdersVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerFilterOrdersVC) instead")
+    static func providerFilterOrdersVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerFilterOrdersVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderForgetPasswordVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerForgetPasswordVC) instead")
+    static func providerForgetPasswordVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerForgetPasswordVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderHeaderTableviewFilterOrdersCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerHeaderTableviewFilterOrdersCell) instead")
+    static func providerHeaderTableviewFilterOrdersCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerHeaderTableviewFilterOrdersCell)
     }
     #endif
 
@@ -3696,6 +3748,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.providerRegisterVC) instead")
     static func providerRegisterVC(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.providerRegisterVC)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProviderResetPasswordVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.providerResetPasswordVC) instead")
+    static func providerResetPasswordVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.providerResetPasswordVC)
     }
     #endif
 
@@ -4235,6 +4295,10 @@ struct R: Rswift.Validatable {
       return R.nib.providerAdsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProviderAdsCell
     }
 
+    static func providerAdsVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerAdsVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     static func providerCartListVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.providerCartListVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -4253,6 +4317,22 @@ struct R: Rswift.Validatable {
 
     static func providerDetailsView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.providerDetailsView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func providerFilterOrdersTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProviderFilterOrdersTableViewCell? {
+      return R.nib.providerFilterOrdersTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProviderFilterOrdersTableViewCell
+    }
+
+    static func providerFilterOrdersVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerFilterOrdersVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func providerForgetPasswordVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerForgetPasswordVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func providerHeaderTableviewFilterOrdersCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProviderHeaderTableviewFilterOrdersCell? {
+      return R.nib.providerHeaderTableviewFilterOrdersCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProviderHeaderTableviewFilterOrdersCell
     }
 
     static func providerHomeVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -4305,6 +4385,10 @@ struct R: Rswift.Validatable {
 
     static func providerRegisterVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.providerRegisterVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func providerResetPasswordVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.providerResetPasswordVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func providerSenderPackagesCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProviderSenderPackagesCell? {
@@ -4454,10 +4538,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `MenuCell`.
     static let menuCell: Rswift.ReuseIdentifier<MenuCell> = Rswift.ReuseIdentifier(identifier: "MenuCell")
+    /// Reuse identifier `ProviderFilterOrdersTableViewCell`.
+    static let providerFilterOrdersTableViewCell: Rswift.ReuseIdentifier<ProviderFilterOrdersTableViewCell> = Rswift.ReuseIdentifier(identifier: "ProviderFilterOrdersTableViewCell")
     /// Reuse identifier `ShippingAddressCell`.
     static let shippingAddressCell: Rswift.ReuseIdentifier<ShippingAddressCell> = Rswift.ReuseIdentifier(identifier: "ShippingAddressCell")
 
@@ -4641,9 +4727,12 @@ struct _R: Rswift.Validatable {
       try _ProductCollectionCell.validate()
       try _ProductTableCell.validate()
       try _ProviderAdsCell.validate()
+      try _ProviderAdsVC.validate()
       try _ProviderCartListVC.validate()
       try _ProviderCategoriesMealCell.validate()
       try _ProviderCompleteRegisterVC.validate()
+      try _ProviderFilterOrdersVC.validate()
+      try _ProviderForgetPasswordVC.validate()
       try _ProviderHomeVC.validate()
       try _ProviderLoginVC.validate()
       try _ProviderMoreMenuCell.validate()
@@ -4652,6 +4741,7 @@ struct _R: Rswift.Validatable {
       try _ProviderRegisterFirstStepCell.validate()
       try _ProviderRegisterThirdStepCell.validate()
       try _ProviderRegisterVC.validate()
+      try _ProviderResetPasswordVC.validate()
       try _ProviderSenderPackagesCell.validate()
       try _ProviderStoreReportsVC.validate()
       try _ProviderVerifyCodeVC.validate()
@@ -5569,6 +5659,24 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _ProviderAdsVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ProviderAdsVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "appBackgroundWithoutAPPName", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'appBackgroundWithoutAPPName' is used in nib 'ProviderAdsVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderAdsVC', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
     struct _ProviderCartListVC: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "ProviderCartListVC"
@@ -5649,6 +5757,71 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _ProviderFilterOrdersTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ProviderFilterOrdersTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "ProviderFilterOrdersTableViewCell"
+      let name = "ProviderFilterOrdersTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProviderFilterOrdersTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProviderFilterOrdersTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProviderFilterOrdersVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ProviderFilterOrdersVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Iconly-Light-Calendar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Iconly-Light-Calendar' is used in nib 'ProviderFilterOrdersVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProviderForgetPasswordVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ProviderForgetPasswordVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "appBackground", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'appBackground' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "back-black", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'back-black' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "BorderColor1", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'BorderColor1' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "FourthColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'FourthColor' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "textColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "thirdTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'thirdTextColor' is used in nib 'ProviderForgetPasswordVC', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProviderHeaderTableviewFilterOrdersCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ProviderHeaderTableviewFilterOrdersCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProviderHeaderTableviewFilterOrdersCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProviderHeaderTableviewFilterOrdersCell
+      }
+
+      fileprivate init() {}
+    }
+
     struct _ProviderHomeVC: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "ProviderHomeVC"
@@ -5671,7 +5844,6 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
           if UIKit.UIColor(named: "mainColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'mainColor' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
           if UIKit.UIColor(named: "textColor-blue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor-blue' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "thirdTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'thirdTextColor' is used in nib 'ProviderHomeVC', but couldn't be loaded.") }
         }
       }
 
@@ -5870,6 +6042,27 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderRegisterVC', but couldn't be loaded.") }
           if UIKit.UIColor(named: "mainColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'mainColor' is used in nib 'ProviderRegisterVC', but couldn't be loaded.") }
           if UIKit.UIColor(named: "thirdTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'thirdTextColor' is used in nib 'ProviderRegisterVC', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProviderResetPasswordVC: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ProviderResetPasswordVC"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "appBackground", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'appBackground' is used in nib 'ProviderResetPasswordVC', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "back-black", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'back-black' is used in nib 'ProviderResetPasswordVC', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "FourthColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'FourthColor' is used in nib 'ProviderResetPasswordVC', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'ProviderResetPasswordVC', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "textColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor' is used in nib 'ProviderResetPasswordVC', but couldn't be loaded.") }
         }
       }
 

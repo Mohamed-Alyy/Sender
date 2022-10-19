@@ -35,6 +35,7 @@ extension OnBoardingVC {
         presenter = nil
         router = nil
     }
+    
 }
 // MARK: - ...  Functions
 extension OnBoardingVC {
@@ -75,7 +76,18 @@ extension OnBoardingVC: OnBoardingCellDelegate {
         let path = IndexPath(row: (cell.path ?? 0) + 1, section: 0)
         self.boardingCollection.scrollToItem(at: path, at: .centeredHorizontally, animated: true)
     }
-    func onBoardingCell(_ cell: OnBoardingCell, start for: Bool) {
-        self.router?.startApplication()
+    func onBoardingCell(_ cell: OnBoardingCell, start: Bool) {
+        if start == true {
+            goToOnLoginProvider()
+        }else{
+            self.router?.startApplication()
+        }
+    }
+    private func goToOnLoginProvider(){
+        let controller = ProviderLoginVC.loadFromNib()
+        let nav = UINavigationController(rootViewController: controller)
+        nav.navigationBar.isHidden = true
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
     }
 }

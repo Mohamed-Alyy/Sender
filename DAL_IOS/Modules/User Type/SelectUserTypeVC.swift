@@ -20,7 +20,6 @@ class SelectUserTypeVC: UIViewController {
         prefs.set(false, forKey: UD.PrefKeys.userTypeIsProvider)
         // Do any additional setup after loading the view.
     }
- 
 
 }
 // MARK: - ...  Functions
@@ -42,22 +41,25 @@ extension SelectUserTypeVC {
     @IBAction func didTappedProvider(_ sender: Any) {
         prefs.set(true, forKey: UD.PrefKeys.userTypeIsProvider)
         setup()
+        print(UserDefultHelper.instance.userTypeIsProvider)
+        print("Provider")
     }
     
     @IBAction func didTappedUser(_ sender: Any) {
         prefs.set(false, forKey: UD.PrefKeys.userTypeIsProvider)
         setup()
+        print(UserDefultHelper.instance.userTypeIsProvider)
+        print("user")
     }
     
     @IBAction func didTappedNext(_ sender: Any) {
+        
         goToOnBoarding()
     }
-    
     private func goToOnBoarding(){
         let storyboard = UIStoryboard(name: "OnBoardingStoryboard", bundle: nil)
         guard let rootViewController = storyboard.instantiateInitialViewController() else { return  }
         rootViewController.modalPresentationStyle = .fullScreen
         self.present(rootViewController, animated: true)
-        
     }
 }

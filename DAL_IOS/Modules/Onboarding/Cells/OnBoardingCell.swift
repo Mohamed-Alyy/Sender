@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol OnBoardingCellDelegate: class {
-    func onBoardingCell(_ cell: OnBoardingCell, next for: Bool)
-    func onBoardingCell(_ cell: OnBoardingCell, start for: Bool)
+protocol OnBoardingCellDelegate: AnyObject {
+    func onBoardingCell(_ cell: OnBoardingCell, next : Bool)
+    func onBoardingCell(_ cell: OnBoardingCell, start : Bool)
 }
 class OnBoardingCell: UICollectionViewCell, CellProtocol {
     @IBOutlet weak var containerView: GradientView!
@@ -53,6 +53,13 @@ class OnBoardingCell: UICollectionViewCell, CellProtocol {
         delegate?.onBoardingCell(self, next: true)
     }
     @IBAction func start(_ sender: Any) {
-        delegate?.onBoardingCell(self, start: true)
+        if UserDefultHelper.instance.userTypeIsProvider == true{
+            print("provider")
+            delegate?.onBoardingCell(self, start: true)
+        }else{
+            print("user")
+            delegate?.onBoardingCell(self, start: false)
+        }
     }
+  
 }
