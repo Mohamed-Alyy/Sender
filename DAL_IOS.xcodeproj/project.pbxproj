@@ -558,6 +558,10 @@
 		C8DD21B02619BF65009D3564 /* EditSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DD21AE2619BF65009D3564 /* EditSelectView.xib */; };
 		C8DD21BB2619DA28009D3564 /* CategoryDetailFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD21B92619DA28009D3564 /* CategoryDetailFilterCell.swift */; };
 		C8DD21BC2619DA28009D3564 /* CategoryDetailFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DD21BA2619DA28009D3564 /* CategoryDetailFilterCell.xib */; };
+		D319B81729012E0300EB2C86 /* ProviderInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D319B81529012E0300EB2C86 /* ProviderInfoVC.swift */; };
+		D319B81829012E0300EB2C86 /* ProviderInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D319B81629012E0300EB2C86 /* ProviderInfoVC.xib */; };
+		D3F83C132902D46D00C8713F /* WeekDaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F83C112902D46D00C8713F /* WeekDaysCollectionViewCell.swift */; };
+		D3F83C142902D46D00C8713F /* WeekDaysCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F83C122902D46D00C8713F /* WeekDaysCollectionViewCell.xib */; };
 		E2261D5028FEA55B003937CC /* ProviderCouponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2261D4E28FEA55B003937CC /* ProviderCouponVC.swift */; };
 		E2261D5128FEA55B003937CC /* ProviderCouponVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2261D4F28FEA55B003937CC /* ProviderCouponVC.xib */; };
 		E252852528FF033F006FA20D /* CouponsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252852328FF033F006FA20D /* CouponsTableViewCell.swift */; };
@@ -1263,8 +1267,10 @@
 		C8DD21AE2619BF65009D3564 /* EditSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditSelectView.xib; sourceTree = "<group>"; };
 		C8DD21B92619DA28009D3564 /* CategoryDetailFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailFilterCell.swift; sourceTree = "<group>"; };
 		C8DD21BA2619DA28009D3564 /* CategoryDetailFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryDetailFilterCell.xib; sourceTree = "<group>"; };
-		CCAEAE7FBFDB11CBC3EAE174 /* Pods-BaseIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		DD5D7188E93C758A193459F7 /* Pods-DAL_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAL_IOS.debug.xcconfig"; path = "Target Support Files/Pods-DAL_IOS/Pods-DAL_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D319B81529012E0300EB2C86 /* ProviderInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderInfoVC.swift; sourceTree = "<group>"; };
+		D319B81629012E0300EB2C86 /* ProviderInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderInfoVC.xib; sourceTree = "<group>"; };
+		D3F83C112902D46D00C8713F /* WeekDaysCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3F83C122902D46D00C8713F /* WeekDaysCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekDaysCollectionViewCell.xib; sourceTree = "<group>"; };
 		E2261D4E28FEA55B003937CC /* ProviderCouponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderCouponVC.swift; sourceTree = "<group>"; };
 		E2261D4F28FEA55B003937CC /* ProviderCouponVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderCouponVC.xib; sourceTree = "<group>"; };
 		E252852328FF033F006FA20D /* CouponsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponsTableViewCell.swift; sourceTree = "<group>"; };
@@ -3056,6 +3062,25 @@
 			path = LangIntro;
 			sourceTree = "<group>";
 		};
+		D3F83C102902D45600C8713F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D3F83C112902D46D00C8713F /* WeekDaysCollectionViewCell.swift */,
+				D3F83C122902D46D00C8713F /* WeekDaysCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D3FAA86429011A3900E917AC /* ProviderData */ = {
+			isa = PBXGroup;
+			children = (
+				D3F83C102902D45600C8713F /* Cell */,
+				D319B81529012E0300EB2C86 /* ProviderInfoVC.swift */,
+				D319B81629012E0300EB2C86 /* ProviderInfoVC.xib */,
+			);
+			path = ProviderData;
+			sourceTree = "<group>";
+		};
 		E2261D4D28FEA20F003937CC /* Provider Coupon */ = {
 			isa = PBXGroup;
 			children = (
@@ -3067,6 +3092,14 @@
 				E2917172290014B600F1AA53 /* EditAddVC.xib */,
 			);
 			path = "Provider Coupon";
+			sourceTree = "<group>";
+		};
+		E59A6D5A881E99D2DE5F9DDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6320EE3CB5D3B9BC22EF46F5 /* Pods_DAL_IOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EA226AB828FED39E0071AF55 /* ProviderResetPasswordVC */ = {
@@ -3085,14 +3118,6 @@
 				EA2831BB28FE9883002AF854 /* ProviderForgetPasswordVC.xib */,
 			);
 			path = ProviderForgetPasswordVC;
-			sourceTree = "<group>";
-		};
-		E59A6D5A881E99D2DE5F9DDD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6320EE3CB5D3B9BC22EF46F5 /* Pods_DAL_IOS.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EE08357C290026A0005A2E44 /* Provider Filter Orders Popup */ = {
@@ -3199,6 +3224,7 @@
 		EE10ABE028F56C5B009B8BEA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D3FAA86429011A3900E917AC /* ProviderData */,
 				E2261D4D28FEA20F003937CC /* Provider Coupon */,
 				EE08357C290026A0005A2E44 /* Provider Filter Orders Popup */,
 				EEE4B99428FDA3F900F49B9D /* Provider Orders */,
@@ -3634,6 +3660,7 @@
 				7769F0A12599EA5A00A4FC5E /* VerifyCodeStoryboard.storyboard in Resources */,
 				EE56208728A133B10060051C /* CreateCardVC.xib in Resources */,
 				C8D90DD0260B804C003D402B /* MakeOrderDoneView.xib in Resources */,
+				D319B81829012E0300EB2C86 /* ProviderInfoVC.xib in Resources */,
 				77C5F4A72534814200E70C4C /* Assets.xcassets in Resources */,
 				EE10ABDB28F5625F009B8BEA /* ProviderRegisterSecondStepCellCell.xib in Resources */,
 				EE2E69912899607700E871B1 /* SetNewPasswordVC.xib in Resources */,
@@ -3647,6 +3674,7 @@
 				EE0EB7AE28CA537700E0260F /* AdditionsTableViewCell.xib in Resources */,
 				EE10ABF528F57387009B8BEA /* ProviderNotificationVC.xib in Resources */,
 				C8D90D6B260B5D62003D402B /* ReservationCell.xib in Resources */,
+				D3F83C142902D46D00C8713F /* WeekDaysCollectionViewCell.xib in Resources */,
 				7775806725BEED030022F7D0 /* QuantityView.xib in Resources */,
 				77C4B49C25D54C5E00B9B4CE /* ReOrderStoryboard.storyboard in Resources */,
 				EEEAEECE28D2462D00EDAD8B /* ShippingAddressVC.xib in Resources */,
@@ -4187,6 +4215,7 @@
 				77B1BF1325D5269500E50B21 /* OrdersVC.swift in Sources */,
 				EE2E6999289960E700E871B1 /* SetNewPasswordModel.swift in Sources */,
 				C88C83262619F32A006402DB /* TagCollectionViewDataSource.swift in Sources */,
+				D319B81729012E0300EB2C86 /* ProviderInfoVC.swift in Sources */,
 				7756A16A25348AD400BFE53C /* UINavigationControllerExtensions.swift in Sources */,
 				77C4C91A2599CB7A00CDFA38 /* OnBoardingCell.swift in Sources */,
 				EE9ECF5428F46DDF00A76409 /* SelectUserTypeVC.swift in Sources */,
@@ -4245,6 +4274,7 @@
 				77E9DAC125B88C5D005BF3C7 /* DeliveryServiceModel.swift in Sources */,
 				EE4BE50C28B011FB0030C45C /* SearchCategoriesContract.swift in Sources */,
 				EA226ABB28FED40A0071AF55 /* ProviderResetPasswordVC.swift in Sources */,
+				D3F83C132902D46D00C8713F /* WeekDaysCollectionViewCell.swift in Sources */,
 				773AB97A25C1CEA100CD48FB /* QuantityModel.swift in Sources */,
 				771C9FEE259B778000E66E4B /* PopupConfirmationContract.swift in Sources */,
 				77C3CFF025BEC63600301A5F /* ReservationTableDonePresenter.swift in Sources */,

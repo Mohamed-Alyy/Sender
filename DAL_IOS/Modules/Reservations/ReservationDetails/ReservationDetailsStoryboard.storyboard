@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1z-F3-ot6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1z-F3-ot6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-Gg-QBO">
-                                <rect key="frame" x="0.0" y="194" width="414" height="702"/>
+                                <rect key="frame" x="0.0" y="198" width="414" height="698"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ToS-i1-5GE">
                                         <rect key="frame" x="0.0" y="30" width="414" height="60"/>
@@ -58,10 +58,10 @@
                                             <constraint firstItem="eIo-jp-RQC" firstAttribute="centerY" secondItem="zyR-8U-yv0" secondAttribute="centerY" id="twv-2C-9j1"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqd-5d-dQU">
-                                        <rect key="frame" x="0.0" y="90" width="414" height="612"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqd-5d-dQU">
+                                        <rect key="frame" x="0.0" y="90" width="414" height="608"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sZx-ic-cA6">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sZx-ic-cA6">
                                                 <rect key="frame" x="0.0" y="20" width="414" height="705"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fT9-Ve-Vxl">
@@ -145,7 +145,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vME-sI-MIg">
-                                                                <rect key="frame" x="68" y="20" width="133.5" height="20.5"/>
+                                                                <rect key="frame" x="68" y="20" width="134.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -154,14 +154,14 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iconly-Light-Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-On-Bue">
-                                                                <rect key="frame" x="209.5" y="20" width="19" height="20"/>
+                                                                <rect key="frame" x="210.5" y="20" width="19" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="e0E-6M-BTM"/>
                                                                     <constraint firstAttribute="width" constant="19" id="p5u-ch-frI"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="25مايو 2020, 3:15 مساءا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoO-Wf-9YZ">
-                                                                <rect key="frame" x="231.5" y="21.5" width="147.5" height="17"/>
+                                                                <rect key="frame" x="232.5" y="21.5" width="146.5" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -341,7 +341,7 @@
                                                             <constraint firstItem="b2z-Aw-pdf" firstAttribute="leading" secondItem="eo8-RN-1Rs" secondAttribute="leading" constant="20" id="lFi-Sq-MLc"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QW5-VA-sUR">
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QW5-VA-sUR">
                                                         <rect key="frame" x="0.0" y="405" width="414" height="300"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLs-vb-igH">
@@ -361,7 +361,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localization" value="Rate service provider"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ON-Uz-uk6" customClass="CosmosView" customModule="Cosmos">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ON-Uz-uk6" customClass="CosmosView" customModule="Cosmos">
                                                                 <rect key="frame" x="109.5" y="60.5" width="195" height="35"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -380,7 +380,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLZ-3m-00d">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLZ-3m-00d">
                                                                 <rect key="frame" x="35" y="117.5" width="344" height="52"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="076d506b2c5e606e82bf26462bf5f8e7" translatesAutoresizingMaskIntoConstraints="NO" id="zuo-97-EJJ">
@@ -422,7 +422,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43c-VK-IjQ" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43c-VK-IjQ" customClass="GradientButton" customModule="DAL_IOS" customModuleProvider="target">
                                                                 <rect key="frame" x="35" y="189.5" width="344" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="1uT-zu-AMh"/>
@@ -484,7 +484,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es3-I3-y9d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="150"/>
                                 <connections>
                                     <action selector="backBtn:" destination="v1z-F3-ot6" eventType="touchUpInside" id="2re-XH-6ky"/>
                                 </connections>
@@ -529,16 +529,13 @@
     </scenes>
     <designables>
         <designable name="43c-VK-IjQ">
-            <size key="intrinsicContentSize" width="47" height="34"/>
-        </designable>
-        <designable name="6ON-Uz-uk6">
-            <size key="intrinsicContentSize" width="195" height="35"/>
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
         <designable name="adi-5m-4na">
-            <size key="intrinsicContentSize" width="150" height="34"/>
+            <size key="intrinsicContentSize" width="88" height="30"/>
         </designable>
         <designable name="mke-jQ-aqO">
-            <size key="intrinsicContentSize" width="30" height="30"/>
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
     </designables>
     <resources>
@@ -552,7 +549,7 @@
             <color red="0.93300002813339233" green="0.93300002813339233" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="mainColor">
-            <color red="0.99607843137254903" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96078431372549022" green="0.46274509803921571" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="shadowColorRed">
             <color red="0.77254901960784317" green="0.15294117647058825" blue="0.14117647058823529" alpha="0.23999999463558197" colorSpace="custom" customColorSpace="sRGB"/>

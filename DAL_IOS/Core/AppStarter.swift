@@ -49,14 +49,18 @@ final class AppStarter {
     }
     private func setRootViewController() {
 //        goToOnProviderLoginVC()
-        if #available(iOS 13.0, *) {
-            window?.overrideUserInterfaceStyle = .light
-        }
-        if UserRoot.token() != nil  {
-            goToHomeUser()
-        }else{
-            goToOnBoarding()
-        }
+//        if #available(iOS 13.0, *) {
+//            window?.overrideUserInterfaceStyle = .light
+//        }
+//        if UserRoot.token() != nil  {
+//            goToHomeUser()
+//        }else{
+//            goToOnBoarding()
+//        }
+        let vc = ProviderInfoVC()
+        let nav = UINavigationController(rootViewController: vc)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
     }
     private func goToOnBoarding(){
         let rootViewController = SelectUserTypeVC.loadFromNib()
@@ -67,7 +71,7 @@ final class AppStarter {
 //        let rootViewController = ProviderLoginVC.loadFromNib()
 //        window?.rootViewController = rootViewController
 //        window?.makeKeyAndVisible()
-        
+       
         let rootViewController = ProviderLoginVC.loadFromNib()
         let nav = UINavigationController(rootViewController: rootViewController)
         window?.rootViewController = nav

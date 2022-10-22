@@ -54,7 +54,7 @@ class LocationHelper: NSObject {
         self.locationManager = CLLocationManager()
     }
     public func reload() {
-        self.locationUpdated = false
+      //  self.locationUpdated = falocollse
         self.currentLocation()
     }
 }

@@ -95,7 +95,8 @@ extension UserRoot {
         let data = UserDefaults.standard.data(forKey: storeUserDefaults)
         let user = self.convertToModel(response: data)
         print("user.token",user.token)
-        return user.token
+        let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODU5ZjBmMWQ4OTVhYmU4MDA5YzE5NTVmNTc5MjlhZDUwODljZjU2NjczOGRlOTc1Y2I3NTQyYTViZmJkZDJhZjhiNzQ3MjU1Zjk5MTE4ZWYiLCJpYXQiOjE2NjYyNTM0MTIuOTI1ODY5OTQxNzExNDI1NzgxMjUsIm5iZiI6MTY2NjI1MzQxMi45MjU4NzIwODc0Nzg2Mzc2OTUzMTI1LCJleHAiOjE2OTc3ODk0MTIuOTIyMTU5OTEwMjAyMDI2MzY3MTg3NSwic3ViIjoiNDQ2Iiwic2NvcGVzIjpbXX0.NwJmz2MyESRVEdyAXan6-9pGzboPyAFH5xeS7NdGKABA1bIMvjdsTzMipj9RUTNCGi_-32yQyeIfC-oGKKLLyaJiZpIvXoh06ZCNLN0hulZ6hORNZLe_dYyHhB4WRQhOH4CNCaW9LYRebmctcckhbkl_NKA2Ng4GkBPKtBxM_TzuuHijK4niDwn8YN-71uTLNNxDJYS6-LQlSj5Gu3PnQQKlvIvDyM8l50ksDYYmJWFge-XwMcoBu1upEjyOEhKc2peHgGv23yHKMdwGe47AMwVeYxOtLXFe-Eg-9g62L0XFP1bytb4CpkgsI5zETb26Cr6M972-w0A32LrQ-o5XmqIYAEcO5D3PNlGnadREbtvThDvU7f_N7WwBkiIsI9zk6DixMB1Ezb4o8-7loSVek4CQcEBWUh9MXhNrp68soDp9XSDcIgkT-ypkbgGCINRwMrEY9X6gowEO1P70tVjyq2w7isLTvLVW7t5xEJev295sykHd4h9WoovK_cSu2T5U3cca_vEJpZb_m02drLBSQseeH3Dkgps0-DhYRaq4kLGef2Kz6yzygcxSEpoINrQc8yETNluAg_X0K-kYJw1ijLcwKZa6DY72ITnl6EFbB2IQLK6ztfVU0LFk_xcSIXkB4fFQyes7P8LyB-BPOBLX5vI3s50CCt35JOw6OzGN1V0"
+        return token
     }
     public static func authroize(closure: HandlerView? = nil) {
         if token() == nil {
